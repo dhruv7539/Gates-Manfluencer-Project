@@ -5,3 +5,5 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .claude/worktrees/
+temp/audience_analysis/comment_embeddings.npy
+temp/audience_analysis/llm_results.parquet
