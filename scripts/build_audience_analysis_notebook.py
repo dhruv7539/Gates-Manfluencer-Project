@@ -91,7 +91,7 @@ CELLS.append(code("""INPUT_DIR = ROOT / "Nigeria Audience Comments"
 KEYWORDS_XLSX = ROOT / "Codebook and Keywords" / "NLC Proposed keywords.xlsx"
 OUTPUT_DIR = ROOT / "Topic Relevant Comments - Nigeria"
 TEMP_DIR = ROOT / "temp" / "audience_analysis"
-PLOTS_DIR = ROOT / "temp" / "audience_analysis" / "plots"
+PLOTS_DIR = ROOT / "Audience Analysis Plots - Nigeria"
 
 TEMP_DIR.mkdir(parents=True, exist_ok=True)
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)
