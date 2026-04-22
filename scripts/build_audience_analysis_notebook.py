@@ -139,6 +139,17 @@ def _strip_leading_handle(text, handle):
     return pattern.sub("", text).strip()
 
 
+def _norm_for_ngram(t):
+    t = str(t).lower()
+    t = re.sub(r"[^a-z0-9\\s]", " ", t)
+    return re.sub(r"\\s+", " ", t).strip()
+
+
+def _ngrams(t, n=8):
+    toks = t.split()
+    return {" ".join(toks[i:i + n]) for i in range(len(toks) - n + 1)} if len(toks) >= n else {t}
+
+
 def load_post(meta):
     path = INPUT_DIR / meta["creator"] / meta["file"]
     df = pd.read_excel(path)
@@ -146,14 +157,30 @@ def load_post(meta):
 
     # Drop any row authored by the creator themselves — that is the original post or a thread continuation.
     dropped_op = 0
+    op_ngrams = set()
     if handle and "author" in df.columns:
         mask = df["author"].astype(str).str.lower() == handle.lower()
         dropped_op = int(mask.sum())
+        for t in df.loc[mask, meta["text_col"]].astype(str):
+            op_ngrams |= _ngrams(_norm_for_ngram(t))
         df = df.loc[~mask].reset_index(drop=True)
 
     df["raw_text"] = df[meta["text_col"]].apply(_normalize_text)
     if handle:
         df["raw_text"] = df["raw_text"].apply(lambda t: _strip_leading_handle(t, handle))
+
+    # Drop pull-quote comments that just repeat the OP verbatim with no added content.
+    dropped_quotes = 0
+    if op_ngrams:
+        def is_quote(t):
+            ng = _ngrams(_norm_for_ngram(t))
+            if not ng:
+                return False
+            overlap = len(ng & op_ngrams) / len(ng)
+            return overlap >= 0.5 and len(_norm_for_ngram(t).split()) >= 8
+        quote_mask = df["raw_text"].apply(is_quote)
+        dropped_quotes = int(quote_mask.sum())
+        df = df.loc[~quote_mask].reset_index(drop=True)
     df["creator"] = meta["creator"]
     df["orientation"] = meta["orientation"]
     df["post"] = meta["post"]
@@ -163,8 +190,8 @@ def load_post(meta):
             keep_cols.append(aux)
             df[aux] = df[aux]
 
-    if dropped_op:
-        print(f"  · {meta['creator']} :: {meta['post']}: dropped {dropped_op} creator-authored rows (OP/thread)")
+    if dropped_op or dropped_quotes:
+        print(f"  · {meta['creator']} :: {meta['post']}: dropped {dropped_op} creator rows + {dropped_quotes} pull-quote rows")
     return df[keep_cols]
 
 
