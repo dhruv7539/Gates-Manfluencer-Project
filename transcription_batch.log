@@ -1,0 +1,54 @@
+2026-04-16 22:49:41,822 INFO Selected 1 jobs.
+2026-04-16 22:49:41,823 INFO  - face_it_like_a_man
+2026-04-16 22:49:41,823 INFO Running job 1/1: face_it_like_a_man
+2026-04-16 22:49:41,827 ERROR Job failed: face_it_like_a_man after 0.0 minutes
+2026-04-16 22:49:41,827 ERROR Traceback for face_it_like_a_man
+Traceback (most recent call last):
+  File "/Users/sushildalavi/Desktop/NLC/GATES-Project/scripts/run_all_transcriptions.py", line 99, in run_single_job
+    run_cells(runtime, PREFLIGHT_CELL_INDEXES if preflight_only else PIPELINE_CELL_INDEXES)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sushildalavi/Desktop/NLC/GATES-Project/scripts/run_all_transcriptions.py", line 91, in run_cells
+    exec(compile(code_cells[index], f"Transcription Pipeline.ipynb::cell_{index}", "exec"), runtime)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Transcription Pipeline.ipynb::cell_20", line 112, in <module>
+  File "Transcription Pipeline.ipynb::cell_20", line 9, in build_metadata_from_local_file
+FileNotFoundError: Local audio file does not exist: /Users/sushildalavi/Desktop/NLC/GATES-Project/Nigeria Audio Files/_Face it Like a Man_ - Banky Wellington [SoVSXTTH2dg].mp3
+
+2026-04-16 22:49:41,827 ERROR Batch finished with 1 failure(s).
+2026-04-16 22:49:41,827 ERROR FAILED JOB face_it_like_a_man
+Traceback (most recent call last):
+  File "/Users/sushildalavi/Desktop/NLC/GATES-Project/scripts/run_all_transcriptions.py", line 99, in run_single_job
+    run_cells(runtime, PREFLIGHT_CELL_INDEXES if preflight_only else PIPELINE_CELL_INDEXES)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sushildalavi/Desktop/NLC/GATES-Project/scripts/run_all_transcriptions.py", line 91, in run_cells
+    exec(compile(code_cells[index], f"Transcription Pipeline.ipynb::cell_{index}", "exec"), runtime)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Transcription Pipeline.ipynb::cell_20", line 112, in <module>
+  File "Transcription Pipeline.ipynb::cell_20", line 9, in build_metadata_from_local_file
+FileNotFoundError: Local audio file does not exist: /Users/sushildalavi/Desktop/NLC/GATES-Project/Nigeria Audio Files/_Face it Like a Man_ - Banky Wellington [SoVSXTTH2dg].mp3
+
+2026-04-16 22:51:26,537 INFO Selected 1 jobs.
+2026-04-16 22:51:26,537 INFO  - face_it_like_a_man
+2026-04-16 22:51:26,537 INFO Running job 1/1: face_it_like_a_man
+2026-04-16 22:51:26,540 ERROR Job failed: face_it_like_a_man after 0.0 minutes
+2026-04-16 22:51:26,540 ERROR Traceback for face_it_like_a_man
+Traceback (most recent call last):
+  File "/Users/sushildalavi/Desktop/NLC/GATES-Project/scripts/run_all_transcriptions.py", line 99, in run_single_job
+    run_cells(runtime, PREFLIGHT_CELL_INDEXES if preflight_only else PIPELINE_CELL_INDEXES)
+  File "/Users/sushildalavi/Desktop/NLC/GATES-Project/scripts/run_all_transcriptions.py", line 91, in run_cells
+    exec(compile(code_cells[index], f"Transcription Pipeline.ipynb::cell_{index}", "exec"), runtime)
+  File "Transcription Pipeline.ipynb::cell_20", line 112, in <module>
+  File "Transcription Pipeline.ipynb::cell_20", line 9, in build_metadata_from_local_file
+FileNotFoundError: Local audio file does not exist: /Users/sushildalavi/Desktop/NLC/GATES-Project/Nigeria Audio Files/_Face it Like a Man_ - Banky Wellington [SoVSXTTH2dg].mp3
+
+2026-04-16 22:51:26,540 ERROR Batch finished with 1 failure(s).
+2026-04-16 22:51:26,540 ERROR FAILED JOB face_it_like_a_man
+Traceback (most recent call last):
+  File "/Users/sushildalavi/Desktop/NLC/GATES-Project/scripts/run_all_transcriptions.py", line 99, in run_single_job
+    run_cells(runtime, PREFLIGHT_CELL_INDEXES if preflight_only else PIPELINE_CELL_INDEXES)
+  File "/Users/sushildalavi/Desktop/NLC/GATES-Project/scripts/run_all_transcriptions.py", line 91, in run_cells
+    exec(compile(code_cells[index], f"Transcription Pipeline.ipynb::cell_{index}", "exec"), runtime)
+  File "Transcription Pipeline.ipynb::cell_20", line 112, in <module>
+  File "Transcription Pipeline.ipynb::cell_20", line 9, in build_metadata_from_local_file
+FileNotFoundError: Local audio file does not exist: /Users/sushildalavi/Desktop/NLC/GATES-Project/Nigeria Audio Files/_Face it Like a Man_ - Banky Wellington [SoVSXTTH2dg].mp3
+
