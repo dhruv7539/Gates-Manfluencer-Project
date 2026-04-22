@@ -105,12 +105,12 @@ LLM_CONCURRENCY = 16        # concurrent requests
 EMBED_BATCH_SIZE = 256
 
 SELECTED_POSTS = [
-    {"creator": "Banky Wellington",  "orientation": "Progressive", "post": "Final Say Faith",                              "file": "Final Say Faith.xlsx",                              "text_col": "comment"},
-    {"creator": "Banky Wellington",  "orientation": "Progressive", "post": "My Story Journey Through Hope and Faith",      "file": "My Story Journey Through Hope and Faith.xlsx",      "text_col": "comment"},
-    {"creator": "Deyemi Okanlawon",  "orientation": "Progressive", "post": "Stop Raping Women Response",                   "file": "Stop Raping Women Response.xlsx",                   "text_col": "text"},
-    {"creator": "Agba John Doe",     "orientation": "Regressive",  "post": "Never Leave Marriage Because Husband Cheated", "file": "Never Leave Marriage Because Husband Cheated.xlsx", "text_col": "text"},
-    {"creator": "Shola",             "orientation": "Regressive",  "post": "7 Women Will Beg One Man to Marry",            "file": "7 Women Will Beg One Man to Marry.xlsx",            "text_col": "text"},
-    {"creator": "Wizarab",           "orientation": "Regressive",  "post": "Sex Toys and Raping Young Boys",               "file": "Sex Toys and Raping Young Boys.xlsx",               "text_col": "text"},
+    {"creator": "Banky Wellington",  "orientation": "Progressive", "post": "Final Say Faith",                              "file": "Final Say Faith.xlsx",                              "text_col": "comment", "creator_handle": None},
+    {"creator": "Banky Wellington",  "orientation": "Progressive", "post": "My Story Journey Through Hope and Faith",      "file": "My Story Journey Through Hope and Faith.xlsx",      "text_col": "comment", "creator_handle": None},
+    {"creator": "Deyemi Okanlawon",  "orientation": "Progressive", "post": "Stop Raping Women Response",                   "file": "Stop Raping Women Response.xlsx",                   "text_col": "text",    "creator_handle": "_deyemi"},
+    {"creator": "Agba John Doe",     "orientation": "Regressive",  "post": "Never Leave Marriage Because Husband Cheated", "file": "Never Leave Marriage Because Husband Cheated.xlsx", "text_col": "text",    "creator_handle": "jon_d_doe"},
+    {"creator": "Shola",             "orientation": "Regressive",  "post": "7 Women Will Beg One Man to Marry",            "file": "7 Women Will Beg One Man to Marry.xlsx",            "text_col": "text",    "creator_handle": "itsSh0la"},
+    {"creator": "Wizarab",           "orientation": "Regressive",  "post": "Sex Toys and Raping Young Boys",               "file": "Sex Toys and Raping Young Boys.xlsx",               "text_col": "text",    "creator_handle": "Wizarab10"},
 ]
 
 print(f"{len(SELECTED_POSTS)} posts selected — 3 Progressive, 3 Regressive")
@@ -131,10 +131,29 @@ CELLS.append(code("""def _normalize_text(s):
     return s
 
 
+def _strip_leading_handle(text, handle):
+    # Strip a leading '@handle' that's purely the reply target (not substantive content).
+    if not handle or not isinstance(text, str):
+        return text
+    pattern = re.compile(rf"^\\s*@{re.escape(handle)}\\b[\\s:,.-]*", flags=re.IGNORECASE)
+    return pattern.sub("", text).strip()
+
+
 def load_post(meta):
     path = INPUT_DIR / meta["creator"] / meta["file"]
     df = pd.read_excel(path)
+    handle = meta.get("creator_handle")
+
+    # Drop any row authored by the creator themselves — that is the original post or a thread continuation.
+    dropped_op = 0
+    if handle and "author" in df.columns:
+        mask = df["author"].astype(str).str.lower() == handle.lower()
+        dropped_op = int(mask.sum())
+        df = df.loc[~mask].reset_index(drop=True)
+
     df["raw_text"] = df[meta["text_col"]].apply(_normalize_text)
+    if handle:
+        df["raw_text"] = df["raw_text"].apply(lambda t: _strip_leading_handle(t, handle))
     df["creator"] = meta["creator"]
     df["orientation"] = meta["orientation"]
     df["post"] = meta["post"]
@@ -143,13 +162,16 @@ def load_post(meta):
         if aux in df.columns:
             keep_cols.append(aux)
             df[aux] = df[aux]
+
+    if dropped_op:
+        print(f"  · {meta['creator']} :: {meta['post']}: dropped {dropped_op} creator-authored rows (OP/thread)")
     return df[keep_cols]
 
 
 raw_frames = [load_post(p) for p in SELECTED_POSTS]
 raw = pd.concat(raw_frames, ignore_index=True)
 raw_counts = raw.groupby(["creator", "post"]).size().reset_index(name="raw_n")
-print(f"Total raw comments across 6 posts: {len(raw):,}")
+print(f"Total raw comments across 6 posts (after OP removal): {len(raw):,}")
 raw_counts
 """))
 
@@ -578,22 +600,15 @@ for (creator, post), g in selected.groupby(["creator", "post"]):
     creator_dir.mkdir(parents=True, exist_ok=True)
     out_path = creator_dir / f"{_safe(post)}.xlsx"
 
-    export_cols = ["rank", "creator", "orientation", "post", "raw_text",
-                   "n_words", "has_keyword", "keyword_hits", "sim_max",
-                   "sim_top_anchor", "llm_relevant", "llm_reason", "score"]
-    for extra in ("author", "likes", "replies", "retweets", "reply_count", "timestamp", "url"):
-        if extra in g.columns:
-            export_cols.append(extra)
-
-    out = g[export_cols].copy()
-    out["keyword_hits"] = out["keyword_hits"].apply(lambda xs: ", ".join(xs) if isinstance(xs, list) else "")
+    # Only the text column, nothing else.
+    out = pd.DataFrame({"text": g.sort_values("rank")["raw_text"].values})
     out.to_excel(out_path, index=False)
     summary_rows.append({"creator": creator, "post": post, "rows": len(out), "path": str(out_path.relative_to(ROOT))})
 
 summary = pd.DataFrame(summary_rows)
 summary_path = OUTPUT_DIR / "_summary.xlsx"
 summary.to_excel(summary_path, index=False)
-print(f"Wrote {len(summary)} files to {OUTPUT_DIR}")
+print(f"Wrote {len(summary)} files to {OUTPUT_DIR} (text-only)")
 summary
 """))
 
