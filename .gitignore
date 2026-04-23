@@ -9,3 +9,4 @@ temp/audience_analysis/comment_embeddings.npy
 temp/audience_analysis/llm_results.parquet
 temp/audience_analysis_kenya/comment_embeddings.npy
 temp/audience_analysis_kenya/llm_results.parquet
+~$*
