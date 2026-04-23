@@ -35,13 +35,11 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 CREATORS = [
-    {"name": "Deyemi Okanlawon",  "orientation": "Progressive", "handle": "_deyemi"},
-    {"name": "Agba John Doe",     "orientation": "Regressive",  "handle": "jon_d_doe"},
-    {"name": "Shola",             "orientation": "Regressive",  "handle": "itsSh0la"},
-    {"name": "Wizarab",           "orientation": "Regressive",  "handle": "Wizarab10"},
+    {"name": "Deyemi Okanlawon",  "orientation": "Progressive", "handle": "_deyemi",   "raw_target": 1000},
+    {"name": "Agba John Doe",     "orientation": "Regressive",  "handle": "jon_d_doe", "raw_target": 500},
+    {"name": "Shola",             "orientation": "Regressive",  "handle": "itsSh0la",  "raw_target": 500},
+    {"name": "Wizarab",           "orientation": "Regressive",  "handle": "Wizarab10", "raw_target": 500},
 ]
-
-RAW_PER_CREATOR = 400
 TARGET_AFTER_FILTER = 150
 START_DATE = "2023-01-01"
 END_DATE = "2026-04-23"
@@ -71,26 +69,31 @@ ANCHORS = [
     "fatherhood and raising sons and daughters",
 ]
 
-SCOPE_SYSTEM_PROMPT = """You are a qualitative research reviewer filtering Nigerian X (Twitter) posts from a single creator for a study on masculinity, gender, relationships, marriage, family, faith, and gender-based discourse.
+SCOPE_SYSTEM_PROMPT = """You are a qualitative research reviewer filtering Nigerian X (Twitter) posts from a single creator for a study on masculinity, gender, relationships, marriage, family, and adjacent social discourse.
 
-Keep a post ONLY if it substantively engages with any of these themes:
-- Masculinity, manhood, or what it means to be a man
-- Gender roles, gender dynamics, or gender norms
-- Dating, marriage, infidelity, sexual morality
-- Female sexuality, female agency, female stereotypes
-- Fatherhood, motherhood, parenting, family structure
-- Child support, divorce, provider role, financial dynamics in relationships
-- Polygamy, female scarcity, hypergamy
-- Rape, sexual violence, consent, false accusations, male/female victimhood
-- Feminism, misogyny, anti-feminism
-- Faith as it connects to gender, marriage, or masculinity
+Be GENEROUS. Keep a post if it touches ANY of these, even indirectly:
+- Masculinity, manhood, male identity, being a man
+- Gender roles, gender dynamics, gender norms, gender differences
+- Dating, marriage, relationships, love, heartbreak, infidelity
+- Female sexuality, female behavior, female stereotypes, women's roles
+- Fatherhood, motherhood, parenting, raising children, family structure
+- Child support, divorce, provider role, financial dynamics between partners
+- Polygamy, marriage market dynamics, hypergamy
+- Sex, sexual morality, body counts, virginity, sexual violence, rape, consent
+- Feminism, misogyny, anti-feminism, women's rights
+- Faith / religion as it connects to gender, marriage, or manhood
+- Self-improvement, life advice, discipline, success, or status framed around men or masculinity
+- Culture, respect, hierarchy, value between men and women
+- Emotional expression, mental health, vulnerability among men
 
-DROP a post if it is:
-- Pure promo, ads, crypto/NFT shilling, personal business
-- Off-topic news, sports, memes with no gender dimension
-- Retweets or one-line replies that don't themselves argue/claim anything about gender
-- Pure personal chit-chat, birthdays, photo posts
-- Unrelated political commentary
+DROP ONLY if the post is clearly:
+- Pure promo, ads, crypto / NFT / token shilling, product plugs, event RSVPs
+- Sports / entertainment / movie promo with no gender commentary
+- Birthday wishes, personal photo posts, travel pics
+- Technical / business content unrelated to any of the themes above
+- A one-word reaction or pure emoji tweet
+
+When uncertain, KEEP the post. The filter is broad, deliberately — downstream coders will do the fine-grained sort.
 
 Return JSON: {"results": [{"id": <int>, "keep": true/false, "reason": "<=10 words"}]}. Output nothing else."""
 
@@ -117,15 +120,16 @@ def scrape_creator(client: ApifyClient, creator: dict) -> pd.DataFrame:
         print(f"  [{creator['name']}] loaded {len(df)} from cache")
         return df
     url = f"https://x.com/{creator['handle']}"
+    target = creator.get("raw_target", 400)
     run_input = {
         "accountUrls": [url],
-        "maxCollections": RAW_PER_CREATOR,
+        "maxCollections": target,
         "language": "any",
         "splitMode": "month",
         "startDate": START_DATE,
         "endDate": END_DATE,
     }
-    print(f"  [{creator['name']}] scraping up to {RAW_PER_CREATOR} tweets from {url}...")
+    print(f"  [{creator['name']}] scraping up to {target} tweets from {url}...")
     run = client.actor("delicious_zebu/advanced-x-twitter-profile-scraper").call(
         run_input=run_input, timeout_secs=1800
     )
