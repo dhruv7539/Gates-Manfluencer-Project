@@ -70,6 +70,8 @@ Banky is a male Christian creator speaking to a faith-based audience about manho
 2. **Marriage, fatherhood, husband/wife dynamics** — partnership, provision, domestic life
 3. **Male emotional life** — shame, pride, vulnerability, failure, restoration, grief, male mental health
 4. **Sexual morality, temptation, discipline, pornography** — especially from male perspective
+5. **Banky's own male-experience testimony** — HIS stories from HIS life as a husband, father, son, working man, Christian man: IVF / fertility struggle, cancer diagnosis and recovery, career hustle, robbery survival, music career, family loss, financial hardship. These ARE male-lens content because Banky is narrating his own male experience, even when he doesn't say "as a man".
+6. **Faith applied to how a man should live** — biblical figures interpreted through male-experience lens (David, Peter, Paul, Moses, Job) when Banky ties it to male identity, leadership, or male spiritual discipline
 
 Skip only: musical interludes ("[Music]"), generic "let us pray" openings, Bible verse recitations with zero gender/masculinity framing, and pure greetings / applause cues.
 
