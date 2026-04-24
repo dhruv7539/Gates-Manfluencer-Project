@@ -63,15 +63,13 @@ You will receive a raw speech-to-text transcript. Produce EXACTLY N topically co
 - EXACTLY N units. Not more, not fewer.
 - Each `verbatim_text` MUST be between 60 and 130 words. COUNT THE WORDS before emitting. If a unit would be over 130 words, cut it shorter OR split it into two units earlier in the list. Absolutely never emit anything over 130 words.
 
-## What to pick (be generous; the manager wants a 200-unit corpus)
-Pick passages that touch ANY of these, even indirectly:
-- Masculinity, manhood, being a man, Christian manhood
-- Gender, marriage, fatherhood, husband/wife dynamics
-- Male emotional life, shame, pride, vulnerability, failure, restoration
-- Sexual morality, temptation, discipline, pornography
-- Testimony framed as male experience — career, provision, family loss, illness
-- Fathers and sons, mentorship of younger men
-- Faith / God as it shapes how a man should live
+## What to INCLUDE — this is the research scope
+Banky is a male Christian creator speaking to a faith-based audience about manhood. ANY of the following counts as scope-relevant:
+
+1. **Direct masculinity / gender teaching** — "as a man…", what men should do, gender role statements, manhood framing
+2. **Marriage, fatherhood, husband/wife dynamics** — partnership, provision, domestic life
+3. **Male emotional life** — shame, pride, vulnerability, failure, restoration, grief, male mental health
+4. **Sexual morality, temptation, discipline, pornography** — especially from male perspective
 
 Skip only: musical interludes ("[Music]"), generic "let us pray" openings, Bible verse recitations with zero gender/masculinity framing, and pure greetings / applause cues.
 
