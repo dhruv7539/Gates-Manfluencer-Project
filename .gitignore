@@ -9,4 +9,8 @@ temp/audience_analysis/comment_embeddings.npy
 temp/audience_analysis/llm_results.parquet
 temp/audience_analysis_kenya/comment_embeddings.npy
 temp/audience_analysis_kenya/llm_results.parquet
+temp/scraped_tweets_nigeria/
+temp/content_analysis_scraped/
+temp/content_analysis_banky_200/
+temp/strict_cleanup/
 ~$*
