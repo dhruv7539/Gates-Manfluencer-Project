@@ -92,12 +92,9 @@ Gates-Manfluencer-Project/
 │   ├── fix_speaker_labels.py
 │   └── transcripts_utils.py
 │
-├── Audio Files/                          # Source audio (Kenya + Nigeria)
-├── Generated Transcripts/                # 15 research-grade transcripts
-├── Captions/                             # 15 YouTube caption files (ground truth)
+├── (audio / captions / transcripts now live under each country folder)
 ├── Codebook and Keywords/                # Codebook docx + 400+ keyword lexicon
 ├── Scope/                                # Project scope documents
-├── Analysis Samples/                     # Reviewer-facing sample docs
 ├── imgs/                                 # Workflow diagrams
 ├── temp/                                 # Caches (gitignored)
 ├── README.md
@@ -179,7 +176,7 @@ Generates research-grade transcripts from YouTube videos.
 
 ### Transcript Accuracy Results
 
-All 15 transcripts hit research-grade quality. **Average: Precision 99.3% | Recall 99.2% | F1 99.3% | Coverage 99.9%** — full per-transcript table in `Generated Transcripts/`.
+All 15 transcripts hit research-grade quality. **Average: Precision 99.3% | Recall 99.2% | F1 99.3% | Coverage 99.9%** — full per-transcript table in `Nigeria/Generated Transcripts/` and `Kenya/Generated Transcripts/`.
 
 ---
 
