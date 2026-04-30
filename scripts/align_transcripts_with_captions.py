@@ -33,7 +33,7 @@ from textwrap import dedent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from run_all_transcriptions import build_runtime, select_jobs
-from transcript_output_utils import (
+from transcripts_utils import (
     clean_text,
     parse_transcript_style_lines,
     render_transcript,

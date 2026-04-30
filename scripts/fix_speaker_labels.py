@@ -31,7 +31,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from run_all_transcriptions import build_runtime, select_jobs
-from transcript_output_utils import clean_text, repair_transcript_text
+from transcripts_utils import clean_text, repair_transcript_text
 
 ROOT = Path(__file__).resolve().parents[1]
 TRANSCRIPTS_DIR = ROOT / "Generated Transcripts"

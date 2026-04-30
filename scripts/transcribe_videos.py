@@ -32,7 +32,7 @@ PIPELINE_EXTRA_CELL_MARKERS = [
     "def normalize_word_entries(raw_words: list[dict], *, source: str) -> list[dict]:",
     "def derive_diarization_constraints(metadata: dict) -> dict:",
     "def assign_speakers_to_words(words: list[dict], speaker_segments: list[dict], tolerance: float = 0.75) -> list[dict]:",
-    "# transcript_output_utils guards",
+    "# transcripts_utils guards",
     "def is_audience_like_turn(text: str) -> bool:",
     "def resolve_transcript_output_path(output_dir: Path, metadata: dict, transcript_filename: str | None) -> Path:",
     "preview_text = Path(saved_path).read_text(encoding='utf-8')",
