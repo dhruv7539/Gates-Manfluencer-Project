@@ -1,7 +1,7 @@
 """Scrape YouTube comments for Banky Wellington videos that don't yet have comments.
 
 Uses yt-dlp's --write-comments to dump all comments+replies as JSON, then flattens
-into the same xlsx schema used in `Nigeria Audience Comments/Banky Wellington/YouTube/`:
+into the same xlsx schema used in `Nigeria/Audience Comments - Raw/Banky Wellington/YouTube/`:
 columns = author | comment | likes | reply_count
 """
 from __future__ import annotations
@@ -15,7 +15,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "Nigeria Audience Comments" / "Banky Wellington" / "YouTube"
+OUT_DIR = ROOT / "Nigeria/Audience Comments - Raw" / "Banky Wellington" / "YouTube"
 TMP = ROOT / "temp" / "yt_comments"
 TMP.mkdir(parents=True, exist_ok=True)
 

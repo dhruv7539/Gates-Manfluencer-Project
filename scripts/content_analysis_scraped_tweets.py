@@ -1,6 +1,6 @@
 """Apply content analysis coding-unit schema to scraped scope-relevant tweets.
 
-Takes each *_scope_relevant.xlsx from Scraped Tweets - Nigeria/ and produces a
+Takes each *_scope_relevant.xlsx from Nigeria/Scraped Tweets/ and produces a
 coding-unit xlsx matching the Kibe_Jagero reference schema:
   Segment ID | Influencer | Platform | Content Type | Theme(s) |
   Context (NOT CODED - comprehension only) | Verbatim Text (CODE THIS)
@@ -27,8 +27,8 @@ ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY missing"
 
-INPUT_DIR = ROOT / "Scraped Tweets - Nigeria"
-OUTPUT_DIR = ROOT / "Content Analysis - Nigeria"
+INPUT_DIR = ROOT / "Nigeria/Scraped Tweets"
+OUTPUT_DIR = ROOT / "Nigeria/Content Analysis"
 CACHE_DIR = ROOT / "temp" / "content_analysis_scraped"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 

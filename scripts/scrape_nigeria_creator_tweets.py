@@ -5,7 +5,7 @@ as audience analysis, keep top ~150 per creator.
 Actor: delicious_zebu/advanced-x-twitter-profile-scraper
 Pricing on FREE tier: $0.0008 per tweet + ~$0.00005 actor start. 1600 tweets ~= $1.30.
 
-Output: Scraped Tweets - Nigeria/<Creator>_scope_relevant.xlsx
+Output: Nigeria/Scraped Tweets/<Creator>_scope_relevant.xlsx
 """
 from __future__ import annotations
 
@@ -29,7 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 
 KEYWORDS_XLSX = ROOT / "Codebook and Keywords" / "NLC Proposed keywords.xlsx"
-OUT_DIR = ROOT / "Scraped Tweets - Nigeria"
+OUT_DIR = ROOT / "Nigeria/Scraped Tweets"
 CACHE_DIR = ROOT / "temp" / "scraped_tweets_nigeria"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 CACHE_DIR.mkdir(parents=True, exist_ok=True)

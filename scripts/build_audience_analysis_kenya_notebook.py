@@ -42,7 +42,7 @@ Same pipeline as Nigeria, re-targeted at Kenya content. Six pre-selected posts (
 7. LLM classification (loose relevance, per manager guidance).
 8. Composite score + top-200 selection (caps at available if a post has fewer raw).
 9. Export to `Topic Relevant Comments - Kenya/<Creator>/<Post>.xlsx` — text column only.
-10. Report-ready plots in `Audience Analysis Plots - Kenya/`.
+10. Report-ready plots in `Kenya/Audience Analysis Plots/`.
 """))
 
 CELLS.append(md("## 0 — Setup"))
@@ -76,11 +76,11 @@ print("OpenAI key loaded:", os.getenv("OPENAI_API_KEY")[:8] + "…")
 """))
 
 CELLS.append(md("## 1 — Config (6 selected Kenya posts)"))
-CELLS.append(code("""INPUT_DIR = ROOT / "Kenya Audience Comments"
+CELLS.append(code("""INPUT_DIR = ROOT / "Kenya/Audience Comments - Raw"
 KEYWORDS_XLSX = ROOT / "Codebook and Keywords" / "NLC Proposed keywords.xlsx"
 OUTPUT_DIR = ROOT / "Topic Relevant Comments - Kenya"
 TEMP_DIR = ROOT / "temp" / "audience_analysis_kenya"
-PLOTS_DIR = ROOT / "Audience Analysis Plots - Kenya"
+PLOTS_DIR = ROOT / "Kenya/Audience Analysis Plots"
 
 TEMP_DIR.mkdir(parents=True, exist_ok=True)
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -669,7 +669,7 @@ plt.show()
 
 CELLS.append(md("""## Notes
 
-- Source: `Kenya Audience Comments/` (flat layout, mixed platforms).
+- Source: `Kenya/Audience Comments - Raw/` (flat layout, mixed platforms).
 - OP detection is platform-aware — X via URL, IG via `ownerUsername`, TikTok via `uniqueId`, YouTube via `author`.
 - Lexicon: NLC Kenya sheet (295 terms across Swahili, Sheng, Gikuyu, English).
 - Any post with fewer than 200 raw comments caps at its available volume (flagged in the selection plot).

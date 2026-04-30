@@ -28,7 +28,7 @@ assert os.getenv("OPENAI_API_KEY")
 client = OpenAI()
 
 TRANSCRIPTS_DIR = ROOT / "Generated Transcripts" / "Nigeria"
-OUTPUT_DIR = ROOT / "Content Analysis - Nigeria" / "Banky Wellington"
+OUTPUT_DIR = ROOT / "Nigeria/Content Analysis" / "Banky Wellington"
 CACHE_DIR = ROOT / "temp" / "content_analysis_banky_200"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 CACHE_DIR.mkdir(parents=True, exist_ok=True)

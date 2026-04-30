@@ -1,4 +1,4 @@
-"""Build 'Audience Demo Comments.ipynb' — focused topic-relevance filter for the
+"""Build 'Nigeria/Audience Comments - Final.ipynb' — focused topic-relevance filter for the
 two finalized regressive Nigeria posts (Agba John Doe + Shola).
 
 Goal: ~400 scope-relevant comments total (~200 per post), every comment
@@ -12,7 +12,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NB_PATH = ROOT / "Notebooks" / "Audience Demo Comments.ipynb"
+NB_PATH = ROOT / "Notebooks" / "Nigeria/Audience Comments - Final.ipynb"
 
 
 def md(text: str) -> dict:
@@ -32,7 +32,7 @@ def code(text: str) -> dict:
 CELLS = []
 
 # -------------------------------------------------------------------
-CELLS.append(md("""# Audience Demo Comments — Nigeria Regressive
+CELLS.append(md("""# Nigeria/Audience Comments - Final — Nigeria Regressive
 
 **Norman Lear Center × Gates Foundation — Manfluencer project**
 
@@ -54,7 +54,7 @@ Produce **~400 scope-relevant comments total** (≈200 per post) for the audienc
 5. **Composite score** — weighted blend; top-200 per post.
 
 ## Output
-`Audience Demo Comments/<Creator>/<Post>.xlsx` — one column `text` plus the per-post summary in `_summary.xlsx`.
+`Nigeria/Audience Comments - Final/<Creator>/<Post>.xlsx` — one column `text` plus the per-post summary in `_summary.xlsx`.
 """))
 
 # -------------------------------------------------------------------
@@ -86,9 +86,9 @@ print("OpenAI key loaded:", os.getenv("OPENAI_API_KEY")[:8] + "…")
 # -------------------------------------------------------------------
 CELLS.append(md("## 1 — Config"))
 
-CELLS.append(code("""INPUT_DIR = ROOT / "Nigeria Audience Comments"
+CELLS.append(code("""INPUT_DIR = ROOT / "Nigeria/Audience Comments - Raw"
 KEYWORDS_XLSX = ROOT / "Codebook and Keywords" / "NLC Proposed keywords.xlsx"
-OUTPUT_DIR = ROOT / "Audience Demo Comments"
+OUTPUT_DIR = ROOT / "Nigeria/Audience Comments - Final"
 TEMP_DIR = ROOT / "temp" / "audience_demo_comments"
 
 TEMP_DIR.mkdir(parents=True, exist_ok=True)
@@ -518,7 +518,7 @@ selection_summary
 """))
 
 # -------------------------------------------------------------------
-CELLS.append(md("""## 8 — Export to `Audience Demo Comments/`"""))
+CELLS.append(md("""## 8 — Export to `Nigeria/Audience Comments - Final/`"""))
 
 CELLS.append(code("""def _safe(name):
     return re.sub(r"[^\\w\\- ]+", "", name).strip()

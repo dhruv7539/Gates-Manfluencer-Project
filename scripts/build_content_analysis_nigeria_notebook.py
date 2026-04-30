@@ -1,4 +1,4 @@
-"""Build Content Analysis - Nigeria.ipynb — produces coding-unit xlsx files per creator.
+"""Build Nigeria/Content Analysis.ipynb — produces coding-unit xlsx files per creator.
 
 Schema matches the Kibe_Jagero_Coding_Units.xlsx reference:
   Segment ID | Influencer | Platform | Content Type | Theme(s) |
@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NB_PATH = ROOT / "Notebooks" / "Content Analysis - Nigeria.ipynb"
+NB_PATH = ROOT / "Notebooks" / "Nigeria/Content Analysis.ipynb"
 
 
 def md(t):
@@ -77,9 +77,9 @@ client = OpenAI()
 
 CELLS.append(md("## 1 — Config"))
 CELLS.append(code("""TRANSCRIPTS_DIR = ROOT / "Generated Transcripts" / "Nigeria"
-AUDIENCE_DIR = ROOT / "Nigeria Audience Comments"
-OUTPUT_DIR = ROOT / "Content Analysis - Nigeria"
-PLOTS_DIR = ROOT / "Content Analysis Plots - Nigeria"
+AUDIENCE_DIR = ROOT / "Nigeria/Audience Comments - Raw"
+OUTPUT_DIR = ROOT / "Nigeria/Content Analysis"
+PLOTS_DIR = ROOT / "Nigeria/Content Analysis Plots"
 CACHE_DIR = ROOT / "temp" / "content_analysis_nigeria"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)

@@ -87,11 +87,11 @@ print("OpenAI key loaded:", os.getenv("OPENAI_API_KEY")[:8] + "…")
 # -------------------------------------------------------------------
 CELLS.append(md("## 1 — Config (6 selected posts)"))
 
-CELLS.append(code("""INPUT_DIR = ROOT / "Nigeria Audience Comments"
+CELLS.append(code("""INPUT_DIR = ROOT / "Nigeria/Audience Comments - Raw"
 KEYWORDS_XLSX = ROOT / "Codebook and Keywords" / "NLC Proposed keywords.xlsx"
 OUTPUT_DIR = ROOT / "Topic Relevant Comments - Nigeria"
 TEMP_DIR = ROOT / "temp" / "audience_analysis"
-PLOTS_DIR = ROOT / "Audience Analysis Plots - Nigeria"
+PLOTS_DIR = ROOT / "Nigeria/Audience Analysis Plots"
 
 TEMP_DIR.mkdir(parents=True, exist_ok=True)
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)

@@ -4,7 +4,7 @@ Same pipeline as `build_audience_demo_deyemi.py`, retuned for Banky's healthy-
 masculinity / MENtality podcast framing. Sources: 6 MENtality episodes about
 masculinity & money, relationships, fatherhood, friendship, young boys, and
 relationships pt 2. Outputs one xlsx per episode in
-`Audience Demo Comments/Banky Wellington/<Episode>.xlsx`, single `text` column.
+`Nigeria/Audience Comments - Final/Banky Wellington/<Episode>.xlsx`, single `text` column.
 
 Faith content is stripped at the end, matching the rest of the audience demo set.
 """
@@ -29,9 +29,9 @@ ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY missing"
 
-INPUT_DIR = ROOT / "Nigeria Audience Comments" / "Banky Wellington" / "MENtality"
+INPUT_DIR = ROOT / "Nigeria/Audience Comments - Raw" / "Banky Wellington" / "MENtality"
 KEYWORDS_XLSX = ROOT / "Codebook and Keywords" / "NLC Proposed keywords.xlsx"
-OUTPUT_DIR = ROOT / "Audience Demo Comments"
+OUTPUT_DIR = ROOT / "Nigeria/Audience Comments - Final"
 TEMP_DIR = ROOT / "temp" / "audience_demo_comments"
 TEMP_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

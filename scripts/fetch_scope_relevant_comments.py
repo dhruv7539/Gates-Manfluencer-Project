@@ -9,7 +9,7 @@ Sampling rule per (country, orientation):
   - PROGRESSIVE creators -> Tier-1 first; if total < TARGET_PER_ORIENT, supplement
     with Tier-2 (sorted by length desc as a quality proxy) until target reached.
 
-Output per file (Scope Relevant Comments/<Country>/<Creator>_<Video>.xlsx):
+Output per file (Nigeria/Audience Comments - Filtered/<Country>/<Creator>_<Video>.xlsx):
   text | author | tier | topic_tag | reason_kept | orientation_source
 """
 from __future__ import annotations
@@ -33,7 +33,7 @@ assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY missing"
 
 CACHE_DIR = ROOT / "temp" / "scope_filter"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
-OUT_DIR = ROOT / "Scope Relevant Comments"
+OUT_DIR = ROOT / "Nigeria/Audience Comments - Filtered"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 LLM_MODEL = "gpt-4o-mini"

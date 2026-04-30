@@ -1,11 +1,11 @@
 """Scrape Twitter replies for Deyemi Okanlawon's top scope-relevant tweets via Apify.
 
 Uses scraper_one/x-post-replies-scraper. Picks top N tweets by replyCount from the
-existing `Scraped Tweets - Nigeria/Deyemi Okanlawon_scope_relevant_full.xlsx` and
+existing `Nigeria/Scraped Tweets/Deyemi Okanlawon_scope_relevant_full.xlsx` and
 batches their URLs into one Apify run. Output mirrors the existing audience-comments
 schema so the downstream scope filter just picks it up:
 
-  Nigeria Audience Comments/Deyemi Okanlawon/<tweet_id>__<short_summary>.xlsx
+  Nigeria/Audience Comments - Raw/Deyemi Okanlawon/<tweet_id>__<short_summary>.xlsx
   columns = author | text | likes | replies | retweets | timestamp | url
 """
 from __future__ import annotations
@@ -25,8 +25,8 @@ load_dotenv(ROOT / ".env")
 APIFY_KEY = os.getenv("APIFY_API_KEY")
 assert APIFY_KEY, "APIFY_API_KEY missing"
 
-SRC = ROOT / "Scraped Tweets - Nigeria" / "Deyemi Okanlawon_scope_relevant_full.xlsx"
-OUT_DIR = ROOT / "Nigeria Audience Comments" / "Deyemi Okanlawon"
+SRC = ROOT / "Nigeria/Scraped Tweets" / "Deyemi Okanlawon_scope_relevant_full.xlsx"
+OUT_DIR = ROOT / "Nigeria/Audience Comments - Raw" / "Deyemi Okanlawon"
 CACHE_DIR = ROOT / "temp" / "deyemi_replies"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 

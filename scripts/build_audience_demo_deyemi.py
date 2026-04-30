@@ -10,8 +10,8 @@ but tuned for the progressive creator:
   5. Lenient LLM relevance with PROGRESSIVE-themed prompt
   6. Composite score: 0.20*kw + 0.35*sim + 0.45*llm
   7. Top-200 LLM-relevant per post (or all of them if < 200 available)
-  8. Output `Audience Demo Comments/Deyemi Okanlawon/<Post>.xlsx` with one
-     column `text`. Update `Audience Demo Comments/_summary.xlsx`.
+  8. Output `Nigeria/Audience Comments - Final/Deyemi Okanlawon/<Post>.xlsx` with one
+     column `text`. Update `Nigeria/Audience Comments - Final/_summary.xlsx`.
 """
 from __future__ import annotations
 
@@ -34,9 +34,9 @@ ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY missing"
 
-INPUT_DIR = ROOT / "Nigeria Audience Comments"
+INPUT_DIR = ROOT / "Nigeria/Audience Comments - Raw"
 KEYWORDS_XLSX = ROOT / "Codebook and Keywords" / "NLC Proposed keywords.xlsx"
-OUTPUT_DIR = ROOT / "Audience Demo Comments"
+OUTPUT_DIR = ROOT / "Nigeria/Audience Comments - Final"
 TEMP_DIR = ROOT / "temp" / "audience_demo_comments"
 TEMP_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
