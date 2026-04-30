@@ -1,16 +1,21 @@
+# OS
 .DS_Store
-.env
-.venv/
+~$*
+
+# Python
 __pycache__/
 *.pyc
+.venv/
 .ipynb_checkpoints/
+
+# Secrets
+.env
+
+# Tooling
 .claude/worktrees/
-temp/audience_analysis/comment_embeddings.npy
-temp/audience_analysis/llm_results.parquet
-temp/audience_analysis_kenya/comment_embeddings.npy
-temp/audience_analysis_kenya/llm_results.parquet
-temp/scraped_tweets_nigeria/
-temp/content_analysis_scraped/
-temp/content_analysis_banky_200/
-temp/strict_cleanup/
-~$*
+
+# Temp / cache (regenerable)
+temp/
+
+# Logs
+*.log
