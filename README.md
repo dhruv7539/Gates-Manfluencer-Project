@@ -84,11 +84,11 @@ Gates-Manfluencer-Project/
 │
 ├── scripts/                              # Reproducible builders + scrapers
 │   ├── build_*.py                       # Notebook generators
-│   ├── fetch_scope_relevant_comments.py # Two-tier scope filter (LLM + length)
+│   ├── filter_scope_relevant_comments.py # Two-tier scope filter (LLM + length)
 │   ├── scrape_*.py                      # Apify / yt-dlp scrapers
 │   ├── content_analysis_*.py            # Content coding-unit generators
-│   ├── run_all_transcriptions.py
-│   ├── improve_transcripts_with_captions.py
+│   ├── transcribe_videos.py
+│   ├── align_transcripts_with_captions.py
 │   ├── fix_speaker_labels.py
 │   └── transcript_output_utils.py
 │
@@ -123,7 +123,7 @@ Full unfiltered scrapes. For Banky, comments are organised by source platform (Y
 
 ### Tier 2 — Filtered
 
-Output of `scripts/fetch_scope_relevant_comments.py`. A two-tier classifier (`gpt-4o-mini`) marks each comment as `KEEP_TIER_1`, `KEEP_TIER_2`, or `DROP` against the masculinity scope, then a length gate (≥100 chars / ≥15 words) trims short reactions. For Banky, all 6 MENtality episodes are pooled into one `MENtality Podcast.xlsx` with 6 sheets (Money / Relationships / Pt 2 Relationships / Fatherhood / Young Boys / Friendship).
+Output of `scripts/filter_scope_relevant_comments.py`. A two-tier classifier (`gpt-4o-mini`) marks each comment as `KEEP_TIER_1`, `KEEP_TIER_2`, or `DROP` against the masculinity scope, then a length gate (≥100 chars / ≥15 words) trims short reactions. For Banky, all 6 MENtality episodes are pooled into one `MENtality Podcast.xlsx` with 6 sheets (Money / Relationships / Pt 2 Relationships / Fatherhood / Young Boys / Friendship).
 
 ### Tier 3 — Final (sent to manager)
 
@@ -158,7 +158,7 @@ Per-creator coding-unit datasets in `Nigeria/Content Analysis/`. For each creato
 - **Banky Wellington** — splits 5 YouTube transcripts into ~40 topically coherent coding units per video (~200 total) via `gpt-4o`, with punctuation / capitalization restored and Pidgin / Yoruba code-switching preserved
 - **Deyemi / Shola / Agba / Wizarab** — one coding unit per X post, with themes and context generated via `gpt-4o`
 
-Outputs: `<Creator>/<Creator>_Coding_Units.xlsx`, plus `_corpus_full.xlsx` and `_summary.xlsx`. Built by `scripts/build_content_analysis_nigeria_notebook.py` and `scripts/content_analysis_*.py`.
+Outputs: `<Creator>/<Creator>_Coding_Units.xlsx`, plus `_corpus_full.xlsx` and `_summary.xlsx`. Built by `scripts/build_content_analysis_nigeria.py` and `scripts/content_analysis_*.py`.
 
 ---
 
@@ -174,7 +174,7 @@ Generates research-grade transcripts from YouTube videos.
 2. **ASR** — `mlx-whisper` (Apple Silicon) / `faster-whisper` produces word-level timestamps
 3. **Diarization** — `pyannote.audio` assigns speaker IDs to time segments
 4. **LLM Refinement** — `gemini-2.5-flash` refines raw ASR + diarization with video-context grounding
-5. **Caption-Based Improvement** (`improve_transcripts_with_captions.py`) — uses YouTube captions as authoritative word source; position-proportional alignment transfers speaker labels onto caption text
+5. **Caption-Based Improvement** (`align_transcripts_with_captions.py`) — uses YouTube captions as authoritative word source; position-proportional alignment transfers speaker labels onto caption text
 6. **Speaker Label Correction** (`fix_speaker_labels.py`) — deterministic fixes for corrupted labels + Gemini-assisted relabeling using YouTube metadata
 
 ### Transcript Accuracy Results
@@ -230,8 +230,8 @@ APIFY_API_KEY=your_apify_api_key
 ### Run Transcription Pipeline
 
 ```bash
-python scripts/run_all_transcriptions.py
-python scripts/improve_transcripts_with_captions.py --skip-download --skip-gemini --force
+python scripts/transcribe_videos.py
+python scripts/align_transcripts_with_captions.py --skip-download --skip-gemini --force
 python scripts/fix_speaker_labels.py
 ```
 
@@ -242,21 +242,19 @@ Open `Notebooks/Audience Comment Analysis.ipynb` — cleans all 10 raw datasets 
 ### Run Scope Filter (Tier 2)
 
 ```bash
-python scripts/fetch_scope_relevant_comments.py --country Nigeria --orientation all
+python scripts/filter_scope_relevant_comments.py --country Nigeria --orientation all
 ```
 
 ### Build Final Demo Datasets (Tier 3)
 
 ```bash
-# Regressive (Agba John Doe + Shola)
-python scripts/build_audience_demo_notebook.py
-jupyter nbconvert --to notebook --execute "Notebooks/Audience Demo Comments.ipynb"
+# All four creators in one shot:
+python scripts/build_audience_demo.py --creator all
 
-# Progressive (Deyemi)
-python scripts/build_audience_demo_deyemi.py
-
-# Progressive (Banky MENtality)
-python scripts/build_audience_demo_banky.py
+# Or individually:
+python scripts/build_audience_demo.py --creator agba_shola
+python scripts/build_audience_demo.py --creator deyemi
+python scripts/build_audience_demo.py --creator banky
 ```
 
 ---
