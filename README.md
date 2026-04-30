@@ -2,7 +2,7 @@
 
 **Norman Lear Center, USC Annenberg — Gates Foundation**
 
-A multi-method analysis of masculinity-focused media content in and adjacent to the "manosphere" in **Kenya** and **Nigeria**. This repository contains the technical pipeline for transcribing, cleaning, and analyzing influencer content and audience comments.
+A multi-method analysis of masculinity-focused media content in and adjacent to the "manosphere" in **Kenya** and **Nigeria**. This repository contains the technical pipeline for transcribing, cleaning, scoping, and analyzing influencer content and audience comments.
 
 ---
 
@@ -18,14 +18,14 @@ The study focuses on media content that explicitly or implicitly promotes or cha
 ### Creators Studied
 
 | Creator | Country | Orientation | Platform | Content Focus |
-|---------|---------|-------------|----------|---------------|
+|---|---|---|---|---|
 | Eric Amunga (Amerix) | Kenya | Regressive | X | Sexual hierarchy, female submission, #MasculinitySaturday |
-| Andrew Kibe | Kenya | Regressive | X/YouTube | Anti-women cynicism, status, male advice |
-| Philip Karanja | Kenya | Progressive | YouTube | Fatherhood (Girl Dad series), violence against women, allyship |
-| Onyango Otieno (Rixpoet) | Kenya | Progressive | YouTube | Trauma recovery, anti-toxic masculinity, men's mental health |
-| Eddy Kimani | Kenya | Progressive | TikTok/YouTube | Depression, failure recovery, men's mental health |
-| Banky Wellington | Nigeria | Progressive | YouTube | Faith, marriage, illness/recovery, emotional openness |
-| Deyemi Okanlawon | Nigeria | Progressive | X | Male accountability, rape culture, victim protection |
+| Andrew Kibe | Kenya | Regressive | X / YouTube | Anti-women cynicism, status, male advice |
+| Philip Karanja | Kenya | Progressive | YouTube | Fatherhood (Girl Dad), violence against women, allyship |
+| Onyango Otieno (Rixpoet) | Kenya | Progressive | YouTube | Trauma recovery, anti-toxic masculinity, mental health |
+| Eddy Kimani | Kenya | Progressive | TikTok / YouTube | Depression, failure recovery, men's mental health |
+| Banky Wellington | Nigeria | Progressive | YouTube (MENtality) | Healthy masculinity, marriage, fatherhood, vulnerability |
+| Deyemi Okanlawon | Nigeria | Progressive | X | Male accountability, rape culture, anti-deflection |
 | Wizarab | Nigeria | Regressive | X | Denigrating women, feminists, single mothers |
 | Shola | Nigeria | Regressive | X | Availability trap, female submission, provider anxiety |
 | Agba John Doe | Nigeria | Regressive | X | Soft patriarchy, marriage-market logic, sexual double standards |
@@ -34,246 +34,168 @@ The study focuses on media content that explicitly or implicitly promotes or cha
 
 ## Repository Structure
 
+The project is split by country at the top level. Country-specific data lives under `Nigeria/` or `Kenya/`. Shared assets (notebooks, scripts, codebooks, transcripts, audio) sit at the root.
+
 ```
 Gates-Manfluencer-Project/
-├── Notebooks/
-│   ├── Transcription Pipeline.ipynb                      # ASR + diarization + LLM refinement
-│   ├── Audience Comment Analysis.ipynb                   # Raw comment cleaning pipeline
-│   ├── Topic Relevant Comment Filtering - Nigeria.ipynb  # 5-stage topic relevance + themes
-│   └── Topic Relevant Comment Filtering - Nigeria v2.ipynb  # Simplified binary relevance
-├── scripts/
-│   ├── run_all_transcriptions.py             # Batch runner for the transcription notebook
-│   ├── improve_transcripts_with_captions.py  # Caption-based transcript improvement
-│   ├── fix_speaker_labels.py                 # Speaker label correction (deterministic + Gemini)
-│   ├── check_accuracy.py                     # Transcript accuracy measurement against captions
-│   └── transcript_output_utils.py            # Shared transcript parsing utilities
-├── Audio Files/                              # Source audio extracted from YouTube
-│   ├── Kenya Audio Files/                    # 10 files (Andrew Kibe, Onyango, Philip Karanja)
-│   └── Nigeria Audio Files/                  # 5 files (Banky Wellington)
-├── Generated Transcripts/                    # 15 research-grade transcripts
-│   ├── Kenya/                                # 10 transcripts
-│   └── Nigeria/                              # 5 transcripts
-├── Captions/                                 # 15 YouTube caption files (ground truth)
-│   ├── Kenya/
-│   └── Nigeria/
-├── Nigeria Audience Comments/                # Raw scraped audience data (10 datasets)
-│   ├── Agba John Doe/
-│   ├── Banky Wellington/
-│   ├── Deyemi Okanlawon/
-│   ├── Shola/
-│   └── Wizarab/
-├── Topic Relevant Comments - Nigeria - Final/  # Post-filter labeled outputs
-├── Scope/                                    # Project scope documents
-│   ├── Gates Masculinity Scope - Streamlined.docx
-│   └── Landscape & Content Analysis - Participants, Creators.docx
-├── Codebook and Keywords/
-│   ├── Gates Content Analysis Codebook.docx  # Coding variables for content analysis
-│   └── NLC Proposed keywords.xlsx            # 400+ keyword lexicon (Nigeria + Kenya)
-├── Analysis Samples/
-│   ├── KENYA - Content and Audience Analysis Samples.docx
-│   └── NIGERIA - Content and Audience Analysis Samples.docx
-├── temp/                                     # Intermediate checkpoints
-│   ├── embeddings/                           # OpenAI text-embedding-3-large vectors
-│   ├── topic_relevance_checkpoints/          # 5-stage topic filter parquets
-│   └── mih_style_topic_relevance/            # GPT-4o-mini batch request artifacts
-├── imgs/
-│   └── Video ASR Workflow.png                # Transcription pipeline flowchart
-├── MIH.ipynb                                 # Reference/template notebook (Made in Heaven labeling)
+├── Nigeria/
+│   ├── Audience Comments - Raw/         # Full unfiltered scrapes per creator
+│   │   ├── Agba John Doe/
+│   │   ├── Banky Wellington/
+│   │   │   ├── YouTube/                 # Sermons (legacy, not in final scope)
+│   │   │   ├── Instagram/               # IG posts (legacy, not in final scope)
+│   │   │   └── MENtality/               # 6 episodes — used for final analysis
+│   │   ├── Deyemi Okanlawon/
+│   │   ├── Shola/
+│   │   └── Wizarab/
+│   ├── Audience Comments - Filtered/    # Scope-filtered (LLM + length gate)
+│   │   ├── Agba John Doe/
+│   │   ├── Banky Wellington/
+│   │   │   └── MENtality Podcast.xlsx   # 6 sheets, one per episode
+│   │   ├── Deyemi Okanlawon/
+│   │   ├── Shola/
+│   │   ├── Wizarab/
+│   │   └── _funnel / _summary xlsx
+│   ├── Audience Comments - Final/       # Final demo dataset for the manager
+│   │   ├── agba_tweet.xlsx              # 177 comments
+│   │   ├── shola_tweet.xlsx             # 89 comments
+│   │   ├── deyemi_tweet.xlsx            # 194 comments
+│   │   ├── banky_podcast.xlsx           # 505 comments (MENtality, pooled)
+│   │   └── _summary.xlsx
+│   ├── Content Analysis/                # Per-creator coding-unit datasets
+│   ├── Content Analysis Datasets/
+│   ├── Content Analysis Plots/
+│   ├── Audience Analysis Plots/
+│   ├── Topic Relevant Comments/
+│   └── Scraped Tweets/
+│
+├── Kenya/
+│   ├── Audience Comments - Raw/         # 10 raw scrapes (X, YouTube, TikTok, Instagram)
+│   ├── Audience Analysis Plots/
+│   └── Topic Relevant Comments/
+│
+├── Notebooks/                            # End-to-end analysis pipelines
+│   ├── Transcription Pipeline.ipynb               # ASR → diarization → LLM refinement
+│   ├── Audience Comment Analysis.ipynb            # Raw comment cleaning
+│   ├── Audience Demo Comments.ipynb               # Final scope-relevant audience demo
+│   ├── Audience Analysis.ipynb                    # Nigeria audience analysis
+│   ├── Audience Analysis - Kenya.ipynb            # Kenya audience analysis
+│   └── Content Analysis - Nigeria.ipynb           # Nigeria content coding units
+│
+├── scripts/                              # Reproducible builders + scrapers
+│   ├── build_*.py                       # Notebook generators
+│   ├── fetch_scope_relevant_comments.py # Two-tier scope filter (LLM + length)
+│   ├── scrape_*.py                      # Apify / yt-dlp scrapers
+│   ├── content_analysis_*.py            # Content coding-unit generators
+│   ├── run_all_transcriptions.py
+│   ├── improve_transcripts_with_captions.py
+│   ├── fix_speaker_labels.py
+│   └── transcript_output_utils.py
+│
+├── Audio Files/                          # Source audio (Kenya + Nigeria)
+├── Generated Transcripts/                # 15 research-grade transcripts
+├── Captions/                             # 15 YouTube caption files (ground truth)
+├── Codebook and Keywords/                # Codebook docx + 400+ keyword lexicon
+├── Scope/                                # Project scope documents
+├── Analysis Samples/                     # Reviewer-facing sample docs
+├── imgs/                                 # Workflow diagrams
+├── temp/                                 # Caches (gitignored)
+├── README.md
 ├── requirements.txt
-└── .env                                      # API keys (GEMINI_API_KEY, OPENAI_API_KEY)
+└── .env                                  # API keys (not committed)
 ```
 
 ---
 
-## Pipeline 1: Transcription Pipeline
+## Audience Pipeline (3 Tiers)
 
-Generates research-grade transcripts from YouTube videos through a multi-stage process.
+For each creator, audience comments flow through three stages:
+
+```
+Audience Comments - Raw   →   Audience Comments - Filtered   →   Audience Comments - Final
+   (full scrapes)              (LLM scope-filtered + length    (heavily cleaned demo set
+                                gate, per-creator subfolders)   sent to manager)
+```
+
+### Tier 1 — Raw
+
+Full unfiltered scrapes. For Banky, comments are organised by source platform (YouTube sermons, Instagram, MENtality podcast). Schema preserved exactly as scraped (`author`, `comment`, `likes`, `reply_count` for YouTube; `author`, `text`, `likes`, `replies`, `retweets`, `timestamp`, `url` for X / Twitter).
+
+### Tier 2 — Filtered
+
+Output of `scripts/fetch_scope_relevant_comments.py`. A two-tier classifier (`gpt-4o-mini`) marks each comment as `KEEP_TIER_1`, `KEEP_TIER_2`, or `DROP` against the masculinity scope, then a length gate (≥100 chars / ≥15 words) trims short reactions. For Banky, all 6 MENtality episodes are pooled into one `MENtality Podcast.xlsx` with 6 sheets (Money / Relationships / Pt 2 Relationships / Fatherhood / Young Boys / Friendship).
+
+### Tier 3 — Final (sent to manager)
+
+Top-N per creator after additional manual curation:
+
+| Creator | Source | Comments |
+|---|---|---:|
+| Agba John Doe | X — *Never Leave Marriage Because Husband Cheated* | 177 |
+| Shola | X — *7 Women Will Beg One Man to Marry* | 89 |
+| Deyemi Okanlawon | X — *Stop Raping Women Response* | 194 |
+| Banky Wellington | YouTube — *MENtality Podcast* (6 episodes pooled) | 505 |
+| **Total** | | **965** |
+
+Each final file has a single `text` column. Cleaning passes applied:
+
+- Substance gate (>7 words after stripping URLs / mentions / emojis)
+- Keyword annotation against NLC Nigeria lexicon
+- Embedding similarity to per-creator anchor phrases (`text-embedding-3-large`)
+- Lenient LLM relevance check (`gpt-4o-mini`) tuned per-creator (regressive vs progressive themes)
+- Composite scoring: `0.20 × keyword + 0.35 × similarity + 0.45 × LLM relevance`
+- Top-200 per post (or all available if < 200)
+- Speaker filter (Banky only): drops comments mentioning other MENtality guests without Banky
+- Faith strip: removes religious framing (Bible / scripture / Jesus / God-as-subject / Islam / etc.) — colloquial idioms (`hell` as exclamation, `blessed` as hyperbole, `God help me`) preserved
+- Manual review passes: removed duplicates, OP-text leakage, generic praise, format critiques, weak jokes, and Grok bot pings (`@grok` prompts that aren't real audience opinions)
+
+---
+
+## Content Analysis Pipeline
+
+Per-creator coding-unit datasets in `Nigeria/Content Analysis/`. For each creator the pipeline:
+
+- **Banky Wellington** — splits 5 YouTube transcripts into ~40 topically coherent coding units per video (~200 total) via `gpt-4o`, with punctuation / capitalization restored and Pidgin / Yoruba code-switching preserved
+- **Deyemi / Shola / Agba / Wizarab** — one coding unit per X post, with themes and context generated via `gpt-4o`
+
+Outputs: `<Creator>/<Creator>_Coding_Units.xlsx`, plus `_corpus_full.xlsx` and `_summary.xlsx`. Built by `scripts/build_content_analysis_nigeria_notebook.py` and `scripts/content_analysis_*.py`.
+
+---
+
+## Transcription Pipeline
+
+Generates research-grade transcripts from YouTube videos.
 
 ![Transcription Pipeline Flowchart](imgs/Video%20ASR%20Workflow.png)
 
-### Stage 1: Media Acquisition
-- **yt-dlp** downloads YouTube videos and auto-generated captions (VTT/SRT)
-- **ffmpeg** converts audio to 16kHz mono WAV for ASR compatibility
-- YouTube metadata (title, description, channel) fetched for speaker identification context
+### Stages
 
-### Stage 2: Speech-to-Text (ASR)
-- **Whisper** (mlx-whisper on Apple Silicon, faster-whisper fallback) transcribes audio
-- Produces word-level timestamps for each recognized word
-- Handles mixed-language content (English, Kiswahili, Sheng, Pidgin)
-
-### Stage 3: Speaker Diarization
-- **pyannote.audio** identifies distinct speakers and assigns time segments
-- Each audio segment is labeled with a speaker ID (SPEAKER_00, SPEAKER_01, etc.)
-- Word-level timestamps from Whisper are aligned with speaker segments
-
-### Stage 4: LLM Refinement
-- **Google Gemini** (gemini-2.5-flash) refines raw ASR+diarization output
-- Video context grounding to identify speakers by name using video metadata
-- Chunk-by-chunk processing with strict instructions to preserve original words
-
-### Stage 5: Caption-Based Improvement (`improve_transcripts_with_captions.py`)
-- Uses YouTube captions as the **authoritative word source** (eliminates LLM over/under-generation)
-- **Position-proportional alignment** transfers speaker labels from the diarized transcript onto caption text
-- Local speaker label smoothing (window=15) to fix noisy label transitions
-- Falls back to plain-text captions with Unicode-normalized fuzzy filename matching
-
-### Stage 6: Speaker Label Correction (`fix_speaker_labels.py`)
-- **Phase 1 — Deterministic fixes**: Corrects corrupted labels (e.g., "Happy. Jagero" → "Jagero"), removes sentence-level duplicate content (>60% overlap threshold)
-- **Phase 2 — Gemini-assisted relabeling**: Uses YouTube metadata + video excerpts to rename generic labels (e.g., "Host" → "Richard Njau", "Interviewee 1" → "Onyango Otieno")
-- **Phase 3 — Resegmentation**: For transcripts with missing speakers, Gemini resegments dialogue based on metadata and conversational patterns
-
-### Stage 7: Accuracy Verification (`check_accuracy.py`)
-- Compares each transcript against its corresponding YouTube caption file
-- Metrics: **Precision** (transcript content that matches captions), **Recall** (caption content captured), **F1** (harmonic mean), **Coverage** (word count ratio)
-- Research-grade threshold: F1 >= 90% AND Coverage 90-110%
+1. **Media Acquisition** — `yt-dlp` downloads video + auto-captions; `ffmpeg` converts audio to 16kHz mono WAV
+2. **ASR** — `mlx-whisper` (Apple Silicon) / `faster-whisper` produces word-level timestamps
+3. **Diarization** — `pyannote.audio` assigns speaker IDs to time segments
+4. **LLM Refinement** — `gemini-2.5-flash` refines raw ASR + diarization with video-context grounding
+5. **Caption-Based Improvement** (`improve_transcripts_with_captions.py`) — uses YouTube captions as authoritative word source; position-proportional alignment transfers speaker labels onto caption text
+6. **Speaker Label Correction** (`fix_speaker_labels.py`) — deterministic fixes for corrupted labels + Gemini-assisted relabeling using YouTube metadata
 
 ### Transcript Accuracy Results
 
-All 15 transcripts achieved research-grade quality:
-
-| # | Transcript | Creator | Country | Precision % | Recall % | F1 % | Coverage % | Status |
-|---|-----------|---------|---------|------------|---------|------|-----------|--------|
-| 1 | Face it Like a Man | Banky Wellington | Nigeria | 100.0 | 100.0 | **100.0** | 100.0 | Research-ready |
-| 2 | Final Say Faith | Banky & Adesua Wellington | Nigeria | 100.0 | 100.0 | **100.0** | 100.0 | Research-ready |
-| 3 | My Story - Journey Through Hope & Faith | Banky Wellington | Nigeria | 100.0 | 100.0 | **100.0** | 100.0 | Research-ready |
-| 4 | 071 Andrew Kibe - 28 Commandments | Andrew Kibe | Kenya | 100.0 | 100.0 | **100.0** | 100.0 | Research-ready |
-| 5 | NaRelate Men's Mental Health Workshop | Onyango Otieno | Kenya | 100.0 | 100.0 | **100.0** | 100.0 | Research-ready |
-| 6 | Men, Addiction, and Violence | Onyango Otieno | Kenya | 100.0 | 100.0 | **100.0** | 100.0 | Research-ready |
-| 7 | My Childhood Upbringing | Philip Karanja | Kenya | 100.0 | 100.0 | **100.0** | 100.0 | Research-ready |
-| 8 | Episode 1 - A Girl Dad on a Mission | Philip Karanja | Kenya | 100.0 | 100.0 | **100.0** | 100.0 | Research-ready |
-| 9 | Episode 2 - A Girl Dad on a Mission | Philip Karanja | Kenya | 99.8 | 99.9 | **99.9** | 100.1 | Research-ready |
-| 10 | Undoing My Father's Damage | Onyango Otieno | Kenya | 99.5 | 99.1 | **99.3** | 99.6 | Research-ready |
-| 11 | Your Story - Sex & Depression | Onyango Otieno | Kenya | 99.7 | 98.7 | **99.2** | 99.0 | Research-ready |
-| 12 | The Prison of Pornography | Banky Wellington | Nigeria | 98.1 | 99.8 | **99.0** | 101.7 | Research-ready |
-| 13 | Faith after a Fall | Banky Wellington | Nigeria | 98.9 | 98.8 | **98.9** | 99.8 | Research-ready |
-| 14 | Toxic Masculinity | Onyango Otieno | Kenya | 97.8 | 97.9 | **97.8** | 100.2 | Research-ready |
-| 15 | Season Finale - A Girl Dad on a Mission | Philip Karanja | Kenya | 95.5 | 94.3 | **94.9** | 98.8 | Research-ready |
-
-**Average: Precision 99.3% | Recall 99.2% | F1 99.3% | Coverage 99.9% | 15/15 Research-ready**
-
----
-
-## Pipeline 2: Audience Comment Cleaning
-
-Cleans and standardizes the 10 scraped audience comment datasets for the Nigeria audience reception analysis.
-
-### Input
-10 Excel files containing audience comments/replies scraped from YouTube and X (Twitter):
-
-| Creator | Source Post | Platform | Raw Rows |
-|---------|-----------|----------|----------|
-| Banky Wellington | Final Say Faith | YouTube | 7,206 |
-| Banky Wellington | My Story - Journey Through Hope & Faith | YouTube | 765 |
-| Shola | Women and Availability Trap | X | 246 |
-| Shola | 7 Women Will Beg One Man to Marry | X | 491 |
-| Wizarab | Sex Toys and Raping Young Boys | X | 351 |
-| Wizarab | Child Support and Divorce | X | 185 |
-| Deyemi Okanlawon | Men Must Hold Men Accountable | X | 74 |
-| Deyemi Okanlawon | Stop Raping Women Response | X | 684 |
-| Agba John Doe | Never Leave Marriage Because Husband Cheated | X | 550 |
-| Agba John Doe | Single Woman Earning Above 1.5M | X | 267 |
-
-### Cleaning Steps
-
-1. **Schema normalization** — Three different raw schemas (YouTube, X standard, X alternate) unified into consistent column sets
-2. **Column reduction** — Dropped empty/redundant columns (`id`, `images`, `quotes`, `videoID`, `twitterUrl`, `bookmarkCount`, `isRetweet`, `isQuote`, `commentsCount`, `pageUrl`, `title`, `type`)
-3. **Text normalization** — Unicode NFKC normalization, smart quotes converted to straight quotes, whitespace collapsed
-4. **Author extraction** — X handles extracted from URLs; YouTube authors preserved as-is
-5. **Timestamp standardization** — Parsed to timezone-naive datetime for Excel compatibility
-6. **Junk removal** — Empty texts, texts under 5 characters, and exact duplicates dropped
-
-### Output Schema
-
-**YouTube (Banky Wellington):** `author`, `comment`, `likes`, `reply_count`
-
-**X / Twitter (all others):** `author`, `text`, `likes`, `replies`, `retweets`, `timestamp`, `url`
-
-### Cleaning Results
-
-| Creator | Source Post | Raw | Clean | Dropped |
-|---------|-----------|-----|-------|---------|
-| Banky Wellington | Final Say Faith | 7,206 | 6,389 | 817 |
-| Banky Wellington | My Story | 765 | 712 | 53 |
-| Shola | Women and Availability Trap | 246 | 225 | 21 |
-| Shola | 7 Women Will Beg One Man | 491 | 454 | 37 |
-| Wizarab | Sex Toys and Raping Young Boys | 351 | 311 | 40 |
-| Wizarab | Child Support and Divorce | 185 | 183 | 2 |
-| Deyemi Okanlawon | Men Must Hold Men Accountable | 74 | 58 | 16 |
-| Deyemi Okanlawon | Stop Raping Women Response | 684 | 647 | 37 |
-| Agba John Doe | Never Leave Marriage | 550 | 511 | 39 |
-| Agba John Doe | Single Woman Earning 1.5M | 267 | 245 | 22 |
-| **TOTAL** | | **10,819** | **9,735** | **1,084** |
-
----
-
-## Pipeline 3: Topic Relevance Filtering + Thematic Labeling (Nigeria)
-
-Classifies cleaned audience comments for topical relevance to the masculinity study and applies multi-label themes + sentiment.
-
-### Stages
-
-1. **Stage 1 — Keyword annotation**: Matches comment text against the NLC Nigeria keyword lexicon (Pidgin / Yoruba / Igbo / Hausa slang)
-2. **Stage 2 — LLM pre-filter**: `GPT-4o-mini` assigns candidate themes from the canonical list (Batch API)
-3. **Stage 3 — Semantic filtering**: OpenAI `text-embedding-3-large` similarity scoring against anchor definitions
-4. **Stage 4 — High-precision LLM pass**: `GPT-4o` refines themes + assigns sentiment
-5. **Stage 5 — Master annotation compile**: Combines all stage outputs into final labeled dataset
-
-### Canonical Themes (from Gates codebook)
-
-- Attention-getting strategies
-- Primary topics: dating, family, money/status, fitness, mental health, gender, religion
-- Masculinity norms: regressive vs. progressive
-- Problems identified, solutions proposed
-- Communication modes, sentiment toward men / women / gender norms
-
-### Intermediate Artifacts (`temp/`)
-
-- `temp/embeddings/text-embedding-3-large_comments.parquet` — comment embeddings
-- `temp/topic_relevance_checkpoints/stage*.parquet` — per-stage checkpoints
-- `temp/mih_style_topic_relevance/` — GPT-4o-mini Batch API request/response files
-
-### Output
-
-`Topic Relevant Comments - Nigeria - Final/` contains one `.xlsx` per creator-post with:
-- original comment text + author
-- topic-relevance flag
-- multi-label themes
-- sentiment
-
-A `_summary.xlsx` aggregates per-dataset retention counts.
+All 15 transcripts hit research-grade quality. **Average: Precision 99.3% | Recall 99.2% | F1 99.3% | Coverage 99.9%** — full per-transcript table in `Generated Transcripts/`.
 
 ---
 
 ## Keyword Lexicon
 
-The `Codebook and Keywords/NLC Proposed keywords.xlsx` file contains 400+ keywords across three sheets:
+`Codebook and Keywords/NLC Proposed keywords.xlsx` — 400+ keywords across three sheets:
 
-- **Nigeria** — Pidgin, Yoruba, Igbo, Hausa slang with cultural annotations (e.g., "ashawo", "agba baller", "yahoo boy", "woman-wrapper")
-- **Kenya** — Swahili, Sheng, Gikuyu terms (e.g., "malaya", "mubaba", "msenge", "mwanaume ni jasho")
+- **Nigeria** — Pidgin, Yoruba, Igbo, Hausa slang (e.g., "ashawo", "agba baller", "yahoo boy", "woman-wrapper")
+- **Kenya** — Swahili, Sheng, Gikuyu (e.g., "malaya", "mubaba", "mwanaume ni jasho")
 - **Source links** — Academic papers and articles on African masculinity discourse
 
-Keywords are tagged by relevance tier: **Highly relevant**, **Moderately relevant**, or **Not relevant**.
-
----
-
-## Content Analysis Codebook
-
-The `Gates Content Analysis Codebook.docx` defines structured coding variables:
-
-- **Attention-getting strategies** — Questions, humor, shock, sexuality, news hooks
-- **Primary topics** — Dating/marriage, family, money/status, fitness, mental health, gender issues, religion
-- **Masculinity norms** — Regressive/traditional vs. progressive/equitable
-- **What men "should" do** — Dominate, provide, be self-reliant, be emotionally open, be equal partners
-- **Problems identified** — Political, Western influence, women/feminism, economic pressure, mental health
-- **Solutions proposed** — Political change, assert dominance, build wealth, emotional growth, equality
-- **Communication modes** — Advice, personal story, debate, humor, motivational
-- **Sentiment** — Toward men, women, and traditional gender norms
+Tagged by relevance: **Highly**, **Moderately**, or **Not relevant**.
 
 ---
 
 ## Setup
-
-### Requirements
 
 ```bash
 python -m venv .venv
@@ -281,26 +203,25 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Environment Variables
-
-Create a `.env` file with:
+Create a `.env` with:
 
 ```
-GEMINI_API_KEY=your_gemini_api_key
 OPENAI_API_KEY=your_openai_api_key
-HF_TOKEN=your_huggingface_token       # required for pyannote diarization
+GEMINI_API_KEY=your_gemini_api_key
+HF_TOKEN=your_huggingface_token
+APIFY_API_KEY=your_apify_api_key
 ```
 
 ### Key Dependencies
 
-- `mlx-whisper` / `faster-whisper` — Speech recognition
-- `pyannote.audio` — Speaker diarization
+- `mlx-whisper` / `faster-whisper` — speech recognition
+- `pyannote.audio` — speaker diarization
 - `google-genai` — Gemini LLM integration
 - `openai` — GPT-4o / GPT-4o-mini + embeddings
+- `apify-client` — X / Twitter / IG scraping
 - `yt-dlp` — YouTube download and metadata
-- `ffmpeg` — Audio processing (system binary)
-- `pandas` / `openpyxl` / `pyarrow` — Data + parquet I/O
-- `scikit-learn` / `numpy` — Similarity + numerics
+- `ffmpeg` — audio processing (system binary)
+- `pandas` / `openpyxl` / `pyarrow` — data I/O
 
 ---
 
@@ -309,39 +230,49 @@ HF_TOKEN=your_huggingface_token       # required for pyannote diarization
 ### Run Transcription Pipeline
 
 ```bash
-# Full pipeline (all videos)
 python scripts/run_all_transcriptions.py
-
-# Caption-based improvement (uses captions as ground truth)
 python scripts/improve_transcripts_with_captions.py --skip-download --skip-gemini --force
-
-# Fix speaker labels
 python scripts/fix_speaker_labels.py
-
-# Check accuracy against captions
-python scripts/check_accuracy.py
 ```
 
 ### Run Audience Comment Cleaning
 
-Open and run `Notebooks/Audience Comment Analysis.ipynb` — cleans all 10 datasets in place.
+Open `Notebooks/Audience Comment Analysis.ipynb` — cleans all 10 raw datasets in place.
 
-### Run Topic Relevance Filtering
+### Run Scope Filter (Tier 2)
 
-Open and run `Notebooks/Topic Relevant Comment Filtering - Nigeria.ipynb` for the full 5-stage pipeline. The v2 notebook provides a simplified binary on/off-topic classifier without multi-label themes.
+```bash
+python scripts/fetch_scope_relevant_comments.py --country Nigeria --orientation all
+```
+
+### Build Final Demo Datasets (Tier 3)
+
+```bash
+# Regressive (Agba John Doe + Shola)
+python scripts/build_audience_demo_notebook.py
+jupyter nbconvert --to notebook --execute "Notebooks/Audience Demo Comments.ipynb"
+
+# Progressive (Deyemi)
+python scripts/build_audience_demo_deyemi.py
+
+# Progressive (Banky MENtality)
+python scripts/build_audience_demo_banky.py
+```
 
 ---
 
 ## Project Status
 
 | Component | Status |
-|-----------|--------|
+|---|---|
 | Transcription (Kenya, 10 videos) | Complete — avg F1 99.2% |
 | Transcription (Nigeria, 5 videos) | Complete — avg F1 99.5% |
 | Caption ground truth | Available for all 15 videos |
-| Nigeria audience comment cleaning | Complete (9,735 rows, 89.8% retention) |
-| Nigeria topic relevance filtering | 5-stage pipeline implemented, outputs curated |
-| Nigeria theme + sentiment labeling | Complete via GPT-4o-mini + GPT-4o ensemble |
-| Kenya audience comments | Pending collection |
+| Nigeria raw audience comments | Complete (10,819 → 9,735 cleaned, 89.8% retention) |
+| Nigeria scope filtering (Tier 2) | Complete — per-creator subfolders + Banky MENtality sheetwise |
+| Nigeria final demo set (Tier 3) | Complete — 965 comments across 4 creators |
+| Nigeria content analysis | Complete — coding units per creator |
+| Kenya raw audience comments | Collected (10 datasets) |
+| Kenya audience analysis | Plots generated |
 | Content analysis codebook | Defined |
 | Keyword lexicon | 400+ terms across Nigeria + Kenya |
