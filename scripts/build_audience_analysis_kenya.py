@@ -673,7 +673,7 @@ CELLS.append(md("""## Notes
 - OP detection is platform-aware — X via URL, IG via `ownerUsername`, TikTok via `uniqueId`, YouTube via `author`.
 - Lexicon: NLC Kenya sheet (295 terms across Swahili, Sheng, Gikuyu, English).
 - Any post with fewer than 200 raw comments caps at its available volume (flagged in the selection plot).
-- Caches in `temp/audience_analysis_kenya/`. Delete to re-compute.
+- Caches in `temp/build_audience_analysis_kenya/`. Delete to re-compute.
 - Output: `Topic Relevant Comments - Kenya/<Creator>/<Post>.xlsx` — text column only.
 """))
 
