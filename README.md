@@ -86,11 +86,11 @@ Gates-Manfluencer-Project/
 │   ├── build_*.py                       # Notebook generators
 │   ├── filter_scope_relevant_comments.py # Two-tier scope filter (LLM + length)
 │   ├── scrape_*.py                      # Apify / yt-dlp scrapers
-│   ├── content_analysis_*.py            # Content coding-unit generators
+│   ├── build_coding_units_from_tweets.py            # Content coding-unit generators
 │   ├── transcribe_videos.py
 │   ├── align_transcripts_with_captions.py
 │   ├── fix_speaker_labels.py
-│   └── transcript_output_utils.py
+│   └── transcripts_utils.py
 │
 ├── Audio Files/                          # Source audio (Kenya + Nigeria)
 ├── Generated Transcripts/                # 15 research-grade transcripts
@@ -158,7 +158,7 @@ Per-creator coding-unit datasets in `Nigeria/Content Analysis/`. For each creato
 - **Banky Wellington** — splits 5 YouTube transcripts into ~40 topically coherent coding units per video (~200 total) via `gpt-4o`, with punctuation / capitalization restored and Pidgin / Yoruba code-switching preserved
 - **Deyemi / Shola / Agba / Wizarab** — one coding unit per X post, with themes and context generated via `gpt-4o`
 
-Outputs: `<Creator>/<Creator>_Coding_Units.xlsx`, plus `_corpus_full.xlsx` and `_summary.xlsx`. Built by `scripts/build_content_analysis_nigeria.py` and `scripts/content_analysis_*.py`.
+Outputs: `<Creator>/<Creator>_Coding_Units.xlsx`, plus `_corpus_full.xlsx` and `_summary.xlsx`. Built by `scripts/build_content_analysis_nigeria.py` and `scripts/build_coding_units_from_tweets.py`.
 
 ---
 
