@@ -242,6 +242,45 @@ AUX = [
         "why": "Topic theme alone cannot tell whether a Gender-Based Violence and Consent comment supports the anti-rape message or pushes back with whataboutism. Without stance, audience analysis is half-blind.",
     },
     {
+        "code": "Sentiment",
+        "scope": "Both audience and content (matches human codebook Q1)",
+        "definition": "The overall valence of the text. Captures whether the comment expresses a positive, negative, or neutral disposition. Unclear is reserved for cases where valence cannot be determined (e.g., rhetorical questions or fragmentary text).",
+        "values": ["Positive",
+                   "Negative",
+                   "Neutral",
+                   "Unclear"],
+        "why": "Mirrors the human audience codebook Q1 vocabulary so that LLM-coded sentiment is directly comparable to human-coded sentiment for inter-rater reliability checks. Earlier 4-class schemes that included a Mixed category were dropped because they produced low-precision splits and were not usable for the prior project's standard reporting.",
+    },
+    {
+        "code": "Emotion Detection",
+        "scope": "Both audience and content (mirrors human codebook Q2 vocabulary)",
+        "definition": "The dominant discrete emotion expressed by the commenter or speaker. Built directly from the human codebook's Q2 'Primary emotional tone' option list to keep LLM-coded emotion comparable to human-coded emotion.",
+        "values": ["Joy",
+                   "Happiness",
+                   "Surprise",
+                   "Anger",
+                   "Fear",
+                   "Contempt",
+                   "Sadness",
+                   "Hope",
+                   "Empathy",
+                   "None of these"],
+        "why": "Q2 of the human codebook bundles 'emotion' and 'tone' into a single field labeled 'Primary emotional tone'. The final codebook splits these into two distinct dimensions: Emotion Detection captures what the commenter feels (this field), and Tone captures how the message is delivered (next field). Splitting these axes is supported by classical work in social-media discourse analysis, where emotion (psychological state) and tone (rhetorical register) consistently behave as separable dimensions. Emotion Detection retains the Q2 vocabulary verbatim so the LLM output can be cross-validated against any future human pass that uses Q2 directly.",
+    },
+    {
+        "code": "Tone",
+        "scope": "Both audience and content (NEW dimension; not directly in human codebook)",
+        "definition": "The rhetorical register of the comment — how the message is delivered, distinct from what the speaker feels. Captures stylistic posture toward the topic and the audience.",
+        "values": ["Earnest — sincere, direct, no irony",
+                   "Sarcastic — ironic, mocking, opposite-meaning",
+                   "Hostile — aggressive, attacking, confrontational",
+                   "Humorous — playful, joking, light-hearted",
+                   "Empathetic — supportive, compassionate, validating",
+                   "Authoritative — didactic, prescriptive, lecturing",
+                   "Detached — neutral, observational, distant"],
+        "why": "Tone is not separately captured anywhere in the human audience or content codebook — Q2 conflates emotion and tone. This is a meaningful gap: a comment expressing the emotion 'Anger' could be delivered in an earnest register, a sarcastic register, or a hostile register, and these distinctions matter substantively for the playbook (e.g., distinguishing sincere male-accountability advocacy from sarcastic deflection). The seven values are drawn from established discourse-analytic categories (Pennebaker LIWC analytical/casual axis; Berger 2014 marketing-tone framework; classical pragmatics on register). The list is deliberately compact (seven mutually exclusive categories) so the LLM and any future human coder can apply it consistently. Tone allows the analysis to separate, for example, an earnest Gender-Based Violence and Consent reply from a hostile one within the same theme bucket.",
+    },
+    {
         "code": "Normative Orientation",
         "scope": "Both audience and content",
         "definition": "Whether the text reinforces hierarchy / misogyny, challenges it, combines both, or is unclear.",
@@ -414,28 +453,37 @@ for j, aux in enumerate(AUX, 1):
 # 8. Track-specific schemas
 add_heading(doc, "8. Coding schemas by track", level=1)
 para(doc, "Both tracks share the 13 primary themes, the Unclear meta code, and the Masculinity Identity scope marker. They differ only in the auxiliary set.")
-para(doc, "Audience analysis schema (8 fields per row)", bold=True)
+para(doc, "Audience analysis schema (11 fields per row)", bold=True)
 for line in [
     "Primary Theme — one of the 13 themes or Unclear",
     "Secondary Theme 1 — one of the 13 themes or blank",
     "Secondary Theme 2 — one of the 13 themes or blank",
     "Masculinity Identity — TRUE / FALSE",
+    "Sentiment — Positive / Negative / Neutral / Unclear",
+    "Emotion Detection — one of ten emotion values (Joy, Happiness, Surprise, Anger, Fear, Contempt, Sadness, Hope, Empathy, None of these)",
+    "Tone — Earnest / Sarcastic / Hostile / Humorous / Empathetic / Authoritative / Detached",
     "Audience Stance — Support / Challenge / Mixed / Question / Testimony / Joke-casual",
     "Normative Orientation — Progressive / Regressive / Mixed / Unclear",
     "Rhetorical Strategy — one of eight",
     "Target of Claim — one of nine",
 ]: bullet(doc, line)
 
-para(doc, "Content analysis schema (7 fields per row)", bold=True)
+para(doc, "Content analysis schema (10 fields per row)", bold=True)
 for line in [
     "Primary Theme — one of the 13 themes or Unclear",
     "Secondary Theme 1 — one of the 13 themes or blank",
     "Secondary Theme 2 — one of the 13 themes or blank",
     "Masculinity Identity — TRUE / FALSE",
+    "Sentiment — Positive / Negative / Neutral / Unclear",
+    "Emotion Detection — one of ten emotion values",
+    "Tone — Earnest / Sarcastic / Hostile / Humorous / Empathetic / Authoritative / Detached",
     "Normative Orientation — Progressive / Regressive / Mixed / Unclear",
     "Rhetorical Strategy — one of eight",
     "Target of Claim — one of nine",
 ]: bullet(doc, line)
+
+para(doc, "Operational LLM-coding schema (matches human codebook Q1–Q21h)", bold=True)
+para(doc, "When coding is performed by the LLM pipeline (notebook: 'LLM Coding Notebook - Audience Analysis.ipynb'), the output spreadsheet additionally carries every Q1 through Q21h column from the human audience codebook so that LLM and human coding can be compared field-by-field. The four front summary columns (Themes, Sentiment, Emotion Detection, Tone) are concise rollups of the same underlying judgments captured in Q1, Q2, and the theme list. Inter-rater reliability between the LLM and any future human pass should therefore be computed on the Q-numbered columns where vocabularies match exactly.", space_after=8)
 
 # 9. Decision rules — disambiguation
 add_heading(doc, "9. Disambiguation rules", level=1)
@@ -463,8 +511,10 @@ versions = [
      "Independent ChatGPT audit of the v1 coded data flagged 21 OTHER assignments and three over-applied codes (FAITH, RELATIONSHIP_TACTICS, AUTHORITY_SUBMISSION). Reduced to 12 primary themes plus OTHER."),
     ("v3 — Gap analysis revision",
      "Cross-checked v2 against the human content and audience codebooks. Added Male Victimhood and Male Accountability as standalone themes (previously bundled into Gender Grievance and Gender-Based Violence and Consent respectively). Demoted Masculinity Identity from primary theme to scope marker. Added Target of Claim as a fourth auxiliary field. Replaced OTHER with Unclear and capped its usage at 5–7%."),
-    ("v4 — Empirical re-validation (current)",
+    ("v4 — Empirical re-validation",
      "Tested two further candidate themes (Emotional Repression, Male Friendship and Community) against the audience and content data. Both fired on under 1% of rows after manual review of regex candidates, and were rejected as primary themes — captured instead through Normative Orientation and secondary tags. The codebook is now stable at 13 primary themes plus Unclear plus Masculinity Identity scope marker plus four auxiliary fields."),
+    ("v5 — Kenya validation (current)",
+     "Validated the v4 13-theme codebook against the Kenya audience corpus (412 comments × 4 creators: Andrew Kibe, Onyango Otieno / Rixpoet, Eddy Kimani, Eric Amunga / Amerix). 20 keyword probes were applied: the 13 codebook themes plus 7 Kenya-specific candidates (Polygamy, Sheng/Swahili gendered terms, Tribalism/regional, Politics/governance, FGM, Fitness/Hustle, Education/skill). All 7 Kenya-specific candidates fired at under 1% of rows; none warranted a new theme. Distribution shifts versus Nigeria are findings rather than codebook flaws — Faith and Moral Repair fires more in Kenya (Christian/Muslim faith vocabulary common in Amerix's regressive register and Rixpoet's healing register), while Gender Grievance fires less. Same prompt and same 13 + Unclear vocabulary applied to a 200-comment stratified sample (50 per creator) yielded clean per-creator profiles: Trauma and Mental Health is Rixpoet-exclusive, Authority and Submission is Amerix-anchored, Self-Discipline is Eddy-anchored. The codebook is therefore confirmed as country-cross-cutting — same theme list applies to Nigeria and Kenya audience and content tracks."),
 ]
 for label, body in versions:
     para(doc, label, bold=True, space_after=2)
