@@ -1,0 +1,16 @@
+,economic_pressure,fatherhood_parenting,female_blame,female_submission_role,feminism_gender_equality,hookup_transactional_sex,male_accountability,male_authority_provider,male_blame,male_emotional_life,male_sexual_entitlement,marriage_relationships,off_topic_or_generic,religion_morality,sexual_violence
+economic_pressure,36,2,2,0,0,0,5,27,0,2,1,0,0,0,0
+fatherhood_parenting,2,45,0,0,1,0,13,21,0,9,0,0,0,0,0
+female_blame,2,0,47,2,0,1,5,11,0,0,20,2,0,0,0
+female_submission_role,0,0,2,45,1,1,2,21,1,0,12,3,0,1,0
+feminism_gender_equality,0,1,0,1,16,0,2,6,0,2,0,2,0,0,0
+hookup_transactional_sex,0,0,1,1,0,9,0,0,0,0,3,0,0,0,0
+male_accountability,5,13,5,2,2,0,67,6,0,19,3,11,0,0,0
+male_authority_provider,27,21,11,21,6,0,6,117,0,7,2,12,0,4,0
+male_blame,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+male_emotional_life,2,9,0,0,2,0,19,7,0,48,3,2,0,0,0
+male_sexual_entitlement,1,0,20,12,0,3,3,2,0,3,67,7,0,0,0
+marriage_relationships,0,0,2,3,2,0,11,12,0,2,7,42,0,1,1
+off_topic_or_generic,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0
+religion_morality,0,0,0,1,0,0,0,4,0,0,0,1,0,7,0
+sexual_violence,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1
