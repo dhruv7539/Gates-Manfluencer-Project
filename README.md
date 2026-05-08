@@ -2,140 +2,169 @@
 
 **Norman Lear Center, USC Annenberg — Gates Foundation**
 
-A multi-method analysis of masculinity-focused media content in and adjacent to the "manosphere" in **Kenya** and **Nigeria**. This repository contains the technical pipeline for transcribing, cleaning, scoping, and analyzing influencer content and audience comments.
+Pipeline for transcribing, cleaning, scoping and analyzing masculinity-focused media (X, YouTube, TikTok, Instagram) and audience comments in **Kenya** and **Nigeria**. Ten creators total — five per country, mix of progressive and regressive.
+
+The bulk of the implementation right now is on the **Nigeria** side. Kenya has the raw scrapes and an earlier-pass topic filter; the Nigeria pipeline can be cloned over once the codebook is locked.
 
 ---
 
-## Project Scope
+## What we're studying
 
-The study focuses on media content that explicitly or implicitly promotes or challenges gender norms, with four interrelated components:
+```mermaid
+flowchart LR
+  L["Landscape<br/>(keywords, platforms,<br/>creators)"] --> P["Playbook<br/>counternarrative<br/>strategies"]
+  C["Content Analysis<br/>10 creators ×<br/>their media output"] --> P
+  A["Audience Reception<br/>engagement +<br/>comments"] --> P
+  classDef box fill:#f7f7f7,stroke:#888,color:#222
+  class L,C,A,P box
+```
 
-1. **Landscape Analysis** — Review of masculinity-related discourse, influencers, platforms, and keywords in Kenya and Nigeria
-2. **Content Analysis** — Analysis of 10 high-reach creators (5 per country) across their media outputs
-3. **Audience Reception Analysis** — Engagement metrics and qualitative analysis of audience comments
-4. **Playbook Development** — Counternarrative strategies for healthier masculinity content
+Four moving parts, all feeding the eventual playbook deliverable. This repo is the technical scaffolding for the middle two (content + audience).
 
-### Creators Studied
+### The 10 creators
 
-| Creator | Country | Orientation | Platform | Content Focus |
+| Creator | Country | Orientation | Platform | Focus |
 |---|---|---|---|---|
-| Eric Amunga (Amerix) | Kenya | Regressive | X | Sexual hierarchy, female submission, #MasculinitySaturday |
-| Andrew Kibe | Kenya | Regressive | X / YouTube | Anti-women cynicism, status, male advice |
-| Philip Karanja | Kenya | Progressive | YouTube | Fatherhood (Girl Dad), violence against women, allyship |
-| Onyango Otieno (Rixpoet) | Kenya | Progressive | YouTube | Trauma recovery, anti-toxic masculinity, mental health |
-| Eddy Kimani | Kenya | Progressive | TikTok / YouTube | Depression, failure recovery, men's mental health |
-| Banky Wellington | Nigeria | Progressive | YouTube (MENtality) | Healthy masculinity, marriage, fatherhood, vulnerability |
-| Deyemi Okanlawon | Nigeria | Progressive | X | Male accountability, rape culture, anti-deflection |
-| Wizarab | Nigeria | Regressive | X | Denigrating women, feminists, single mothers |
-| Shola | Nigeria | Regressive | X | Availability trap, female submission, provider anxiety |
-| Agba John Doe | Nigeria | Regressive | X | Soft patriarchy, marriage-market logic, sexual double standards |
+| Eric Amunga (Amerix) | Kenya | regressive | X | Sexual hierarchy, female submission, #MasculinitySaturday |
+| Andrew Kibe | Kenya | regressive | X / YouTube | Anti-women cynicism, status, male advice |
+| Philip Karanja | Kenya | progressive | YouTube | Fatherhood (Girl Dad), VAW, allyship |
+| Onyango Otieno (Rixpoet) | Kenya | progressive | YouTube | Trauma recovery, anti-toxic masculinity, mental health |
+| Eddy Kimani | Kenya | progressive | TikTok / YouTube | Depression, failure recovery, men's mental health |
+| Banky Wellington | Nigeria | progressive | YouTube (MENtality) | Healthy masculinity, marriage, fatherhood, vulnerability |
+| Deyemi Okanlawon | Nigeria | progressive | X | Male accountability, rape culture, anti-deflection |
+| Wizarab | Nigeria | regressive | X | Denigrating women, feminists, single mothers |
+| Shola | Nigeria | regressive | X | Availability trap, female submission, provider anxiety |
+| Agba John Doe | Nigeria | regressive | X | Soft patriarchy, marriage-market logic, sexual double standards |
 
 ---
 
-## Repository Structure
+## How the data flows (Nigeria)
 
-The project is split by country at the top level. Country-specific data, notebooks, and scripts all live under `Nigeria/` or `Kenya/`. Only project-wide assets (codebook, scope docs) sit at the root.
+```mermaid
+flowchart LR
+  subgraph acquire["Acquisition"]
+    yt["YouTube<br/>yt-dlp + ASR + diarization"]
+    x["X / Twitter<br/>Apify"]
+    ig["Instagram, TikTok"]
+  end
+
+  subgraph audience["Audience pipeline"]
+    araw["Raw"] -->|clean + dedupe| acomp["Complete"]
+    acomp -->|LLM scope filter +<br/>manual curation| afinal["Final<br/>965 comments<br/>4 creators"]
+  end
+
+  subgraph content["Content pipeline"]
+    craw["Raw transcripts<br/>+ tweets"] -->|coding-unit<br/>segmentation| cfinal["Final<br/>310 segments<br/>6 creators"]
+  end
+
+  acquire --> audience
+  acquire --> content
+
+  afinal --> awb["Nigeria Audience<br/>Analysis Final.xlsx"]
+  cfinal --> cwb["Nigeria Content<br/>Analysis Final.xlsx"]
+
+  awb --> trans["Translated/<br/>(English-translated parquet)"]
+  cwb --> trans
+  trans --> expl["Exploratory/<br/>themes • sentiment • emotion<br/>NER • toxicity • misogyny<br/>MFT • stance • framing<br/>argument mining • clusters"]
+  expl --> doc["Findings .docx"]
+  expl --> fig["figures/ (PNG)"]
+```
+
+The two `Final` workbooks are the manager-facing locked deliverables. Everything to the right of them is regenerable from cache.
+
+---
+
+## Repository layout
 
 ```
 Gates-Manfluencer-Project/
 ├── Nigeria/
 │   ├── Audience Analysis/
-│   │   ├── Audience Comments - Raw/        # Full unfiltered scrapes per creator
+│   │   ├── Audience Comments - Raw/        # full scrapes, per creator
 │   │   │   ├── Agba John Doe/
 │   │   │   ├── Banky Wellington/
-│   │   │   │   ├── YouTube/                # Sermons (legacy, not in final scope)
-│   │   │   │   ├── Instagram/              # IG posts (legacy, not in final scope)
-│   │   │   │   └── MENtality/              # 6 episodes — used for final analysis
+│   │   │   │   ├── YouTube/                # sermons (legacy, not in final scope)
+│   │   │   │   ├── Instagram/              # 3 posts (legacy, not in final scope)
+│   │   │   │   └── MENtality/              # 6 episodes — used for final
 │   │   │   ├── Deyemi Okanlawon/
 │   │   │   ├── Shola/
 │   │   │   └── Wizarab/
-│   │   ├── Audience Comments - Complete/   # Cleaned + deduped, single `text` column
-│   │   │                                   # (one-to-one mirror of Raw, no LLM filter)
-│   │   └── Audience Comments - Final/      # Curated, scope-relevant set for the manager
-│   │       ├── Agba John Doe_Never Leave Marriage Because Husband Cheated.xlsx
-│   │       ├── Shola_7 Women Will Beg One Man to Marry.xlsx
-│   │       ├── Deyemi Okanlawon_Stop Raping Women Response.xlsx
-│   │       └── Banky Wellington_MENtality Podcast.xlsx
-│   ├── Content Analysis/                   # Per-creator coding units (qualitative)
+│   │   ├── Audience Comments - Complete/   # cleaned + deduped, single `text` col
+│   │   ├── Audience Comments - Final/      # the 4 manager-facing files
+│   │   ├── Audience Comments - Archive/    # superseded snapshots
+│   │   ├── Nigeria Audience Analysis Final.xlsx   # consolidated headline workbook
+│   │   ├── Translated/                     # English-translated parquet/xlsx
+│   │   └── Exploratory/                    # LLM analyses + xlsx/docx + figures/
+│   ├── Content Analysis/
+│   │   ├── Content - Raw/
+│   │   ├── Content - Final/
+│   │   ├── Content - Archive/
+│   │   ├── Nigeria Content Analysis Final.xlsx
+│   │   ├── Translated/
+│   │   └── Exploratory/
 │   ├── Notebooks/
-│   │   ├── Audience Comments.ipynb         # Stage 1 (clean) → Stage 2 (LLM scope filter)
-│   │   ├── Content Analysis.ipynb          # Coding-unit pipeline (placeholder)
-│   │   └── Data Acquisition Pipeline.ipynb # Scraping + transcription (consolidated)
-│   ├── Scraped Tweets/                     # Apify creator-tweet scrapes
-│   └── scripts/                            # Python utilities (scrapers, transcription, etc.)
+│   │   ├── Audience Comments.ipynb         # cleaning + LLM scope filter
+│   │   ├── Content Analysis.ipynb          # placeholder
+│   │   ├── Data Acquisition Pipeline.ipynb # scraping + transcription
+│   │   └── Exploratory Analysis.ipynb      # the LLM analyses
+│   ├── Scraped Tweets/
+│   └── scripts/
+│       └── archive/                        # superseded one-offs
 │
-├── Kenya/
-│   ├── Audience Comments - Raw/            # 10 raw scrapes (X, YouTube, TikTok, Instagram)
-│   ├── Audience Analysis Plots/            # Generated plots from earlier analysis
-│   ├── Captions/, Generated Transcripts/   # Source captions + ASR transcripts
-│   └── Topic Relevant Comments/            # Earlier-pass topic-filtered output
-│
-├── Proposed Keywords & Codebooks/
-│   ├── Gates Content Analysis Codebook.docx
-│   └── NLC Proposed keywords.xlsx          # 400+ keyword lexicon (Nigeria + Kenya sheets)
-│
-├── Scope/                                  # Project-wide scope + analysis sample docs
-│   ├── Gates Masculinity Scope - Streamlined.docx
-│   ├── Landscape & Content Analysis - Participants, Creators.docx
-│   ├── KENYA - Content and Audience Analysis Samples.docx
-│   ├── NIGERIA - Content and Audience Analysis Samples.docx
-│   └── imgs/Video ASR Workflow.png
-│
+├── Kenya/                                  # raw scrapes, ASR transcripts, earlier-pass plots
+├── Codebooks/Human Codebooks/              # 12-coder spreadsheets + assignment trackers
+├── Proposed Keywords & Codebooks/          # 400+ keyword lexicon + original codebook
+├── Scope/                                  # scope docs + sample analyses
 ├── README.md
 ├── requirements.txt
-└── temp/                                   # Caches (gitignored)
+└── temp/                                   # caches (gitignored)
 ```
 
 ---
 
-## Audience Comments Pipeline (3 Tiers)
+## Audience comments — three tiers
 
-For each creator, audience comments flow through three stages:
-
+```mermaid
+flowchart LR
+  R["Raw<br/>full metadata<br/>(author, likes, replies,<br/>retweets, timestamps, urls)"]
+  C["Complete<br/>cleaned + deduped<br/>single `text` column"]
+  F["Final<br/>scope-relevant only<br/>965 comments / 4 creators"]
+  R -->|Stage 1<br/>NFKC + dedupe + min length<br/>no LLM, free| C
+  C -->|Stage 2<br/>keywords + embeddings +<br/>gpt-4o-mini scope filter<br/>+ manual curation| F
 ```
-Audience Comments - Raw       Stage 1       Audience Comments - Complete       Stage 2        Audience Comments - Final
-─────────────────────────  ── cleaning ──►  ──────────────────────────────  ── LLM filter ──►  ────────────────────────
-Full scraped metadata          (no LLM)     Cleaned + deduped text-only     keywords +         Top-N curated, faith
-(author, likes, etc.)                       (one-to-one mirror of Raw)      embeddings +       stripped (manager set)
-                                                                            gpt-4o-mini
-```
 
-Both stages are wired up in `Nigeria/Notebooks/Audience Comments.ipynb`.
+Both stages live in `Nigeria/Notebooks/Audience Comments.ipynb`.
 
 ### Tier 1 — Raw
 
-Full unfiltered scrapes. Schema preserved exactly as scraped:
-- **YouTube**: `author`, `comment`, `likes`, `reply_count`
-- **X / Twitter**: `author`, `text`, `likes`, `replies`, `retweets`, `timestamp`, `url`
-- **TikTok / Instagram**: platform-specific schemas
+Schema preserved exactly as scraped. YouTube: `author, comment, likes, reply_count`. X: `author, text, likes, replies, retweets, timestamp, url`. TikTok / IG: platform-specific.
 
-For Banky, comments are organised by source platform: `YouTube/` (sermons), `Instagram/` (3 posts), `MENtality/` (6 podcast episodes — the source for the final dataset).
+For Banky we keep three subfolders — `YouTube/` sermons, `Instagram/` posts, `MENtality/` podcast — only MENtality (6 episodes) feeds into Final.
 
-### Tier 2 — Complete (cleaning, no LLM)
+### Tier 2 — Complete (no LLM)
 
-Output of **Stage 1** in `Audience Comments.ipynb`. Deterministic processing only — no API calls:
+Output of Stage 1. Pure deterministic processing:
 
-- Unicode normalisation (NFKC)
-- Smart-quote replacement
-- Whitespace collapsing
-- Drop empty + too-short comments (< 5 chars)
-- Drop exact duplicates
+- NFKC unicode normalization
+- Smart-quote replacement, whitespace collapse
+- Drop empties + comments under 5 chars
+- Drop exact dupes
 - Single `text` column, one-to-one mirror of Raw
 
 Free, fast, repeatable.
 
-### Tier 3 — Final (LLM scope filter + manual curation)
+### Tier 3 — Final
 
-Output of **Stage 2** in `Audience Comments.ipynb`, with additional manual curation. Stage 2 sub-stages:
+Output of Stage 2 plus a manual review pass. The notebook does the heavy lifting:
 
-- **2a — Keyword annotation** against NLC Nigeria/Kenya lexicon
-- **2b — Embedding similarity** to per-orientation anchor phrases (`text-embedding-3-large`)
-- **2c — LLM relevance check** (`gpt-4o-mini`, async batched, cached)
-- **2d — Composite score** + top-N per source file (`0.20 × keyword + 0.35 × similarity + 0.45 × LLM relevance`)
-- **2e — Faith strip** (substantive religious framing removed; colloquial idioms kept)
-- **2f — Export** to `Audience Comments - Final/<Creator>_<PostTitle>.xlsx`
+- **2a** — keyword annotation against the NLC lexicon
+- **2b** — embedding similarity to per-orientation anchors (`text-embedding-3-large`)
+- **2c** — relevance check via `gpt-4o-mini` (async, batched, cached)
+- **2d** — composite score `0.20·keyword + 0.35·similarity + 0.45·relevance`, top-N per source
+- **2e** — faith strip (substantive religious framing only — colloquial idioms stay)
+- **2f** — export to `Audience Comments - Final/<Creator>_<PostTitle>.xlsx`
 
-The 4 final Nigeria datasets after manual curation:
+Manual curation on top of that removed: dupes, OP-text leakage, generic praise, format critiques, weak jokes, and `@grok` bot pings. The four locked outputs:
 
 | Creator | Source | Comments |
 |---|---|---:|
@@ -145,58 +174,73 @@ The 4 final Nigeria datasets after manual curation:
 | Banky Wellington | YouTube — *MENtality Podcast* (6 episodes pooled) | 505 |
 | **Total** | | **965** |
 
-Each final file has a single `text` column. Beyond the notebook output, manual review passes also removed: duplicates, OP-text leakage, generic praise, format critiques, weak jokes, and Grok bot pings (`@grok` prompts that aren't real audience opinions).
+> Re-running the notebook would overwrite these. Don't, unless you genuinely want to start fresh.
 
 ---
 
-## Content Analysis Pipeline
+## Content analysis
 
-Per-creator coding-unit datasets in `Nigeria/Content Analysis/`. The pipeline lives in `Nigeria/Notebooks/Content Analysis.ipynb` (currently a placeholder skeleton — full implementation is the next step).
+Per-creator coding-unit datasets in `Nigeria/Content Analysis/Content - Final/`. Schema mirrors the Kibe / Jagero reference: `Segment ID | Influencer | Platform | Content Type | Theme(s) | Context (NOT CODED) | Verbatim Text (CODE THIS)`.
 
-Existing per-creator data:
+```mermaid
+flowchart LR
+  subgraph banky["Banky Wellington"]
+    bv["5 YouTube transcripts"] -->|gpt-4o segmentation| bs["~40 units per video<br/>~200 total"]
+  end
+  subgraph x4["Deyemi / Shola / Agba / Wizarab"]
+    xt["X posts"] -->|gpt-4o<br/>themes + context| xs["1 unit per post"]
+  end
+  bs --> cfinal["Content - Final/<br/>per-creator xlsx"]
+  xs --> cfinal
+  cfinal --> headline["Nigeria Content<br/>Analysis Final.xlsx"]
+```
 
-- **Banky Wellington** — splits 5 YouTube transcripts into ~40 topically coherent coding units per video (~200 total) via `gpt-4o`, with punctuation / capitalization restored and Pidgin / Yoruba code-switching preserved
-- **Deyemi / Shola / Agba / Wizarab** — one coding unit per X post, with themes and context generated via `gpt-4o`
+Banky's segmentation restores punctuation and capitalization on raw ASR and preserves Pidgin / Yoruba code-switching. The shorter X-post creators get one unit per tweet.
 
-Schema matches the Kibe/Jagero reference: `Segment ID | Influencer | Platform | Content Type | Theme(s) | Context (NOT CODED) | Verbatim Text (CODE THIS)`.
+`Nigeria/Notebooks/Content Analysis.ipynb` is currently a skeleton — full pipeline is the next implementation task.
 
 ---
 
-## Data Acquisition Pipeline
+## Data acquisition + transcription
 
-`Nigeria/Notebooks/Data Acquisition Pipeline.ipynb` is the consolidated entry point for:
+`Nigeria/Notebooks/Data Acquisition Pipeline.ipynb` is the consolidated entry point. It covers comment scraping (X via Apify, YouTube via yt-dlp, IG) and the video transcription pipeline.
 
-1. **Scraping audience comments** — X / Twitter (creator tweets + replies via Apify), YouTube comments (yt-dlp), Instagram
-2. **Transcribing creator videos** — yt-dlp → ffmpeg → whisper → pyannote diarisation → Gemini refinement
-3. **Caption-based improvement** — align YouTube captions onto diarised transcripts (eliminates LLM over/under-generation)
-4. **Speaker label correction** — deterministic fixes for corrupted labels + Gemini-assisted relabeling using YouTube metadata
+```mermaid
+flowchart TD
+  url[YouTube URL] --> ytdlp["yt-dlp<br/>video + auto-captions"]
+  ytdlp --> ff["ffmpeg<br/>16kHz mono WAV"]
+  ff --> asr["mlx-whisper / faster-whisper<br/>word-level ASR"]
+  ff --> diar["pyannote.audio<br/>speaker diarization"]
+  asr --> gem["Gemini 2.5 Flash refinement<br/>video-grounded"]
+  diar --> gem
+  ytdlp -. captions .-> align
+  gem --> align["Caption alignment<br/>position-proportional speaker transfer"]
+  align --> fix["Speaker label fix<br/>deterministic + Gemini metadata"]
+  fix --> out["Final transcript<br/>avg P 99.3% / R 99.2% /<br/>F1 99.3% / Cov 99.9%"]
+```
 
-### Transcription stages
+Stages, in order:
 
-![Transcription Pipeline Flowchart](Scope/imgs/Video%20ASR%20Workflow.png)
-
-1. **Media Acquisition** — `yt-dlp` downloads video + auto-captions; `ffmpeg` converts audio to 16kHz mono WAV
-2. **ASR** — `mlx-whisper` (Apple Silicon) / `faster-whisper` produces word-level timestamps
+1. **Acquire** — `yt-dlp` pulls video + auto-captions; `ffmpeg` produces 16kHz mono WAV
+2. **ASR** — `mlx-whisper` (Apple Silicon) or `faster-whisper` for word-level timestamps
 3. **Diarization** — `pyannote.audio` assigns speaker IDs to time segments
-4. **LLM Refinement** — `gemini-2.5-flash` refines raw ASR + diarization with video-context grounding
-5. **Caption-Based Improvement** (`align_transcripts_with_captions.py`) — uses YouTube captions as authoritative word source; position-proportional alignment transfers speaker labels onto caption text
-6. **Speaker Label Correction** (`fix_speaker_labels.py`) — deterministic + Gemini-assisted relabeling
+4. **Refine** — `gemini-2.5-flash` cleans up the raw ASR + diarization with the video as context
+5. **Caption alignment** — `align_transcripts_with_captions.py` treats YouTube captions as authoritative and transfers speaker labels onto them by position. This kills LLM over- and under-generation.
+6. **Speaker fix** — `fix_speaker_labels.py` does deterministic cleanup plus a Gemini-assisted relabel using channel metadata.
 
-### Transcript accuracy results
-
-All 15 transcripts hit research-grade quality. **Average: Precision 99.3% | Recall 99.2% | F1 99.3% | Coverage 99.9%** — full per-transcript table in `Kenya/Generated Transcripts/`.
+All 15 transcripts (10 Kenya + 5 Nigeria) hit research-grade accuracy. Per-transcript breakdown lives in `Kenya/Generated Transcripts/`.
 
 ---
 
-## Keyword Lexicon
+## Keyword lexicon
 
-`Proposed Keywords & Codebooks/NLC Proposed keywords.xlsx` — 400+ keywords across three sheets:
+`Proposed Keywords & Codebooks/NLC Proposed keywords.xlsx` — 400+ entries across three sheets:
 
-- **Nigeria** — Pidgin, Yoruba, Igbo, Hausa slang (e.g., "ashawo", "agba baller", "yahoo boy", "woman-wrapper")
-- **Kenya** — Swahili, Sheng, Gikuyu (e.g., "malaya", "mubaba", "mwanaume ni jasho")
-- **Source links** — Academic papers and articles on African masculinity discourse
+- **Nigeria** — Pidgin, Yoruba, Igbo, Hausa slang ("ashawo", "agba baller", "yahoo boy", "woman-wrapper"...)
+- **Kenya** — Swahili, Sheng, Gikuyu ("malaya", "mubaba", "mwanaume ni jasho"...)
+- **Sources** — academic + popular references on African masculinity discourse
 
-Tagged by relevance: **Highly**, **Moderately**, or **Not relevant**.
+Each term is tagged Highly / Moderately / Not relevant.
 
 ---
 
@@ -208,62 +252,50 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Create a `.env` at the repo root with:
+Drop a `.env` at the repo root:
 
 ```
-OPENAI_API_KEY=your_openai_api_key
-GEMINI_API_KEY=your_gemini_api_key
-HF_TOKEN=your_huggingface_token
-APIFY_API_KEY=your_apify_api_key
+OPENAI_API_KEY=...
+GEMINI_API_KEY=...
+HF_TOKEN=...
+APIFY_API_KEY=...
 ```
 
-### Key dependencies
-
-- `mlx-whisper` / `faster-whisper` — speech recognition
-- `pyannote.audio` — speaker diarization
-- `google-genai` — Gemini LLM integration
-- `openai` — GPT-4o / GPT-4o-mini + embeddings
-- `apify-client` — X / Twitter / IG scraping
-- `yt-dlp` — YouTube download and metadata
-- `ffmpeg` — audio processing (system binary)
-- `pandas` / `openpyxl` / `pyarrow` — data I/O
+Key deps: `mlx-whisper` / `faster-whisper`, `pyannote.audio`, `google-genai`, `openai`, `apify-client`, `yt-dlp`, plus `pandas` / `openpyxl` / `pyarrow`. `ffmpeg` needs to be on PATH as a system binary.
 
 ---
 
-## Usage
+## Running things
 
-### Audience Comments Pipeline (Nigeria)
+**Audience scope filter (Nigeria).** Open `Nigeria/Notebooks/Audience Comments.ipynb`. Stage 1 (cleaning) is free and instant. Stage 2 (LLM filter) costs ~$3–5 on a fresh run; cache makes re-runs free. The 4 Final files are manually curated past the notebook output — re-running will overwrite them.
 
-Open `Nigeria/Notebooks/Audience Comments.ipynb`. Run **Stage 1** (cleaning) at any time — free and fast. Run **Stage 2** (LLM scope filter) when you want to regenerate Final from scratch — first run costs ~$3-5 in `gpt-4o-mini` calls; subsequent runs use the parquet cache for free.
+**Translation.** `python Nigeria/scripts/translate_to_english_pipeline.py` writes English-translated parquets + xlsx into `Nigeria/Audience Analysis/Translated/` and `Nigeria/Content Analysis/Translated/`. Cached on `temp/translation_cache.parquet`.
 
-> **Note:** the 4 Nigeria Final files have been **manually curated** beyond the notebook output (Grok prompt removal, OP-text leak fix, weak-row trims, speaker filter for Banky, stricter faith strip). Re-running the notebook would overwrite these — only do so if you want to start fresh.
+**Exploratory analyses.** `Nigeria/Notebooks/Exploratory Analysis.ipynb` reads the Translated parquets and writes the two consolidated workbooks, parquets, and figures into each tier's `Exploratory/` folder. ~$2–5 + 5–10 min wall time on a cold run; free after that.
 
-### Audience Comments Pipeline (Kenya)
+**Findings docs.** `python Nigeria/scripts/build_findings_docs.py` regenerates the two `Nigeria - * LLM Exploratory Findings.docx` files.
 
-`Kenya/` is currently in its earlier-pass state (raw + topic-relevant + plots). To produce a Kenya Final dataset matching Nigeria's structure, copy `Nigeria/Notebooks/Audience Comments.ipynb` into a new `Kenya/Notebooks/`, swap the country name in the config cell, and run.
+**Content analysis (Nigeria).** Notebook is a placeholder. Coding-unit data is already in `Content Analysis/Content - Final/`.
 
-### Content Analysis (Nigeria)
+**Audience scope filter (Kenya).** Not built yet. Plan: copy the Nigeria notebook into a new `Kenya/Notebooks/`, swap the country in the config cell, run.
 
-Open `Nigeria/Notebooks/Content Analysis.ipynb` — placeholder skeleton, full implementation pending.
-
-### Data Acquisition
-
-Open `Nigeria/Notebooks/Data Acquisition Pipeline.ipynb` for the transcription stages. Scraping cells will be added to consolidate the scrapers in `Nigeria/scripts/`.
+**Data acquisition.** `Data Acquisition Pipeline.ipynb` covers transcription stages today; scraping cells will be folded in to consolidate the standalone scrapers in `Nigeria/scripts/`.
 
 ---
 
-## Project Status
+## Status
 
-| Component | Status |
+| Component | State |
 |---|---|
-| Transcription (Kenya, 10 videos) | Complete — avg F1 99.2% |
-| Transcription (Nigeria, 5 videos) | Complete — avg F1 99.5% |
-| Caption ground truth | Available for all 15 videos |
-| Nigeria raw audience comments | Collected (10,819 raw → cleaned to Complete tier) |
-| Nigeria scope filter (Stage 2) | Notebook implemented; final dataset manually curated |
-| Nigeria Final dataset | **Locked — 965 comments across 4 creators** |
-| Nigeria content analysis | Per-creator coding units in place; notebook pipeline pending |
-| Kenya raw audience comments | Collected (10 datasets); Final pipeline pending |
-| Kenya audience analysis | Plots from earlier pass available |
-| Content analysis codebook | Defined |
-| Keyword lexicon | 400+ terms across Nigeria + Kenya |
+| Transcription, Kenya (10 videos) | done — avg F1 99.2% |
+| Transcription, Nigeria (5 videos) | done — avg F1 99.5% |
+| Caption ground truth | available for all 15 |
+| Nigeria raw audience comments | collected (10,819 → cleaned to Complete) |
+| Nigeria Stage 2 scope filter | notebook in place; Final manually curated |
+| Nigeria audience Final | **locked — 965 comments × 4 creators** |
+| Nigeria content coding units | in place; pipeline notebook pending |
+| Nigeria translated + exploratory | done (417 audience / 310 content rows analyzed) |
+| Kenya raw audience comments | collected (10 datasets); Final pending |
+| Kenya audience plots | from earlier pass, on disk |
+| Codebook | defined |
+| Keyword lexicon | 400+ terms, two countries |
