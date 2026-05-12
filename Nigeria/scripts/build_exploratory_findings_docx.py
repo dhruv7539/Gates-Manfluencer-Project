@@ -243,14 +243,27 @@ def build():
         doc,
         header=["Metric", "Kenya", "Nigeria"],
         rows=[
-            ["Audience comments coded", "412", "417"],
-            ["Content snippets coded", "394", "381"],
-            ["Regressive share (content snippets)", "43%", "43%"],
-            ["Progressive share (content snippets)", "35%", "31%"],
-            ["Mixed / unclear (content snippets)",  "22%", "26%"],
+            ["Audience comments coded (n)", "412", "417"],
+            ["Content snippets coded (n)",  "394", "381"],
+            ["Regressive share — % of country content snippets",
+             "43% (171 / 394)", "43% (165 / 381)"],
+            ["Progressive share — % of country content snippets",
+             "35% (138 / 394)", "31% (117 / 381)"],
+            ["Mixed / unclear — % of country content snippets",
+             "22% (85 / 394)",  "26% (99 / 381)"],
         ],
         col_widths=[8.5, 4, 4],
         first_col_bold=True,
+    )
+    _add_para(doc,
+        "Read every percentage in this document as \"share within the "
+        "curated Phase 1 sample\". Because creators were selected to "
+        "span both ends of the regressive ↔ progressive axis, the "
+        "headline 43% / 35% / 31% figures reflect the composition of "
+        "the corpus, not a population estimate for either country. "
+        "Per-creator figures (Section 2) are the primary unit of "
+        "analysis.",
+        size=10, italic=True, color=COLOR_MUTED,
     )
 
     _add_para(
@@ -277,12 +290,13 @@ def build():
         "distinct entry points into the same ecosystem.",
     )
     _add_para(doc,
-        "2.  Regressive content concentrates in a small set of creators. "
-        "Kibe and Amerix together account for 157 of the 172 Kenyan "
-        "regressive snippets (91%). In Nigeria, Agba John Doe, Shola, "
-        "and Wizarab carry the bulk of regressive content; Banky "
-        "Wellington, Deyemi Okanlawon, and Ebuka Obi-Uchendu code as "
-        "progressive-leaning. Per-creator orientation is in Section 11.",
+        "2.  Regressive content concentrates in a small set of creators "
+        "within this sample. Kibe and Amerix together account for 157 "
+        "of the 171 Kenyan regressive snippets (92%). In Nigeria, Agba "
+        "John Doe, Shola, and Wizarab carry the bulk of regressive "
+        "content; Banky Wellington, Deyemi Okanlawon, and Ebuka "
+        "Obi-Uchendu code as progressive-leaning. Per-creator "
+        "orientation is in Section 11.",
     )
     _add_para(doc,
         "3.  Solutions diagnosis is thin. 44% of Kenyan (172 / 394) and "
@@ -293,21 +307,23 @@ def build():
         "both compatible with counter-narrative framing.",
     )
     _add_para(doc,
-        "4.  Audience response patterns diverge by country. Kenyan "
-        "audiences validate more than they push back (validation 155, "
-        "resistance/pushback 100). Nigerian audiences invert that "
-        "pattern (pushback 150, validation 113). The Nigerian comment "
-        "threads in this sample are organised counter-publics rather "
-        "than uniform echo chambers.",
+        "4.  Audience response patterns diverge by country in this "
+        "sample. Kenyan audiences validate more than they push back "
+        "(validation 155, resistance / pushback 100). Nigerian "
+        "audiences invert that pattern (pushback 150, validation 113). "
+        "The Nigerian comment threads in this sample appear closer to "
+        "organised counter-publics than to uniform echo chambers; this "
+        "is a sample-level observation and is not generalised beyond "
+        "the curated set.",
     )
     _add_para(doc,
-        "5.  Healing / testimony content carries the strongest counter-"
-        "narrative signature in the sample. Under Rixpoet, audience "
-        "comments code 88% supports and a high share of "
-        "extends-the-message uptake. Banky Wellington shows the same "
-        "pattern in Nigeria. This is the only register in the sample "
-        "that produces both learning/reflection and personal disclosure "
-        "at meaningful rates.",
+        "5.  Within this sample, the healing / testimony register "
+        "appears to carry the clearest counter-narrative signature. "
+        "Under Rixpoet, audience comments code 88% supports and a high "
+        "share of extends-the-message uptake. Banky Wellington shows "
+        "the same pattern in Nigeria. This is also the only register "
+        "in the sample that produces both learning / reflection and "
+        "personal disclosure at meaningful rates.",
     )
     _add_para(doc,
         "6.  Audiences open a violence/safety frame that creators do not "
@@ -844,9 +860,9 @@ def build():
             "is acknowledgement or amplification.",
             "Nigeria: resistance / pushback (150) > validation (113) > "
             "learning / reflection (78). Nigerian threads in this "
-            "sample are organised counter-publics rather than uniform "
-            "echo chambers — a material consideration for playbook "
-            "framing.",
+            "sample appear closer to organised counter-publics than to "
+            "uniform echo chambers — a sample-level observation, but "
+            "one that matters for playbook framing.",
             "Personal disclosure is a Kenya-specific signature in the "
             "sample (15 vs 3 comments) and appears almost entirely "
             "under the healing register, where it co-occurs with "
@@ -1177,10 +1193,16 @@ def build():
         "confidence = low (Section 24)."
     )
     _add_para(doc,
-        "Single-coder limitation. The LLM is the final coder. A "
-        "human-coded recheck on a random sample is recommended for "
-        "publication-grade reliability estimates; that work is "
-        "scheduled in the focused pass."
+        "Single-coder limitation and validation plan. The LLM is the "
+        "final coder in this exploratory pass. A human-coded recheck "
+        "on a stratified random sample (target: 10% of rows per "
+        "country, balanced across high / medium / low confidence) is "
+        "scheduled in the focused pass and will produce a per-variable "
+        "agreement rate against the LLM codes. Inter-rater reliability "
+        "between human reviewers (Cohen's κ on a shared subset) will "
+        "be reported alongside. The exploratory figures in this "
+        "document should be read as conditional on the LLM coding "
+        "until the validation pass is complete."
     )
 
     _add_heading(doc, "26.  Representative quotes", level=3)
