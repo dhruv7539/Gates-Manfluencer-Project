@@ -383,12 +383,16 @@ def build():
     _add_para(doc,
         "Eleven masculinity-associated creators across Kenya and "
         "Nigeria, drawn from the manosphere-adjacent ecosystem "
-        "identified in the landscape analysis. The sample sits within "
-        "the Scope's 3–5-per-country guideline and 1,600-comment "
-        "budget. Creators were chosen so that both ends of the "
-        "regressive–progressive spectrum are visible in the data; this "
-        "shapes how the corpus-level percentages should be read "
-        "(see Section 25)."
+        "identified in the landscape analysis. Five Kenyan creators "
+        "and six Nigerian creators were selected; this is at the upper "
+        "end of the Scope's 3–5-per-country guideline, with Nigeria "
+        "extended by one to capture the wider range of "
+        "progressive and regressive voices in that ecosystem. The "
+        "comment budget remains within the Scope's 1,600-comment "
+        "envelope (1,604 coded rows total). Creators were chosen so "
+        "that both ends of the regressive–progressive spectrum are "
+        "visible in the data; this shapes how the corpus-level "
+        "percentages should be read (see Section 25)."
     )
 
     _add_table(doc,
@@ -745,7 +749,7 @@ def build():
             "dominate, lead\". Topics: gender debate, dating / "
             "relationships. Frames: traditional gender order, male "
             "victimhood, female blame. Rhetoric: advice / instruction "
-            "and commentary / opinion. Hostile-sexism rate: 41–74%.",
+            "and commentary / opinion. Sexism rate (any level — hostile, dehumanising, or benevolent / traditional): 41–74%.",
             "Audience signature: high opposes share (Amerix opposes "
             "55%); uptake splits between intensifies and challenges. "
             "This is the manosphere-aligned entry point.",
@@ -760,7 +764,7 @@ def build():
             "relationships, money / status, marriage / family. "
             "Frames: traditional gender order, provider pressure, "
             "female blame. Rhetoric: commentary / opinion. "
-            "Hostile-sexism rate: ~46%.",
+            "Sexism rate (any level — hostile, dehumanising, or benevolent / traditional): ~46%.",
             "Audience signature: high supports rate and high intensifies "
             "uptake. This is the soft-regressive entry point — gender "
             "hierarchy framed through wealth and bridewealth.",
@@ -776,7 +780,7 @@ def build():
             "fatherhood / parenting, gender debate. Frames: trauma "
             "healing, self-improvement, equality / partnership. "
             "Rhetoric: testimony, personal story, motivational speech. "
-            "Hostile-sexism rate: ~0%.",
+            "Sexism rate (any level — hostile, dehumanising, or benevolent / traditional): ~0%.",
             "Audience signature: high supports and extends-original-"
             "message uptake; audience reports personal disclosure and "
             "learning / reflection at rates not observed under the other "
@@ -793,7 +797,7 @@ def build():
             "protect women and children\". Topics: marriage / family, "
             "fatherhood / parenting. Frames: equality / partnership, "
             "fatherhood responsibility. Rhetoric: commentary / opinion "
-            "and advice / instruction. Hostile-sexism rate: ~3%.",
+            "and advice / instruction. Sexism rate (any level — hostile, dehumanising, or benevolent / traditional): ~3%.",
             "Audience signature: Banky's audience supports and extends; "
             "Deyemi's audience opposes at 85%. Partnership and "
             "fatherhood content can be received as moralism unless it "
@@ -988,13 +992,14 @@ def build():
     _add_callout(doc,
         "Lever 3 — Reframe the provider story without abandoning it",
         [
-            "The most common Nigerian regressive narrative is \"men "
-            "should provide and succeed\". The provider-pressure frame "
-            "is real for adolescent boys and young men; direct attack "
-            "is unlikely to land. The opening in the data is to "
-            "decouple provider success from women's submission. Banky "
-            "Wellington's content already does this; the playbook can "
-            "scale that move.",
+            "The most common Nigerian regressive narrative in this "
+            "sample is \"men should provide and succeed\". The "
+            "provider-pressure frame is real for adolescent boys and "
+            "young men, and the data suggest that directly contesting "
+            "the narrative may be less effective than reframing it. "
+            "The opening visible here is to decouple provider success "
+            "from women's submission. Banky Wellington's content "
+            "already does this; the playbook can scale that move.",
         ],
     )
     _add_callout(doc,
@@ -1193,16 +1198,18 @@ def build():
         "confidence = low (Section 24)."
     )
     _add_para(doc,
-        "Single-coder limitation and validation plan. The LLM is the "
-        "final coder in this exploratory pass. A human-coded recheck "
-        "on a stratified random sample (target: 10% of rows per "
-        "country, balanced across high / medium / low confidence) is "
-        "scheduled in the focused pass and will produce a per-variable "
-        "agreement rate against the LLM codes. Inter-rater reliability "
-        "between human reviewers (Cohen's κ on a shared subset) will "
-        "be reported alongside. The exploratory figures in this "
-        "document should be read as conditional on the LLM coding "
-        "until the validation pass is complete."
+        "Single-coder limitation and proposed validation. The LLM is "
+        "the final coder in this exploratory pass. For publication-"
+        "grade reliability we recommend a human-coded recheck on a "
+        "stratified random sample (suggested target: 10% of rows per "
+        "country, balanced across high / medium / low confidence), "
+        "producing a per-variable agreement rate against the LLM "
+        "codes. Inter-rater reliability between human reviewers "
+        "(Cohen's κ on a shared subset) can be reported alongside. "
+        "Scope, timeline, and reviewer assignment for this validation "
+        "pass are to be confirmed with the team; until it is complete, "
+        "the exploratory figures in this document should be read as "
+        "conditional on the LLM coding."
     )
 
     _add_heading(doc, "26.  Representative quotes", level=3)
