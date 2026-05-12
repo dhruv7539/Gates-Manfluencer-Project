@@ -763,9 +763,9 @@ def build():
             "Hostile-sexism rate: ~0%.",
             "Audience signature: high supports and extends-original-"
             "message uptake; audience reports personal disclosure and "
-            "learning / reflection at rates not seen elsewhere. This is "
-            "the strongest existing counter-narrative platform in the "
-            "data.",
+            "learning / reflection at rates not observed under the other "
+            "archetypes in this sample. The healing register is the "
+            "clearest counter-narrative signature in the data.",
         ],
     )
     _add_callout(doc,
