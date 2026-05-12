@@ -309,11 +309,285 @@ COLUMN_ALIAS: dict[tuple[str, str], str] = {
 
 # Multi-select aliases (column-aware)
 MULTI_ALIAS: dict[tuple[str, str], str] = {
+    # Q2 — primary topics (short forms; full options contain comma)
+    ("Q2. Primary topic(s)", "gender issues"): "Gender issues, e.g. equality",
+    ("Q2. Primary topic(s)", "social issues"): "Social issues, e.g. corruption",
+    ("Q2. Primary topic(s)", "dating"): "Dating/marriage",
+    ("Q2. Primary topic(s)", "marriage"): "Dating/marriage",
+    ("Q2. Primary topic(s)", "dating / sex"): "Dating/marriage",
+    ("Q2. Primary topic(s)", "family"): "Family/children",
+    ("Q2. Primary topic(s)", "religion"): "Religion/morality",
+    ("Q2. Primary topic(s)", "morality"): "Religion/morality",
+    ("Q2. Primary topic(s)", "fitness"): "Fitness/self-improvement",
+    ("Q2. Primary topic(s)", "self-improvement"): "Fitness/self-improvement",
+    ("Q2. Primary topic(s)", "money"): "Money/status",
+    ("Q2. Primary topic(s)", "status"): "Money/status",
+    ("Q2. Primary topic(s)", "friends"): "Friends/socializing",
+    ("Q2. Primary topic(s)", "socializing"): "Friends/socializing",
+
+    # Q3 — short forms
+    ("Q3. Type of content", "commentary content"): "Commentary/reaction content",
+    ("Q3. Type of content", "commentary"): "Commentary/reaction content",
+    ("Q3. Type of content", "conversational content"): "Interview/conversational content",
+    ("Q3. Type of content", "interview"): "Interview/conversational content",
+    ("Q3. Type of content", "motivational content"): "Motivational/self-help content",
+    ("Q3. Type of content", "self-help"): "Motivational/self-help content",
+    ("Q3. Type of content", "motivational/self help content"): "Motivational/self-help content",
+
+    # Q7 — directives
+    ("Q7. What men do or need to do", "no applicable"): "Not applicable",
+
+    # Q8 — problems
     ("Q8. Problem identified", "mens behavior"): "Men's behavior",
     ("Q8. Problem identified", "men behavior"): "Men's behavior",
-    ("Q8. Problem identified",
-     "kenyan or nigerian political/social problems"):
+    ("Q8. Problem identified", "women's behavior"): "Women/feminism",
+    ("Q8. Problem identified", "women / women's behavior"): "Women/feminism",
+    ("Q8. Problem identified", "mental health"): "Mental health/emotional struggle",
+    ("Q8. Problem identified", "mental health / kenyan cultural problems"):
+        "Mental health/emotional struggle, Kenyan or Nigerian political/social problems",
+    ("Q8. Problem identified", "kenyan cultural problems"):
         "Kenyan or Nigerian political/social problems",
+    ("Q8. Problem identified", "general political/social/cultural problems"):
+        "Global political/social/cultural problems",   # 'General' typo for 'Global'
+    ("Q8. Problem identified", "kenyan or nigerian political/social problems"):
+        "Kenyan or Nigerian political/social problems",
+
+    # Q10 — communication
+    ("Q10. Communication mode", "commentary content"): "Commentary/opinion",
+    ("Q10. Communication mode", "commentary"): "Commentary/opinion",
+    ("Q10. Communication mode", "advice"): "Advice/instruction",
+    ("Q10. Communication mode", "instruction"): "Advice/instruction",
+    ("Q10. Communication mode", "news"): "News/telling facts",
+    ("Q10. Communication mode", "facts"): "News/telling facts",
+    ("Q10. Communication mode", "humor"): "Humor/satire",
+    ("Q10. Communication mode", "satire"): "Humor/satire",
+
+    # Q11 — audience needs
+    ("Q11. Audience needs", "identity construction"): "Self expression/identity construction",
+    ("Q11. Audience needs", "self expression"): "Self expression/identity construction",
+    ("Q11. Audience needs", "connetion/social interaction"): "Connection/social interaction",
+    ("Q11. Audience needs", "connection"): "Connection/social interaction",
+    ("Q11. Audience needs", "social interaction"): "Connection/social interaction",
+    ("Q11. Audience needs", "entertainment"): "Entertainment/escapism",
+    ("Q11. Audience needs", "escapism"): "Entertainment/escapism",
+
+    # Q12 — claim support
+    ("Q12. How claims are supported", "generalizations about women"):
+        "Generalizations about men/women",
+    ("Q12. How claims are supported", "generalizations about men"):
+        "Generalizations about men/women",
+    ("Q12. How claims are supported", "social observations"):
+        "Cultural/social observations",
+    ("Q12. How claims are supported", "cultural observations"):
+        "Cultural/social observations",
+    ("Q12. How claims are supported", "facts"): "Facts/statistics",
+    ("Q12. How claims are supported", "statistics"): "Facts/statistics",
+    ("Q12. How claims are supported", "stories about women"):
+        "Stories about men/women",
+    ("Q12. How claims are supported", "stories about men"):
+        "Stories about men/women",
+    ("Q12. How claims are supported", "moral claims"): "Moral/religious claims",
+    ("Q12. How claims are supported", "religious claims"): "Moral/religious claims",
+
+    # Q13 — justifications
+    ("Q13. How claims are justified", "common sense"): "Presented as common sense",
+    ("Q13. How claims are justified", "religion"): "References religion/tradition",
+    ("Q13. How claims are justified", "tradition"): "References religion/tradition",
+    ("Q13. How claims are justified", "anecdotes"): "Anecdotal examples",
+    ("Q13. How claims are justified", "external sources"):
+        "References external sources, such as other influencers",
+    ("Q13. How claims are justified", "data"): "References data",
+
+    # Q18a — CTA types: the "Calls for men/women to follow more X gender norms"
+    # phrases coders wrote freely — map to "Other" with a note since these
+    # don't match any standard CTA enum.
+    ("Q18a. Types of calls to action",
+     "calls for men to follow more traditional gender norms"): "Other",
+    ("Q18a. Types of calls to action",
+     "calls for men to follow more equitable gender norms"): "Other",
+    ("Q18a. Types of calls to action",
+     "calls for women to follow more traditional gender norms"): "Other",
+    ("Q18a. Types of calls to action",
+     "calls for women to follow more equitable gender norms"): "Other",
+    ("Q18a. Types of calls to action",
+     "calls for politicians or social figures to do something"):
+        "Calls for political / social action",
+    ("Q18a. Types of calls to action", "dominate more"): "Other",
+
+    # Q7 — typos
+    ("Q7. What men do or need to do", "men need to dominate/ead"):
+        "Men need to dominate/lead",
+    ("Q7. What men do or need to do", "men need to be dominate / lead more"):
+        "Men need to dominate/lead",
+    ("Q7. What men do or need to do", "men need to now show emotions"):
+        "Men need to not show emotions",   # 'now' was a typo for 'not'
+    ("Q7. What men do or need to do",
+     "men need to be more emotionally open and heal"):
+        "Men need to be emotionally open",
+    ("Q7. What men do or need to do",
+     "men need to be more emotionally open"):
+        "Men need to be emotionally open",
+    ("Q7. What men do or need to do", "mixed"): "Mixed/unclear",
+    ("Q7. What men do or need to do", "unclear"): "Mixed/unclear",
+
+    # Q8 — shorter forms / typos
+    ("Q8. Problem identified", "nigerian cultural problems"):
+        "Kenyan or Nigerian political/social problems",
+    ("Q8. Problem identified", "kenyan cultural problems"):
+        "Kenyan or Nigerian political/social problems",
+    ("Q8. Problem identified", "no problem is identified"):
+        "No clear problem is identified",
+    ("Q8. Problem identified", "women and"): "Women/feminism",
+
+    # Q9 — short forms
+    ("Q9. Solution proposed", "more respect for men"):
+        "More equality/respect for men",
+    ("Q9. Solution proposed", "more respect for women"):
+        "More equality/respect for women",
+
+    # Q10 — short forms
+    ("Q10. Communication mode", "opinion"): "Commentary/opinion",
+    ("Q10. Communication mode", "conversational content"):
+        "Personal story",   # closest, but flag if coder meant interview
+    ("Q10. Communication mode", "advice / commentary / opinion"):
+        "Advice/instruction, Commentary/opinion",
+    ("Q10. Communication mode", "commentary / debate"):
+        "Commentary/opinion, Debate/argument",
+    ("Q10. Communication mode", "commentary /"): "Commentary/opinion",
+
+    # Q12 — fragments
+    ("Q12. How claims are supported", "/ social observations"):
+        "Cultural/social observations",
+
+    # Q13 — short forms
+    ("Q13. How claims are justified", "references external sources"):
+        "References external sources, such as other influencers",
+
+    # Q2 — mashed multi-options
+    ("Q2. Primary topic(s)", "marriage and gender issues"):
+        "Dating/marriage, Gender issues, e.g. equality",
+    ("Q2. Primary topic(s)", "social issues / corruption"):
+        "Social issues, e.g. corruption",
+    ("Q2. Primary topic(s)", "gender issues / equality"):
+        "Gender issues, e.g. equality",
+
+    # Q3 — multi mashes
+    ("Q3. Type of content", "commentary / conversational content"):
+        "Commentary/reaction content, Interview/conversational content",
+    ("Q3. Type of content", "self-help content"): "Motivational/self-help content",
+    ("Q3. Type of content", "reaction content"): "Commentary/reaction content",
+    ("Q3. Type of content", "commentary/reaction"): "Commentary/reaction content",
+    ("Q3. Type of content", "commentary / self-help content"):
+        "Commentary/reaction content, Motivational/self-help content",
+
+    # Q1a typos
+    ("Q1a. Attention-getting strategies", "others"): "Other",
+    ("Q1a. Attention-getting strategies", "humor/sarcasm"): "Humor or sarcasm",
+    ("Q1a. Attention-getting strategies", "uses all caps"): "Use of all CAPS",
+
+    # Q2 typos
+    ("Q2. Primary topic(s)", "mental heath"): "Mental health",
+    ("Q2. Primary topic(s)", "family and religion"):
+        "Family/children, Religion/morality",
+    ("Q2. Primary topic(s)", "family and children"): "Family/children",
+    ("Q2. Primary topic(s)", "religion and morality"): "Religion/morality",
+    ("Q2. Primary topic(s)", "gender issues / morality"):
+        "Gender issues, e.g. equality, Religion/morality",
+    ("Q2. Primary topic(s)", "gender issues / marriage"):
+        "Gender issues, e.g. equality, Dating/marriage",
+    ("Q2. Primary topic(s)", "gender issues / dating"):
+        "Gender issues, e.g. equality, Dating/marriage",
+    ("Q2. Primary topic(s)", "family / gender issues"):
+        "Family/children, Gender issues, e.g. equality",
+    ("Q2. Primary topic(s)", "children / family / gender issues"):
+        "Family/children, Gender issues, e.g. equality",
+    ("Q2. Primary topic(s)", "family / social issues"):
+        "Family/children, Social issues, e.g. corruption",
+    ("Q2. Primary topic(s)", "gemder issues and family (parenting)"):
+        "Gender issues, e.g. equality, Family/children",
+    ("Q2. Primary topic(s)", "corruption / family trauma"):
+        "Social issues, e.g. corruption, Family/children",
+    ("Q2. Primary topic(s)", "amongst men / gender issues"):
+        "Gender issues, e.g. equality",
+
+    # Q7 typos
+    ("Q7. What men do or need to do", "not applicabe"): "Not applicable",
+    ("Q7. What men do or need to do", "men need to be dominant/lead"):
+        "Men need to dominate/lead",
+    ("Q7. What men do or need to do", "men need to build community"): "Other",
+    ("Q7. What men do or need to do",
+     "men need to know they're allowed to be emotionally open"):
+        "Men need to be emotionally open",
+    ("Q7. What men do or need to do", "unlclear"): "Mixed/unclear",
+    ("Q7. What men do or need to do", "men need to not show emotion"):
+        "Men need to not show emotions",
+    ("Q7. What men do or need to do", "not to date \"born again\" women"):
+        "Other",
+
+    # Q8 — Nigerian/Kenyan cultural problem variants
+    ("Q8. Problem identified", "nigerian culture problems"):
+        "Kenyan or Nigerian political/social problems",
+    ("Q8. Problem identified", "nigerian culture issues"):
+        "Kenyan or Nigerian political/social problems",
+    ("Q8. Problem identified", "nigerian culture and social issues"):
+        "Kenyan or Nigerian political/social problems",
+    ("Q8. Problem identified", "nigerian social and cultural problems"):
+        "Kenyan or Nigerian political/social problems",
+    ("Q8. Problem identified", "nigerian social & culture issues"):
+        "Kenyan or Nigerian political/social problems",
+    ("Q8. Problem identified", "kenyan social & cultural problems"):
+        "Kenyan or Nigerian political/social problems",
+    ("Q8. Problem identified", "men''s behavior"): "Men's behavior",
+    ("Q8. Problem identified", "women"): "Women/feminism",
+    ("Q8. Problem identified", "mental health and emotional struggle"):
+        "Mental health/emotional struggle",
+    ("Q8. Problem identified", "global social issue of the patriarchy in particular"):
+        "Global political/social/cultural problems",
+
+    # Q9 — solution variants
+    ("Q9. Solution proposed", "more emotional growth"):
+        "More emotional growth/healing",
+    ("Q9. Solution proposed", "more emotional growth and healing in both parties of a marriage"):
+        "More emotional growth/healing",
+    ("Q9. Solution proposed", "more emotional growth for both partners in marriage"):
+        "More emotional growth/healing",
+
+    # Q10 — fragments
+    ("Q10. Communication mode", "commenary/opinion"): "Commentary/opinion",
+    ("Q10. Communication mode", "commentary content /"): "Commentary/opinion",
+    ("Q10. Communication mode", "/ commentary"): "Commentary/opinion",
+
+    # Q11 — fragments
+    ("Q11. Audience needs", "connection / self-expression"):
+        "Connection/social interaction, Self expression/identity construction",
+
+    # Q12 typos / variants
+    ("Q12. How claims are supported", "generalizations about men and women"):
+        "Generalizations about men/women",
+    ("Q12. How claims are supported", "moral / religous claims"):
+        "Moral/religious claims",
+    ("Q12. How claims are supported", "anecdotal examples"): "Personal experience",
+    ("Q12. How claims are supported", "generalization about relationships"):
+        "Generalizations about men/women",
+    ("Q12. How claims are supported", "cultura/social observations"):
+        "Cultural/social observations",
+
+    # Q13 — typos
+    ("Q13. How claims are justified", "anecdotal exampled"): "Anecdotal examples",
+    ("Q13. How claims are justified", "anecdotal exmaples"): "Anecdotal examples",
+    ("Q13. How claims are justified", "anectdotal exmaples / religous refrences"):
+        "Anecdotal examples, References religion/tradition",
+    ("Q13. How claims are justified", "refrences religion"):
+        "References religion/tradition",
+
+    # Q18a
+    ("Q18a. Types of calls to action", "calls for audience to share the content"):
+        "Calls for audience to share content",
+    ("Q18a. Types of calls to action",
+     "calls for women to follow more traditional gender norm"): "Other",
+    ("Q18a. Types of calls to action",
+     "calls for reading the influencer's content with an open mind"):
+        "Calls for audience to take action in their own life",
 }
 
 
@@ -321,6 +595,9 @@ def _strip(value: object) -> str:
     if value is None or (isinstance(value, float) and pd.isna(value)):
         return ""
     s = str(value).replace("\xa0", " ").strip()
+    # Normalize unicode quotes / apostrophes so "Men's" matches "Men's"
+    s = s.replace("’", "'").replace("‘", "'")
+    s = s.replace("“", '"').replace("”", '"')
     s = re.sub(r"\s+", " ", s)
     # drop a single trailing period if not part of an ellipsis
     if s.endswith(".") and not s.endswith("..."):
@@ -356,33 +633,59 @@ def _canon_single(col: str, value: str) -> str:
 
 
 def _canon_multi(col: str, value: str) -> str:
-    """Clean a multi-select cell. Splits on comma, normalizes each part
-    against the column's enum, and joins back with ', '."""
+    """Clean a multi-select cell. Uses longest-enum-match-first so that
+    enum options legitimately containing commas (e.g., 'Gender issues,
+    e.g. equality') are not split apart."""
     if not value:
         return ""
-    parts = [p.strip() for p in value.split(",")]
-    parts = [p for p in parts if p]
-    lookup = MULTI_LOOKUP.get(col, {})
-    cleaned: list[str] = []
-    for part in parts:
-        low = part.lower().rstrip(".").strip()
+    enum = MULTI_SELECT_ENUMS.get(col, [])
+    found: list[str] = []
+    remaining = " " + value + " "
+    # try longest enum options first so multi-word options consume tokens
+    # before shorter substrings can claim them
+    for opt in sorted(enum, key=len, reverse=True):
+        # Word-bounded match to avoid e.g. "Men's behavior" matching
+        # the substring "men's behavior" inside "Women's Behavior".
+        pattern = re.compile(
+            r"(?<![A-Za-z0-9])" + re.escape(opt) + r"(?![A-Za-z0-9])",
+            flags=re.IGNORECASE,
+        )
+        for _ in range(20):
+            m = pattern.search(remaining)
+            if not m:
+                break
+            found.append(opt)
+            remaining = remaining[: m.start()] + " | " + remaining[m.end():]
+    # leftover after pulling out known enum options
+    leftovers = [t.strip(" ,.;|") for t in re.split(r",", remaining)]
+    leftovers = [t for t in leftovers if t and t != "|"]
+    # apply per-column aliases to leftovers, then fall back to as-is
+    for t in leftovers:
+        low = t.lower().rstrip(".").strip()
         if (col, low) in MULTI_ALIAS:
-            cleaned.append(MULTI_ALIAS[(col, low)])
+            found.append(MULTI_ALIAS[(col, low)])
             continue
-        if low in lookup:
-            cleaned.append(lookup[low])
-            continue
-        squeezed = re.sub(r"[\s/]+", "", low)
-        if squeezed in lookup:
-            cleaned.append(lookup[squeezed])
-            continue
-        cleaned.append(part)
+        # also try generic alias table for shared variants
+        for (alias_col, alias_low), alias_val in MULTI_ALIAS.items():
+            if alias_col == col and alias_low == low:
+                found.append(alias_val); break
+        else:
+            # try squeezed match
+            lookup = MULTI_LOOKUP.get(col, {})
+            squeezed = re.sub(r"[\s/]+", "", low)
+            if squeezed in lookup:
+                found.append(lookup[squeezed])
+            elif low in lookup:
+                found.append(lookup[low])
+            else:
+                # preserve unmatched token verbatim
+                found.append(t)
     # dedupe while preserving order
     seen: set[str] = set()
     result: list[str] = []
-    for c in cleaned:
-        key = c.lower()
-        if key not in seen:
+    for c in found:
+        key = c.lower().strip()
+        if key and key not in seen:
             seen.add(key)
             result.append(c)
     return ", ".join(result)
