@@ -398,21 +398,14 @@ MULTI_ALIAS: dict[tuple[str, str], str] = {
         "References external sources, such as other influencers",
     ("Q13. How claims are justified", "data"): "References data",
 
-    # Q18a — CTA types: the "Calls for men/women to follow more X gender norms"
-    # phrases coders wrote freely — map to "Other" with a note since these
-    # don't match any standard CTA enum.
-    ("Q18a. Types of calls to action",
-     "calls for men to follow more traditional gender norms"): "Other",
-    ("Q18a. Types of calls to action",
-     "calls for men to follow more equitable gender norms"): "Other",
-    ("Q18a. Types of calls to action",
-     "calls for women to follow more traditional gender norms"): "Other",
-    ("Q18a. Types of calls to action",
-     "calls for women to follow more equitable gender norms"): "Other",
+    # Q18a — coders wrote free-text categories not in the enum. We do NOT
+    # auto-map these to "Other" because that would lose the coder's intent
+    # and make Pass-6 in the recheck script falsely report
+    # "Other without explanation". Instead these values are preserved
+    # verbatim and surface in Pass 2 of the recheck for human review.
     ("Q18a. Types of calls to action",
      "calls for politicians or social figures to do something"):
         "Calls for political / social action",
-    ("Q18a. Types of calls to action", "dominate more"): "Other",
 
     # Q7 — typos
     ("Q7. What men do or need to do", "men need to dominate/ead"):

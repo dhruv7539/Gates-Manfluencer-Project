@@ -228,28 +228,38 @@ def run() -> None:
 
     # PASS 3 — Q4=No but Q5 substantive
     for _, row in df.iterrows():
-        q4 = str(row.get("Q4. Addresses masculinity / gender norms",
-                         "")).strip().lower()
+        q4_raw = row.get("Q4. Addresses masculinity / gender norms")
+        if is_empty(q4_raw):
+            continue
+        q4 = str(q4_raw).strip().lower()
         if q4 != "no":
             continue
-        q5 = str(row.get("Q5. Type of masculinity / gender norms",
-                         "")).strip()
-        if q5 and "does not address" not in q5.lower():
+        q5_raw = row.get("Q5. Type of masculinity / gender norms")
+        if is_empty(q5_raw):
+            continue
+        q5 = str(q5_raw).strip()
+        if "does not address" not in q5.lower():
             add(3, "HIGH", row, "Q5", q5,
                 "Q4 = No but Q5 has a substantive orientation answer "
                 "(should be 'Does not address...' or blank)")
 
     # PASS 4 — Q1=Yes but Q1a blank
     for _, row in df.iterrows():
-        q1 = str(row.get("Q1. Attention-getter (Yes/No)", "")).strip().lower()
-        if q1 == "yes" and is_empty(row.get("Q1a. Attention-getting strategies")):
+        q1_raw = row.get("Q1. Attention-getter (Yes/No)")
+        if is_empty(q1_raw):
+            continue
+        if str(q1_raw).strip().lower() == "yes" and \
+           is_empty(row.get("Q1a. Attention-getting strategies")):
             add(4, "MED", row, "Q1a", "(empty)",
                 "Q1 = Yes but Q1a strategies are blank")
 
     # PASS 5 — Q18=Yes but Q18a blank
     for _, row in df.iterrows():
-        q18 = str(row.get("Q18. Calls to action present", "")).strip().lower()
-        if q18 == "yes" and is_empty(row.get("Q18a. Types of calls to action")):
+        q18_raw = row.get("Q18. Calls to action present")
+        if is_empty(q18_raw):
+            continue
+        if str(q18_raw).strip().lower() == "yes" and \
+           is_empty(row.get("Q18a. Types of calls to action")):
             add(5, "MED", row, "Q18a", "(empty)",
                 "Q18 = Yes but Q18a CTA types are blank")
 
@@ -325,27 +335,35 @@ def run() -> None:
 
     # PASS 13 — Q1=No but Q1a has strategies (logical contradiction)
     for _, row in df.iterrows():
-        q1 = str(row.get("Q1. Attention-getter (Yes/No)", "")).strip().lower()
-        q1a = row.get("Q1a. Attention-getting strategies")
-        if q1 == "no" and not is_empty(q1a):
-            add(13, "MED", row, "Q1a", str(q1a),
+        q1_raw = row.get("Q1. Attention-getter (Yes/No)")
+        if is_empty(q1_raw):
+            continue
+        if str(q1_raw).strip().lower() == "no" and \
+           not is_empty(row.get("Q1a. Attention-getting strategies")):
+            add(13, "MED", row, "Q1a",
+                str(row.get("Q1a. Attention-getting strategies")),
                 "Q1 = No but Q1a lists strategies (logical contradiction)")
 
     # PASS 14 — Q18=No but Q18a has CTAs
     for _, row in df.iterrows():
-        q18 = str(row.get("Q18. Calls to action present", "")).strip().lower()
-        q18a = row.get("Q18a. Types of calls to action")
-        if q18 == "no" and not is_empty(q18a):
-            add(14, "MED", row, "Q18a", str(q18a),
+        q18_raw = row.get("Q18. Calls to action present")
+        if is_empty(q18_raw):
+            continue
+        if str(q18_raw).strip().lower() == "no" and \
+           not is_empty(row.get("Q18a. Types of calls to action")):
+            add(14, "MED", row, "Q18a",
+                str(row.get("Q18a. Types of calls to action")),
                 "Q18 = No but Q18a lists CTA types (logical contradiction)")
 
     # PASS 15 — Q4 != No but Q5 is "Does not address..."
     for _, row in df.iterrows():
-        q4 = str(row.get("Q4. Addresses masculinity / gender norms",
-                         "")).strip().lower()
-        q5 = str(row.get("Q5. Type of masculinity / gender norms",
-                         "")).strip().lower()
-        if q4 and q4 != "no" and "does not address" in q5:
+        q4_raw = row.get("Q4. Addresses masculinity / gender norms")
+        q5_raw = row.get("Q5. Type of masculinity / gender norms")
+        if is_empty(q4_raw) or is_empty(q5_raw):
+            continue
+        q4 = str(q4_raw).strip().lower()
+        q5 = str(q5_raw).strip().lower()
+        if q4 != "no" and "does not address" in q5:
             add(15, "MED", row, "Q5", q5,
                 "Q4 says masculinity is addressed but Q5 = 'Does not address...' "
                 "(logical contradiction)")
