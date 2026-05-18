@@ -1,9 +1,10 @@
-# Filtering
+# Kenya audience comment filtering
 
-Comment-filtering workbench for the masculinity study. Takes raw audience
-engagement workbooks (Kenya + Nigeria), applies keyword- and
-linguistic-signal-based filters, and produces per-piece "kept" workbooks
-for downstream coding.
+Kenya-only scripts for the Gates Manfluencer project. Applies keyword- and
+linguistic-signal-based filters to raw audience engagement workbooks and
+produces per-piece kept workbooks for downstream coding.
+
+(Nigeria filtering lives under `Nigeria/scripts/` in this repo.)
 
 ## Layout
 
