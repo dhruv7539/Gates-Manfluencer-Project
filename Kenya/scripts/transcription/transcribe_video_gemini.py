@@ -7,7 +7,6 @@ from pytubefix import YouTube
 from google import genai
 from google.genai import types
 
-API_KEY = "AIzaSyAu1wqxV9UZ_8QnrDIApWXyxrKiYnFGThY"
 VIDEO_URL = "https://www.youtube.com/watch?v=rAIQEqQ2WTo"
 SEGMENT_MINUTES = 15
 
@@ -137,11 +136,19 @@ def get_last_lines(text, n=5):
 
 
 def main():
+    api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+    if not api_key:
+        print(
+            "Missing API key. Set GEMINI_API_KEY (or GOOGLE_API_KEY) in your environment.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
     with tempfile.TemporaryDirectory() as tmpdir:
         audio_path, duration, yt_title = download_audio(VIDEO_URL, tmpdir)
         segments = split_audio(audio_path, tmpdir, duration)
 
-        client = genai.Client(api_key=API_KEY)
+        client = genai.Client(api_key=api_key)
 
         print("\nCleaning up old uploaded files...")
         cleanup_old_files(client)
