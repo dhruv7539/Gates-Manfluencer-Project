@@ -1,0 +1,8 @@
+Score,How calculated,Value,Interpretation
+Overall exact agreement,Average exact match across all scored columns,0.299332,Weak agreement
+Average Krippendorff's alpha,Average alpha across single-answer columns,0.125631,Weak agreement
+Average Jaccard,Average Jaccard across multi-select columns,0.248639,Weak agreement
+Final combined agreement,Average of single-answer percent agreements and multi-select Jaccard scores,0.355528,Weak agreement
+Overlapping Content IDs,Rows present in both files by Content ID,200,
+Rows only in human file,Using ID column 'Content ID',0,
+Rows only in LLM file,Using ID column 'Content ID',0,

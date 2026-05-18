@@ -1,0 +1,1 @@
+url,twitterUrl,id,text,retweetCount,replyCount,likeCount,quoteCount,createdAt,bookmarkCount,isRetweet,isQuote,source_file,source_text_col,comment_text,comment_text_norm,mode,word_count,has_gender_hint,has_stance_hint,has_experience_hint,has_learning_hint,has_change_hint,has_reinforcement_hint,has_action_hint,has_info_hint,has_identity_hint,keep,keep_reason

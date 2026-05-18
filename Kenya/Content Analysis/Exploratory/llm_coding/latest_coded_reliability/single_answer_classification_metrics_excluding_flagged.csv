@@ -1,0 +1,10 @@
+Question ID,Question,Valid rows,Accuracy,Macro precision,Macro recall,Macro F1
+Q1,Q1. Does the content start with an attention-getter? ,200,0.660000,0.663121,0.539931,0.487643
+Q4,Q4. Does this content address masculinity / gender norms?,200,0.565000,0.448090,0.378788,0.483452
+Q5,"Q5. If yes, how would you characterize the type of masculinity or gender norms addressed?",199,0.618090,0.577862,0.485526,0.526756
+Q6,"Q6. If yes, does the content address what men should do or be in society?",199,0.492462,0.474413,0.319949,0.542500
+Q14,Q14. What is the general sentiment toward men?,200,0.245000,0.399622,0.278737,0.220659
+Q15,Q15. What is the general sentiment toward women?,200,0.690000,0.390641,0.404209,0.713182
+Q16,Q16. What is the general sentiment toward traditional gender norms?,200,0.575000,0.299149,0.368334,0.712615
+Q17,Q17. Does the content use fear or threat to help drive the message home?,200,0.645000,0.370131,0.364766,0.350427
+Q18,Q18. Does the content include any calls to action to the audience?,162,0.734568,0.665147,0.591642,0.595447

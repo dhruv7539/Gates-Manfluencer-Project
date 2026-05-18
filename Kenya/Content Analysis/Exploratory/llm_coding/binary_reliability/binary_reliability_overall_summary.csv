@@ -1,0 +1,9 @@
+Metric,Value
+Single-answer average percent agreement,0.993079
+Single-answer average Krippendorff alpha,0.986140
+Multi-select average binary percent agreement,0.873755
+Multi-select average binary Krippendorff alpha,0.261608
+Overall average question percent agreement,0.927451
+Overall average question Krippendorff alpha,0.587648
+Compared Content IDs,200
+Open-text columns excluded,"Q10A, Q12A, Q13A, Q18B, Q1B, Q2A, Q3A, Q7A, Q8A, Q9A"

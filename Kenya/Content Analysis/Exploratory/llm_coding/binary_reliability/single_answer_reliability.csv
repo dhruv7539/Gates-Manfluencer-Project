@@ -1,0 +1,10 @@
+Question ID,Question,Type,Valid rows,Percent agreement,Krippendorff alpha
+Q1,Q1. Does the content start with an attention-getter? ,single_nominal,200,1.000000,1.000000
+Q4,Q4. Does this content address masculinity / gender norms?,single_nominal,200,1.000000,1.000000
+Q5,"Q5. If yes, how would you characterize the type of masculinity or gender norms addressed?",single_nominal,153,1.000000,1.000000
+Q6,"Q6. If yes, does the content address what men should do or be in society?",single_nominal,153,0.947712,0.896746
+Q14,Q14. What is the general sentiment toward men?,single_nominal,200,1.000000,1.000000
+Q15,Q15. What is the general sentiment toward women?,single_nominal,200,1.000000,1.000000
+Q16,Q16. What is the general sentiment toward traditional gender norms?,single_nominal,200,1.000000,1.000000
+Q17,Q17. Does the content use fear or threat to help drive the message home?,single_nominal,200,1.000000,1.000000
+Q18,Q18. Does the content include any calls to action to the audience?,single_nominal,200,0.990000,0.978518

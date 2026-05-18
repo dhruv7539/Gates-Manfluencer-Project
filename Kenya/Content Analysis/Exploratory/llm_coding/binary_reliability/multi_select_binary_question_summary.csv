@@ -1,0 +1,12 @@
+Question ID,Question,Type,Options scored,Mean binary percent agreement,Mean binary Krippendorff alpha
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_binary_options,9,0.954444,0.398359
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_binary_options,11,0.854545,0.191530
+Q3,Q3. Characterize the type of content.,multi_binary_options,4,0.935000,0.610454
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_binary_options,11,0.910909,0.260166
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_binary_options,9,0.782778,0.071501
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_binary_options,10,0.915000,0.416247
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_binary_options,8,0.841875,0.236168
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_binary_options,7,0.760000,-0.050342
+Q12,Q12. How does the content support its claims or messages?,multi_binary_options,9,0.856111,0.140988
+Q13,Q13. How are the claims justified?,multi_binary_options,7,0.827143,0.187000
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_binary_options,10,0.973500,0.415619

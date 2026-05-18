@@ -1,0 +1,21 @@
+Question ID,Type,Metric,Winning score,Percent/exact agreement,Jaccard,Alpha,Valid rows,Source file
+Q1,Single-answer,Krippendorff alpha,0.324353,0.670000,,0.324353,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/Final_LLM_Coding_Content_Analysis_-_Kenya_Coded - Final_LLM_Coding_Content_Analysis_-_Kenya_Coded.csv
+Q10,Multi-select,Jaccard,0.548333,0.375000,0.548333,,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/Final_LLM_Coding_Content_Analysis_-_Kenya_Coded - Final_LLM_Coding_Content_Analysis_-_Kenya_Coded.csv
+Q11,Multi-select,Jaccard,0.394167,0.065000,0.394167,,200,/Users/dhruvbhanderi/Documents/Gates cursor/llm_coding/outputs/Final_LLM_Coding_Kenya_coded.csv
+Q12,Multi-select,Jaccard,0.642083,0.545000,0.642083,,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/Final_LLM_Coding_Content_Analysis_-_Kenya_Coded - Final_LLM_Coding_Content_Analysis_-_Kenya_Coded.csv
+Q13,Multi-select,Jaccard,0.547500,0.475000,0.547500,,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/Final_LLM_Coding_Content_Analysis_-_Kenya_Coded - Final_LLM_Coding_Content_Analysis_-_Kenya_Coded.csv
+Q14,Single-answer,Krippendorff alpha,0.208745,0.370000,,0.208745,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/Final_LLM_Coding_Content_Analysis_-_Kenya_Coded - Final_LLM_Coding_Content_Analysis_-_Kenya_Coded.csv
+Q15,Single-answer,Krippendorff alpha,0.569619,0.710000,,0.569619,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/redo/Final%20LLM%20Coding%20Content%20Analysis%20-%20Kenya_completed.csv
+Q16,Single-answer,Krippendorff alpha,0.502738,0.645000,,0.502738,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/Final_LLM_Coding_Content_Analysis_-_Kenya_Coded - Final_LLM_Coding_Content_Analysis_-_Kenya_Coded.csv
+Q17,Single-answer,Krippendorff alpha,0.280265,0.690000,,0.280265,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/Final_LLM_Coding_Content_Analysis_-_Kenya_Coded - Final_LLM_Coding_Content_Analysis_-_Kenya_Coded.csv
+Q18,Single-answer,Krippendorff alpha,0.978518,0.990000,,0.978518,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/LLM Coding Content Analysis - LLM Kenya.csv
+Q18A,Multi-select,Jaccard,1.000000,1.000000,1.000000,,17,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/LLM_Coding_Content_Analysis_Kenya_unique_200_by_Content_ID.csv
+Q1A,Multi-select,Jaccard,0.503968,0.333333,0.503968,,21,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/redo/Final LLM Coding Content Analysis - Kenya_completed (3).csv
+Q2,Multi-select,Jaccard,0.545583,0.325000,0.545583,,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/Final_LLM_Coding_Content_Analysis_-_Kenya_Coded - Final_LLM_Coding_Content_Analysis_-_Kenya_Coded.csv
+Q3,Multi-select,Jaccard,0.866667,0.745000,0.866667,,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/LLM Coding Content Analysis - LLM Kenya.csv
+Q4,Single-answer,Krippendorff alpha,0.366565,0.655000,,0.366565,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/Final_LLM_Coding_Content_Analysis_-_Kenya_Coded - Final_LLM_Coding_Content_Analysis_-_Kenya_Coded.csv
+Q5,Single-answer,Krippendorff alpha,0.571520,0.748503,,0.571520,167,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/Final_LLM_Coding_Content_Analysis_-_Kenya_Coded - Final_LLM_Coding_Content_Analysis_-_Kenya_Coded.csv
+Q6,Single-answer,Krippendorff alpha,0.896746,0.947712,,0.896746,153,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/LLM Coding Content Analysis - LLM Kenya.csv
+Q7,Multi-select,Jaccard,0.350000,0.295000,0.350000,,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/redo/Final%20LLM%20Coding%20Content%20Analysis%20-%20Kenya_completed.csv
+Q8,Multi-select,Jaccard,0.406083,0.140000,0.406083,,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/redo/Final LLM Coding Content Analysis - Kenya_completed (3).csv
+Q9,Multi-select,Jaccard,0.631667,0.570000,0.631667,,200,/Users/dhruvbhanderi/Documents/USC/New Research Engineer/LLM Coding/LLM Coding Content Analysis - LLM Kenya.csv

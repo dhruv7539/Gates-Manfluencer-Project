@@ -1,0 +1,12 @@
+Question ID,Question,Options,Binary decisions,TP,FP,FN,TN,Micro accuracy,Micro precision,Micro recall,Micro F1,Macro option accuracy,Macro option precision,Macro option recall,Macro option F1
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",9,1800,9,5,81,1705,0.952222,0.642857,0.100000,0.173077,0.952222,0.843750,0.191920,0.454130
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,11,2167,268,144,105,1650,0.885095,0.650485,0.718499,0.682803,0.885095,0.679019,0.480600,0.573946
+Q3,Q3. Characterize the type of content.,4,568,93,67,80,328,0.741197,0.581250,0.537572,0.558559,0.741197,0.582393,0.455304,0.400206
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",11,2200,119,86,145,1850,0.895000,0.580488,0.450758,0.507463,0.895000,0.546793,0.306612,0.438947
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,9,1656,138,74,175,1269,0.849638,0.650943,0.440895,0.525714,0.849638,0.646409,0.352756,0.446406
+Q9,Q9. What solution is being proposed? Choose all that apply.,10,2000,112,106,138,1644,0.878000,0.513761,0.448000,0.478632,0.878000,0.546107,0.447100,0.447646
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,8,1600,162,59,136,1243,0.878125,0.733032,0.543624,0.624277,0.878125,0.603979,0.278522,0.498830
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,7,1400,196,177,158,869,0.760714,0.525469,0.553672,0.539202,0.760714,0.406967,0.271837,0.527878
+Q12,Q12. How does the content support its claims or messages?,9,1800,140,72,109,1479,0.899444,0.660377,0.562249,0.607375,0.899444,0.680305,0.339767,0.521086
+Q13,Q13. How are the claims justified?,7,1400,122,79,104,1095,0.869286,0.606965,0.539823,0.571429,0.869286,0.667553,0.348779,0.622270
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",10,1990,5,16,86,1883,0.948744,0.238095,0.054945,0.089286,0.948744,0.347222,0.124269,0.398551

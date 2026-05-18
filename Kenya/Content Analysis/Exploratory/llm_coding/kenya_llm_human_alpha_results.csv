@@ -1,0 +1,149 @@
+question_id,question,scoring_mode,option,n_items,observed_disagreement,expected_disagreement,krippendorff_alpha
+Q1,Q1. Does the content start with an attention-getter?,single_choice_nominal,,200,0.330000,0.487200,0.322660
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,Compelling question,200,0.085000,0.125887,0.324794
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,Use of all CAPS,200,0.095000,0.099487,0.045106
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,Humor or sarcasm,200,0.045000,0.043987,-0.023018
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,Shares something violent or gross,200,0.030000,0.048750,0.384615
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,Shares something sexual,200,0.060000,0.085950,0.301920
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,Shares something surprising,200,0.215000,0.251487,0.145087
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,Uses a news headline or social media trend as opener,200,0.015000,0.014887,-0.007557
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,Interesting visual or meme,200,0.000000,0.000000,
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,Other,200,0.120000,0.112800,-0.063830
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,use of all caps;humor or sarcasm,200,0.015000,0.014887,-0.007557
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,use of all caps;compelling question,200,0.005000,0.004987,-0.002506
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,shares something surprising;use of all caps,200,0.015000,0.014887,-0.007557
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,shares something surprising;shares something sexual,200,0.005000,0.004987,-0.002506
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,use of all caps;shares something surprising,200,0.005000,0.004987,-0.002506
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,use of all caps;shares something violent or gross,200,0.005000,0.004987,-0.002506
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,uses all caps,200,0.005000,0.004987,-0.002506
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,shares something sexual;use of all caps,200,0.005000,0.004987,-0.002506
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,shares something violent or gross;uses a news headline or social media trend as opener,200,0.005000,0.004987,-0.002506
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,shares something sexual;humor or sarcasm,200,0.005000,0.004987,-0.002506
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_binary_option,shares something surprising;humor or sarcasm,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,Dating/marriage,200,0.190000,0.438750,0.566952
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,Friends/socializing,200,0.040000,0.067550,0.407846
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,Family/children,200,0.130000,0.288750,0.549784
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,Money/status,200,0.070000,0.103950,0.326599
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,Fitness/self-improvement,200,0.005000,0.024687,0.797468
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,Mental health,200,0.145000,0.356888,0.593710
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,"Gender issues, e.g. equality",200,0.000000,0.000000,
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,"Social issues, e.g. corruption",200,0.000000,0.000000,
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,Religion/morality,200,0.065000,0.081387,0.201352
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,Gaming/technology,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,Other,200,0.055000,0.053487,-0.028278
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,gender issues,200,0.375000,0.433388,0.134724
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,dating / marriage,200,0.060000,0.058200,-0.030928
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,social issues,200,0.160000,0.233550,0.314922
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,e.g. equality,200,0.240000,0.313950,0.235547
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,dating,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,e.g. corruption,200,0.135000,0.167887,0.195890
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,mental heath,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,mental health & gender issues,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,dating / sex,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,family,200,0.010000,0.009950,-0.005025
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,mental health / trauma,200,0.010000,0.009950,-0.005025
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,social issues / corruption,200,0.010000,0.009950,-0.005025
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,family / social issues,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,money status,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,& mental health,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,corruption / family trauma,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,family / mental health,200,0.005000,0.004987,-0.002506
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_binary_option,mental health / gender issues,200,0.005000,0.004987,-0.002506
+Q3,Q3. Characterize the type of content.,single_choice_nominal,,198,0.611111,0.696039,0.122016
+Q4,Q4. Does this content address masculinity / gender norms?,single_choice_nominal,,200,0.350000,0.546375,0.359414
+Q5,"Q5. If yes, how would you characterize the type of masculinity or gender norms addressed?",single_choice_nominal,,167,0.353293,0.644627,0.451941
+Q6,"Q6. If yes, does the content address what men should do or be in society?",single_choice_nominal,,165,0.375758,0.538990,0.302849
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Men need to dominate/lead,200,0.200000,0.320000,0.375000
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Men need to provide/succeed,200,0.055000,0.090488,0.392181
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Men are disadvantaged/victims,200,0.050000,0.048750,-0.025641
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Men need to improve themselves,200,0.070000,0.103950,0.326599
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Men need to be fully self-reliant,200,0.090000,0.095000,0.052632
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Men need to be emotionally open,200,0.070000,0.187950,0.627561
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Men need to not show emotions,200,0.050000,0.058200,0.140893
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Men need to be equal partners,200,0.005000,0.014887,0.664148
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Mixed/unclear,200,0.040000,0.039200,-0.020408
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Other,200,0.135000,0.125887,-0.072386
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,Not applicable,200,0.330000,0.275550,-0.197605
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,men need to now show emotions,200,0.010000,0.009950,-0.005025
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,mixed,200,0.005000,0.004987,-0.002506
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,"not to date ""born again"" women",200,0.005000,0.004987,-0.002506
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,men need to be dominant/lead,200,0.005000,0.004987,-0.002506
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,men need to not show emotion,200,0.005000,0.004987,-0.002506
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,men need to be more emotionally open and heal,200,0.020000,0.019800,-0.010101
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,men need to build community,200,0.005000,0.004987,-0.002506
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,men need to dominate/ead,200,0.005000,0.004987,-0.002506
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_binary_option,men need to be more emotionally open,200,0.005000,0.004987,-0.002506
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,Kenyan or Nigerian political/social problems,200,0.125000,0.151388,0.174304
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,Global political/social/cultural problems,200,0.090000,0.085950,-0.047120
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,Western political/social influence,200,0.015000,0.014887,-0.007557
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,Women/feminism,200,0.210000,0.411800,0.490044
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,Men’s behavior,200,0.175000,0.159687,-0.095890
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,Economic/status pressure,200,0.045000,0.072187,0.376623
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,Mental health/emotional struggle,200,0.200000,0.313950,0.362956
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,No clear problem is identified,200,0.290000,0.261950,-0.107082
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,Other,200,0.150000,0.138750,-0.081081
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,men's behavior,200,0.285000,0.356888,0.201429
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,women / women's behavior,200,0.075000,0.072187,-0.038961
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,general political/social/cultural problems,200,0.055000,0.053487,-0.028278
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,mental health / kenyan cultural problems,200,0.075000,0.072187,-0.038961
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,stories about men/women,200,0.005000,0.004987,-0.002506
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,economic status/pressure,200,0.005000,0.004987,-0.002506
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,mental health,200,0.005000,0.004987,-0.002506
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,kenyan social & cultural problems,200,0.005000,0.004987,-0.002506
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,family/children,200,0.005000,0.004987,-0.002506
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_binary_option,cultural/social observations,200,0.005000,0.004987,-0.002506
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,Social or political change,200,0.045000,0.099487,0.547682
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,Assert dominance/control,200,0.165000,0.251487,0.343904
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,More wealth/status,200,0.020000,0.048750,0.589744
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,More self-discipline/fitness,200,0.070000,0.085950,0.185573
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,More emotional growth/healing,200,0.120000,0.247950,0.516031
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,More equality/respect for men,200,0.080000,0.076800,-0.041667
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,More equality/respect for women,200,0.030000,0.039200,0.234694
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,Building community,200,0.060000,0.112800,0.468085
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,No clear solution,200,0.330000,0.500000,0.340000
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,Other,200,0.130000,0.121550,-0.069519
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,assert dominance / control,200,0.020000,0.019800,-0.010101
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_binary_option,more emotional growth / healing,200,0.030000,0.029550,-0.015228
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,Advice/instruction,200,0.250000,0.411800,0.392909
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,Personal story,200,0.105000,0.377487,0.721845
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,Commentary/opinion,200,0.360000,0.498200,0.277399
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,Debate/argument,200,0.050000,0.048750,-0.025641
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,Humor/satire,200,0.005000,0.004987,-0.002506
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,Motivational speech,200,0.090000,0.085950,-0.047120
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,News/telling facts,200,0.030000,0.029550,-0.015228
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,Other,200,0.015000,0.024687,0.392405
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,debate / argument,200,0.075000,0.072187,-0.038961
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,mixed,200,0.005000,0.004987,-0.002506
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,commentary,200,0.005000,0.004987,-0.002506
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,commentary / motivational speech,200,0.010000,0.009950,-0.005025
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,commentary content,200,0.015000,0.014887,-0.007557
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,conversational content,200,0.015000,0.014887,-0.007557
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_binary_option,commentary content / motivational speech,200,0.005000,0.004987,-0.002506
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_select_binary_option,Entertainment/escapism,200,0.130000,0.121550,-0.069519
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_select_binary_option,Information seeking,200,0.555000,0.405388,-0.369060
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_select_binary_option,Connection/social interaction,200,0.275000,0.237187,-0.159420
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_select_binary_option,Self expression/identity construction,200,0.455000,0.351487,-0.294498
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_select_binary_option,Status seeking,200,0.120000,0.112800,-0.063830
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_select_binary_option,Documentation of events,200,0.005000,0.004987,-0.002506
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_select_binary_option,None of these apply,200,0.120000,0.112800,-0.063830
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_select_binary_option,connetion/social interaction,200,0.055000,0.053487,-0.028278
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_select_binary_option,identity construction,200,0.050000,0.048750,-0.025641
+Q12,Q12. How does the content support its claims or messages?,single_choice_nominal,,198,0.540404,0.807430,0.330711
+Q13,Q13. How are the claims justified?,single_choice_nominal,,200,0.525000,0.700750,0.250803
+Q14,Q14. What is the general sentiment toward men?,single_choice_nominal,,200,0.630000,0.794212,0.206761
+Q15,Q15. What is the general sentiment toward women?,single_choice_nominal,,200,0.300000,0.689912,0.565162
+Q16,Q16. What is the general sentiment toward traditional gender norms?,single_choice_nominal,,200,0.355000,0.712125,0.501492
+Q17,Q17. Does the content use fear or threat to help drive the message home?,single_choice_nominal,,200,0.310000,0.429638,0.278461
+Q18,Q18. Does the content include any calls to action to the audience?,single_choice_nominal,,200,0.210000,0.452150,0.535552
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,Calls for audience to like the content,200,0.000000,0.000000,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,Calls for audience to share the content,200,0.000000,0.000000,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,Calls for audience to follow the speaker on social media,200,0.000000,0.000000,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,Calls for men to follow more traditional gender norms,200,0.150000,0.301550,0.502570
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,Calls for men to follow more equitable gender norms,200,0.050000,0.076800,0.348958
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,Calls for women to follow more traditional gender norms,200,0.025000,0.024687,-0.012658
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,Calls for women to follow more equitable gender norms,200,0.005000,0.004987,-0.002506
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,Calls for politicians or social figures to do something,200,0.005000,0.034388,0.854598
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,Calls for audience to vote in a different way,200,0.000000,0.000000,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,Other,200,0.165000,0.214988,0.232514
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,calls for women to follow more traditional gender norm,200,0.005000,0.004987,-0.002506
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_binary_option,dominate more,200,0.010000,0.009950,-0.005025

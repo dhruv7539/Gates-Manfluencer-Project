@@ -1,0 +1,1002 @@
+Content ID,Question ID,Flag type,Original value,Cleaned value,Note
+EDDY-003,Q18B,shortened other specify,Calls for greater emotional intelligence within men.,Calls for greater emotional intelligence,Prompt requests 1-5 words
+RIX-017,Q8,normalized multi-select formatting,Economic status/pressure,Economic/status pressure,Standardized separators/case/order/exact labels
+RIX-070,Q2,normalized multi-select formatting,"Mental health, gender issues","Mental health, Gender issues",Standardized separators/case/order/exact labels
+RIX-070,Q18B,shortened other specify,Calls for men to be more emotionally open,Calls for men to be,Prompt requests 1-5 words
+RIX-080,Q2,normalized multi-select formatting,"Mental health, gender issues","Mental health, Gender issues",Standardized separators/case/order/exact labels
+RIX-083,Q2,normalized multi-select formatting,"Mental health, gender issues","Mental health, Gender issues",Standardized separators/case/order/exact labels
+RIX-083,Q7A,shortened other specify,Men need to express their emotions in which ever way they personally deem fit.,Men need to express their,Prompt requests 1-5 words
+RIX-083,Q9A,shortened other specify,Men being free to express their emotions how they deem fit,Men being free to express,Prompt requests 1-5 words
+RIX-086,Q2,normalized multi-select formatting,"Gender issues, social issues, Mental health","Mental health, Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-007,Q2,normalized multi-select formatting,"Gender issues, social issues","Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-011,Q2,normalized multi-select formatting,"Gender issues, social issues","Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-012,Q2,normalized multi-select formatting,"Gender issues, social issues, Dating/marriage","Dating/marriage, Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-019,Q2,normalized multi-select formatting,"Gender issues, social issues, Dating/marriage","Dating/marriage, Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-029,Q12,normalized multi-select formatting,Anecdotal examples,Stories about men/women,Standardized separators/case/order/exact labels
+KIBE-014,Q18,unresolved noncanonical value,Other,Other,Needs manual review; left as-is
+KIBE-014,Q18A,normalized multi-select formatting,Dominate more,Other,Standardized separators/case/order/exact labels
+KIBE-014,Q18,invalid Q18 value replaced,Other,Yes,Q18 only allows Yes/No
+KIBE-014,Q18B,missing other specify,,,Q18A includes Other but specify is blank
+KIBE-052,Q7,normalized multi-select formatting,Men need to dominate/ead,Men need to dominate/lead,Standardized separators/case/order/exact labels
+KIBE-052,Q18,unresolved noncanonical value,Other,Other,Needs manual review; left as-is
+KIBE-052,Q18A,normalized multi-select formatting,Dominate more,Other,Standardized separators/case/order/exact labels
+KIBE-052,Q18,invalid Q18 value replaced,Other,Yes,Q18 only allows Yes/No
+KIBE-052,Q18B,missing other specify,,,Q18A includes Other but specify is blank
+KIBE-061,Q2,normalized multi-select formatting,"Gender issues, social issues","Gender issues, Social issues",Standardized separators/case/order/exact labels
+KIBE-077,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+KIBE-091,Q7,normalized multi-select formatting,Men need to now show emotions,Men need to not show emotions,Standardized separators/case/order/exact labels
+KIBE-091,Q10,normalized multi-select formatting,"Personal story, commentary/opinion","Personal story, Commentary/opinion",Standardized separators/case/order/exact labels
+KIBE-091,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+1951561231522746625,Q7,normalized multi-select formatting,"Men need to dominate/lead, Men need to now show emotions","Men need to dominate/lead, Men need to not show emotions",Standardized separators/case/order/exact labels
+1951561231522746625,Q8,normalized multi-select formatting,"Men's behavior, Women/feminism","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+1951561231522746625,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+1951614290114310219,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+1954835680426635741,Q10,normalized multi-select formatting,"Advice/instruction, commentary/opinion","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+1954835680426635741,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+1954835680426635741,Q9A,shortened other specify,Unlearn what they previously thought about women loving men,Unlearn what they previously thought,Prompt requests 1-5 words
+1975245528242729101,Q1A,normalized multi-select formatting,Uses all CAPS,Use of all CAPS,Standardized separators/case/order/exact labels
+1975245528242729101,Q8,normalized multi-select formatting,"Men's behavior, Women/feminism","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+1975245528242729101,Q10,normalized multi-select formatting,"Advice/instruction, commentary/opinion","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+1975245528242729101,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+2040406554671829239,Q8,normalized multi-select formatting,"Men's behavior, Women/feminism","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+2040406554671829239,Q10,normalized multi-select formatting,"Advice/instruction, commentary/opinion","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+2040406554671829239,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+2040459874526433729,Q10,normalized multi-select formatting,"Advice/instruction, commentary/opinion","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+2040459874526433729,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+2046157177539162148,Q2,normalized multi-select formatting,"Gender issues, social issues","Gender issues, Social issues",Standardized separators/case/order/exact labels
+2046157177539162148,Q8,normalized multi-select formatting,"Men's behavior, Global political/social/cultural problems","Global political/social/cultural problems, Men's behavior",Standardized separators/case/order/exact labels
+2046157177539162148,Q10,normalized multi-select formatting,"Advice/instruction, commentary/opinion","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+2046157177539162148,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+2046157177539162148,Q13,normalized multi-select formatting,References external sources,References external sources such as other influencers,Standardized separators/case/order/exact labels
+2046157177539162148,Q7A,shortened other specify,Men need to not fall for women who pander to them.,Men need to not fall,Prompt requests 1-5 words
+2046157177539162148,Q18B,shortened other specify,Calls for men to watch out for pandering women.,Calls for men to watch,Prompt requests 1-5 words
+2048821238248669312,Q2,normalized multi-select formatting,"Gender issues, social issues","Gender issues, Social issues",Standardized separators/case/order/exact labels
+2048821238248669312,Q4,normalized label/case,Yes,"Yes, explicitly",Mapped to exact prompt label
+2048821238248669312,Q8,normalized multi-select formatting,"Men's behavior, Global political/social/cultural problems","Global political/social/cultural problems, Men's behavior",Standardized separators/case/order/exact labels
+2048821238248669312,Q10,normalized multi-select formatting,"Advice/instruction, commentary/opinion","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+2048821238248669312,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+2048821238248669312,Q7A,shortened other specify,Men need to not abuse other men,Men need to not abuse,Prompt requests 1-5 words
+2048821238248669312,Q18B,shortened other specify,Calls for men to not abuse other men.,Calls for men to not,Prompt requests 1-5 words
+1954188481585873209,Q10,normalized multi-select formatting,"Advice/instruction, commentary/opinion","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+1954188481585873209,Q11,normalized multi-select formatting,"Information seeking, connetion/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+RIX-081,Q10,normalized multi-select formatting,"Advice/instruction, commentary/opinion","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+2043969069993378270,Q8,normalized multi-select formatting,"Men's behavior, Women/feminism","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+2043969069993378270,Q11,normalized multi-select formatting,"Information seeking, connection/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+2043969069993378270,Q18B,shortened other specify,Calls for men to show more respect to women for their submission.,Calls for men to show,Prompt requests 1-5 words
+KIBE-002,Q2,normalized multi-select formatting,"Mental health, Dating/marriage","Dating/marriage, Mental health",Standardized separators/case/order/exact labels
+KIBE-002,Q1B,shortened other specify,Use of curse word.,Use of curse word,Prompt requests 1-5 words
+EDDY-036,Q2,normalized multi-select formatting,Mental heath,Mental health,Standardized separators/case/order/exact labels
+2048009544043758028,Q8,normalized multi-select formatting,"Men's behavior, Women/feminism","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+2048009544043758028,Q11,normalized multi-select formatting,"Information seeking, connection/social interaction","Information seeking, Connection/social interaction",Standardized separators/case/order/exact labels
+EDDY-061,Q2,normalized multi-select formatting,"Mental health, Fitness/self-improvement","Fitness/self-improvement, Mental health",Standardized separators/case/order/exact labels
+EDDY-061,Q5,normalized label/case,Does not address masculinity/gender norms,Does not address masculinity or gender norms,Mapped to exact prompt label
+EDDY-061,Q18B,shortened other specify,Calls for audience to engage failure,Calls for audience to engage,Prompt requests 1-5 words
+EDDY-012,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-012,Q3,normalized multi-select formatting,Commentary / Conversational Content,"Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+EDDY-012,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+EDDY-012,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-012,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+EDDY-012,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+EDDY-012,Q9,normalized multi-select formatting,No Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+EDDY-012,Q10,normalized multi-select formatting,Personal Story,Personal story,Standardized separators/case/order/exact labels
+EDDY-012,Q12,normalized multi-select formatting,Personal Experience,Personal experience,Standardized separators/case/order/exact labels
+EDDY-012,Q13,normalized multi-select formatting,Anecdotal Examples,Anecdotal examples,Standardized separators/case/order/exact labels
+EDDY-012,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-012,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-012,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+EDDY-034,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-034,Q3,normalized multi-select formatting,Commentary / Conversational Content,"Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+EDDY-034,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+EDDY-034,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-034,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+EDDY-034,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+EDDY-034,Q9,normalized multi-select formatting,No Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+EDDY-034,Q10,normalized multi-select formatting,Commentary,Commentary/opinion,Standardized separators/case/order/exact labels
+EDDY-034,Q11,normalized multi-select formatting,Identity Construction,Self expression/identity construction,Standardized separators/case/order/exact labels
+EDDY-034,Q12,normalized multi-select formatting,Facts / Statistics,Facts/statistics,Standardized separators/case/order/exact labels
+EDDY-034,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+EDDY-034,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-034,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-034,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+EDDY-040,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-040,Q2,normalized multi-select formatting,Mental Health & Gender Issues,"Mental health, Gender issues",Standardized separators/case/order/exact labels
+EDDY-040,Q3,normalized multi-select formatting,Commentary / Conversational Content,"Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+EDDY-040,Q5,normalized label/case,More progressive,More progressive/equitable/expansive,Mapped to exact prompt label
+EDDY-040,Q6,normalized label/case,YES,Yes,Mapped to exact prompt label
+EDDY-040,Q7,normalized multi-select formatting,Men need to be more emotionally open and heal,Men need to be emotionally open,Standardized separators/case/order/exact labels
+EDDY-040,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+EDDY-040,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+EDDY-040,Q9,normalized multi-select formatting,More emotional growth / healing,More emotional growth/healing,Standardized separators/case/order/exact labels
+EDDY-040,Q10,normalized multi-select formatting,Commentary / Motivational Speech,"Commentary/opinion, Motivational speech",Standardized separators/case/order/exact labels
+EDDY-040,Q11,normalized multi-select formatting,Identity Construction,Self expression/identity construction,Standardized separators/case/order/exact labels
+EDDY-040,Q12,normalized multi-select formatting,Cultural / Social Observations,Cultural/social observations,Standardized separators/case/order/exact labels
+EDDY-040,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+EDDY-040,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-040,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-052,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-052,Q2,normalized multi-select formatting,Mental Health,Mental health,Standardized separators/case/order/exact labels
+EDDY-052,Q3,normalized multi-select formatting,Commentary / Conversational Content,"Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+EDDY-052,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+EDDY-052,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+EDDY-052,Q9,normalized multi-select formatting,More emotional growth / healing,More emotional growth/healing,Standardized separators/case/order/exact labels
+EDDY-052,Q10,normalized multi-select formatting,Personal Story,Personal story,Standardized separators/case/order/exact labels
+EDDY-052,Q11,normalized multi-select formatting,Identity Construction,Self expression/identity construction,Standardized separators/case/order/exact labels
+EDDY-052,Q12,normalized multi-select formatting,Cultural / Social Observations,Cultural/social observations,Standardized separators/case/order/exact labels
+EDDY-052,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+EDDY-052,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+EDDY-052,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-007,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-007,Q2,normalized multi-select formatting,"Money Status, Family, & Mental Health","Family/children, Money/status, Mental health",Standardized separators/case/order/exact labels
+RIX-007,Q3,normalized multi-select formatting,Commentary / Conversational Content,"Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+RIX-007,Q4,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-007,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+RIX-007,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+RIX-007,Q9,normalized multi-select formatting,No Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+RIX-007,Q10,normalized multi-select formatting,Personal Story,Personal story,Standardized separators/case/order/exact labels
+RIX-007,Q12,normalized multi-select formatting,Personal Experience,Personal experience,Standardized separators/case/order/exact labels
+RIX-007,Q13,normalized multi-select formatting,Anecdotal Examples,Anecdotal examples,Standardized separators/case/order/exact labels
+RIX-007,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-007,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-007,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+RIX-007,Q6,conditional normalization,,Not applicable,Q4 = No
+RIX-007,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+RIX-009,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-009,Q2,unresolved noncanonical value,Corruption,Corruption,Needs manual review; left as-is
+RIX-009,Q2,unresolved noncanonical value,Family Trauma,Family Trauma,Needs manual review; left as-is
+RIX-009,Q2,normalized multi-select formatting,Corruption / Family Trauma,"Corruption, Family Trauma",Standardized separators/case/order/exact labels
+RIX-009,Q3,normalized multi-select formatting,Commentary / Conversational Content,"Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+RIX-009,Q4,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-009,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+RIX-009,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+RIX-009,Q9,normalized multi-select formatting,No Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+RIX-009,Q10,normalized multi-select formatting,Personal Story,Personal story,Standardized separators/case/order/exact labels
+RIX-009,Q12,normalized multi-select formatting,Personal Experience,Personal experience,Standardized separators/case/order/exact labels
+RIX-009,Q13,normalized multi-select formatting,Anecdotal Examples,Anecdotal examples,Standardized separators/case/order/exact labels
+RIX-009,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-009,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-009,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+RIX-009,Q6,conditional normalization,,Not applicable,Q4 = No
+RIX-009,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+RIX-028,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-028,Q2,normalized multi-select formatting,Family / Mental Health,"Family/children, Mental health",Standardized separators/case/order/exact labels
+RIX-028,Q3,unresolved noncanonical value,Self-help Content,Self-help Content,Needs manual review; left as-is
+RIX-028,Q3,normalized multi-select formatting,Commentary / Self-help Content,"Commentary/reaction content, Self-help Content",Standardized separators/case/order/exact labels
+RIX-028,Q4,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-028,Q8,unresolved noncanonical value,Kenyan Social,Kenyan Social,Needs manual review; left as-is
+RIX-028,Q8,normalized multi-select formatting,Kenyan Social & Cultural Problems,"Kenyan or Nigerian political/social problems, Kenyan Social",Standardized separators/case/order/exact labels
+RIX-028,Q9,normalized multi-select formatting,More emotional growth / healing,More emotional growth/healing,Standardized separators/case/order/exact labels
+RIX-028,Q10,normalized multi-select formatting,Commentary / Motivational Speech,"Commentary/opinion, Motivational speech",Standardized separators/case/order/exact labels
+RIX-028,Q11,normalized multi-select formatting,Identity Construction,Self expression/identity construction,Standardized separators/case/order/exact labels
+RIX-028,Q12,normalized multi-select formatting,Cultural / Social Observations,Cultural/social observations,Standardized separators/case/order/exact labels
+RIX-028,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+RIX-028,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-028,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-028,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+RIX-028,Q6,conditional normalization,,Not applicable,Q4 = No
+RIX-028,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+RIX-072,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-072,Q2,normalized multi-select formatting,Gender Issues,Gender issues,Standardized separators/case/order/exact labels
+RIX-072,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+RIX-072,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+RIX-072,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-072,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+RIX-072,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+RIX-072,Q9,normalized multi-select formatting,No Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+RIX-072,Q10,normalized multi-select formatting,Conversational Content,Other,Standardized separators/case/order/exact labels
+RIX-072,Q11,normalized multi-select formatting,Identity Construction,Self expression/identity construction,Standardized separators/case/order/exact labels
+RIX-072,Q12,normalized multi-select formatting,Cultural / Social Observations,Cultural/social observations,Standardized separators/case/order/exact labels
+RIX-072,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+RIX-072,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-072,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-072,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+RIX-072,Q10A,missing other specify,,,Q10 includes Other but specify is blank
+RIX-082,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-082,Q2,normalized multi-select formatting,Mental Health / Gender Issues,"Mental health, Gender issues",Standardized separators/case/order/exact labels
+RIX-082,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+RIX-082,Q5,normalized label/case,More progressive,More progressive/equitable/expansive,Mapped to exact prompt label
+RIX-082,Q6,normalized label/case,YES,Yes,Mapped to exact prompt label
+RIX-082,Q7,normalized multi-select formatting,Men need to be more emotionally open and heal,Men need to be emotionally open,Standardized separators/case/order/exact labels
+RIX-082,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+RIX-082,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+RIX-082,Q9,normalized multi-select formatting,More emotional growth / healing,More emotional growth/healing,Standardized separators/case/order/exact labels
+RIX-082,Q10,normalized multi-select formatting,Commentary Content,Commentary/opinion,Standardized separators/case/order/exact labels
+RIX-082,Q11,normalized multi-select formatting,Identity Construction,Self expression/identity construction,Standardized separators/case/order/exact labels
+RIX-082,Q12,normalized multi-select formatting,Cultural / Social Observations,Cultural/social observations,Standardized separators/case/order/exact labels
+RIX-082,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+RIX-082,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-082,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-088,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-088,Q2,normalized multi-select formatting,Mental Health,Mental health,Standardized separators/case/order/exact labels
+RIX-088,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+RIX-088,Q5,normalized label/case,More progressive,More progressive/equitable/expansive,Mapped to exact prompt label
+RIX-088,Q6,normalized label/case,YES,Yes,Mapped to exact prompt label
+RIX-088,Q7,normalized multi-select formatting,Men need to be more emotionally open and heal,Men need to be emotionally open,Standardized separators/case/order/exact labels
+RIX-088,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+RIX-088,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+RIX-088,Q9,normalized multi-select formatting,More emotional growth / healing,More emotional growth/healing,Standardized separators/case/order/exact labels
+RIX-088,Q10,normalized multi-select formatting,Commentary Content / Motivational Speech,"Commentary/opinion, Motivational speech",Standardized separators/case/order/exact labels
+RIX-088,Q11,normalized multi-select formatting,Identity Construction,Self expression/identity construction,Standardized separators/case/order/exact labels
+RIX-088,Q12,normalized multi-select formatting,Cultural / Social Observations,Cultural/social observations,Standardized separators/case/order/exact labels
+RIX-088,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+RIX-088,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-088,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-001,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-001,Q2,normalized multi-select formatting,Family,Family/children,Standardized separators/case/order/exact labels
+PHIL-001,Q3,normalized multi-select formatting,Conversational Content,Interview/conversational content,Standardized separators/case/order/exact labels
+PHIL-001,Q4,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-001,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+PHIL-001,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+PHIL-001,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+PHIL-001,Q10,normalized multi-select formatting,Conversational Content,Other,Standardized separators/case/order/exact labels
+PHIL-001,Q11,normalized multi-select formatting,Identity Construction,Self expression/identity construction,Standardized separators/case/order/exact labels
+PHIL-001,Q12,normalized multi-select formatting,Cultural / Social Observations,Cultural/social observations,Standardized separators/case/order/exact labels
+PHIL-001,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+PHIL-001,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-001,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-001,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+PHIL-001,Q6,conditional normalization,,Not applicable,Q4 = No
+PHIL-001,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+PHIL-001,Q10A,missing other specify,,,Q10 includes Other but specify is blank
+PHIL-002,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-002,Q2,normalized multi-select formatting,Mental Health / Trauma,Mental health,Standardized separators/case/order/exact labels
+PHIL-002,Q3,normalized multi-select formatting,Conversational Content,Interview/conversational content,Standardized separators/case/order/exact labels
+PHIL-002,Q4,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-002,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+PHIL-002,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+PHIL-002,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+PHIL-002,Q10,normalized multi-select formatting,Conversational Content,Other,Standardized separators/case/order/exact labels
+PHIL-002,Q11,normalized multi-select formatting,Identity Construction,Self expression/identity construction,Standardized separators/case/order/exact labels
+PHIL-002,Q12,normalized multi-select formatting,Personal Experience,Personal experience,Standardized separators/case/order/exact labels
+PHIL-002,Q13,normalized multi-select formatting,Anecdotal Examples,Anecdotal examples,Standardized separators/case/order/exact labels
+PHIL-002,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-002,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-002,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+PHIL-002,Q6,conditional normalization,,Not applicable,Q4 = No
+PHIL-002,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+PHIL-002,Q10A,missing other specify,,,Q10 includes Other but specify is blank
+PHIL-005,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-005,Q2,unresolved noncanonical value,Corruption,Corruption,Needs manual review; left as-is
+PHIL-005,Q2,normalized multi-select formatting,Social Issues / Corruption,"Social issues, Corruption",Standardized separators/case/order/exact labels
+PHIL-005,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+PHIL-005,Q4,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-005,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+PHIL-005,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+PHIL-005,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+PHIL-005,Q10,normalized multi-select formatting,Personal Story,Personal story,Standardized separators/case/order/exact labels
+PHIL-005,Q12,normalized multi-select formatting,Personal Experience,Personal experience,Standardized separators/case/order/exact labels
+PHIL-005,Q13,normalized multi-select formatting,Anecdotal Examples,Anecdotal examples,Standardized separators/case/order/exact labels
+PHIL-005,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-005,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-005,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+PHIL-005,Q6,conditional normalization,,Not applicable,Q4 = No
+PHIL-005,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+PHIL-035,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-035,Q2,normalized multi-select formatting,Family / Social Issues,"Family/children, Social issues",Standardized separators/case/order/exact labels
+PHIL-035,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+PHIL-035,Q5,normalized label/case,More Progressive,More progressive/equitable/expansive,Mapped to exact prompt label
+PHIL-035,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-035,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+PHIL-035,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+PHIL-035,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+PHIL-035,Q10,normalized multi-select formatting,Personal Story,Personal story,Standardized separators/case/order/exact labels
+PHIL-035,Q12,normalized multi-select formatting,Personal Experience,Personal experience,Standardized separators/case/order/exact labels
+PHIL-035,Q13,normalized multi-select formatting,Anecdotal Examples,Anecdotal examples,Standardized separators/case/order/exact labels
+PHIL-035,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-035,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-035,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+PHIL-036,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-036,Q2,unresolved noncanonical value,Corruption,Corruption,Needs manual review; left as-is
+PHIL-036,Q2,normalized multi-select formatting,Social Issues / Corruption,"Social issues, Corruption",Standardized separators/case/order/exact labels
+PHIL-036,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+PHIL-036,Q4,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-036,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+PHIL-036,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+PHIL-036,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+PHIL-036,Q10,normalized multi-select formatting,Personal Story,Personal story,Standardized separators/case/order/exact labels
+PHIL-036,Q12,normalized multi-select formatting,Personal Experience,Personal experience,Standardized separators/case/order/exact labels
+PHIL-036,Q13,normalized multi-select formatting,Anecdotal Examples,Anecdotal examples,Standardized separators/case/order/exact labels
+PHIL-036,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-036,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+PHIL-036,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+PHIL-036,Q6,conditional normalization,,Not applicable,Q4 = No
+PHIL-036,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+KIBE-001,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-001,Q2,normalized multi-select formatting,Gender Issues,Gender issues,Standardized separators/case/order/exact labels
+KIBE-001,Q3,normalized multi-select formatting,Conversational Content,Interview/conversational content,Standardized separators/case/order/exact labels
+KIBE-001,Q5,normalized label/case,More Progressive,More progressive/equitable/expansive,Mapped to exact prompt label
+KIBE-001,Q6,normalized label/case,YES,Yes,Mapped to exact prompt label
+KIBE-001,Q7,normalized multi-select formatting,Men need to be more emotionally open and heal,Men need to be emotionally open,Standardized separators/case/order/exact labels
+KIBE-001,Q8,unresolved noncanonical value,Kenyan Cultural Problems,Kenyan Cultural Problems,Needs manual review; left as-is
+KIBE-001,Q8,normalized multi-select formatting,Mental Health / Kenyan Cultural Problems,"Mental health/emotional struggle, Kenyan Cultural Problems",Standardized separators/case/order/exact labels
+KIBE-001,Q9,normalized multi-select formatting,More emotional growth / healing,More emotional growth/healing,Standardized separators/case/order/exact labels
+KIBE-001,Q10,normalized multi-select formatting,Commentary Content,Commentary/opinion,Standardized separators/case/order/exact labels
+KIBE-001,Q11,normalized multi-select formatting,Identity Construction,Self expression/identity construction,Standardized separators/case/order/exact labels
+KIBE-001,Q12,normalized multi-select formatting,Cultural / Social Observations,Cultural/social observations,Standardized separators/case/order/exact labels
+KIBE-001,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+KIBE-001,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-001,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-012,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-012,Q2,normalized multi-select formatting,Dating / Sex,Dating/marriage,Standardized separators/case/order/exact labels
+KIBE-012,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+KIBE-012,Q4,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-012,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+KIBE-012,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+KIBE-012,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+KIBE-012,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+KIBE-012,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+KIBE-012,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-012,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-012,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+KIBE-012,Q6,conditional normalization,,Not applicable,Q4 = No
+KIBE-012,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+KIBE-020,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-020,Q2,normalized multi-select formatting,Gender Issues,Gender issues,Standardized separators/case/order/exact labels
+KIBE-020,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+KIBE-020,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+KIBE-020,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-020,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+KIBE-020,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+KIBE-020,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+KIBE-020,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+KIBE-020,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+KIBE-020,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-020,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-020,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+KIBE-021,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-021,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+KIBE-021,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+KIBE-021,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+KIBE-021,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-021,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+KIBE-021,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+KIBE-021,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+KIBE-021,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+KIBE-021,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+KIBE-021,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-021,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-021,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+KIBE-029,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-029,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+KIBE-029,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+KIBE-029,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+KIBE-029,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-029,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+KIBE-029,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+KIBE-029,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+KIBE-029,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+KIBE-029,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+KIBE-029,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-029,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-029,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+KIBE-035,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-035,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+KIBE-035,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+KIBE-035,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+KIBE-035,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-035,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+KIBE-035,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+KIBE-035,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+KIBE-035,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+KIBE-035,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+KIBE-035,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-035,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-035,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+KIBE-056,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-056,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+KIBE-056,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+KIBE-056,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+KIBE-056,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-056,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+KIBE-056,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+KIBE-056,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+KIBE-056,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+KIBE-056,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+KIBE-056,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-056,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+KIBE-056,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+1951568877998965117,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+1951568877998965117,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+1951568877998965117,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+1951568877998965117,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+1951568877998965117,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+1951568877998965117,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+1951568877998965117,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+1951568877998965117,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+1951568877998965117,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+1951568877998965117,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+1951568877998965117,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+1951568877998965117,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+1951568877998965117,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+1954158345113174097,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+1954158345113174097,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+1954158345113174097,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+1954158345113174097,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+1954158345113174097,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+1954158345113174097,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+1954158345113174097,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+1954158345113174097,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+1954158345113174097,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+1954158345113174097,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+1954158345113174097,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+1954158345113174097,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+1954158345113174097,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+1975078851945394590,Q1,normalized label/case,YES,Yes,Mapped to exact prompt label
+1975078851945394590,Q1A,normalized multi-select formatting,Use of all caps,Use of all CAPS,Standardized separators/case/order/exact labels
+1975078851945394590,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+1975078851945394590,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+1975078851945394590,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+1975078851945394590,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+1975078851945394590,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+1975078851945394590,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+1975078851945394590,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+1975078851945394590,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+1975078851945394590,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+1975078851945394590,Q17,normalized label/case,YES,Yes,Mapped to exact prompt label
+1975078851945394590,Q18,normalized label/case,YES,Yes,Mapped to exact prompt label
+1975078851945394590,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+1975078851945394590,Q18B,shortened other specify,Calls for men to not sleep around with Married women,Calls for men to not,Prompt requests 1-5 words
+1976936284460351491,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+1976936284460351491,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+1976936284460351491,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+1976936284460351491,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+1976936284460351491,Q6,normalized label/case,YES,Yes,Mapped to exact prompt label
+1976936284460351491,Q7,normalized multi-select formatting,"Mixed, Not to date ""Born Again"" women","Mixed/unclear, Other",Standardized separators/case/order/exact labels
+1976936284460351491,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+1976936284460351491,Q9,normalized multi-select formatting,Assert dominance / control,Assert dominance/control,Standardized separators/case/order/exact labels
+1976936284460351491,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+1976936284460351491,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+1976936284460351491,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+1976936284460351491,Q17,normalized label/case,YES,Yes,Mapped to exact prompt label
+1976936284460351491,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+1976936284460351491,Q7A,missing other specify,,,Q7 includes Other but specify is blank
+2035341023287689308,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+2035341023287689308,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+2035341023287689308,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+2035341023287689308,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+2035341023287689308,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+2035341023287689308,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+2035341023287689308,Q9,normalized multi-select formatting,Assert dominance / control,Assert dominance/control,Standardized separators/case/order/exact labels
+2035341023287689308,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+2035341023287689308,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+2035341023287689308,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+2035341023287689308,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+2035341023287689308,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+2035341023287689308,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+2040414105522065830,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+2040414105522065830,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+2040414105522065830,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+2040414105522065830,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+2040414105522065830,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+2040414105522065830,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+2040414105522065830,Q9,normalized multi-select formatting,Assert dominance / control,Assert dominance/control,Standardized separators/case/order/exact labels
+2040414105522065830,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+2040414105522065830,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+2040414105522065830,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+2040414105522065830,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+2040414105522065830,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+2040414105522065830,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+2048016863561441660,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+2048016863561441660,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+2048016863561441660,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+2048016863561441660,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+2048016863561441660,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+2048016863561441660,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+2048016863561441660,Q9,normalized multi-select formatting,NO Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+2048016863561441660,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+2048016863561441660,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+2048016863561441660,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+2048016863561441660,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+2048016863561441660,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+2048016863561441660,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+2048031963504611687,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+2048031963504611687,Q2,normalized multi-select formatting,Dating / Marriage,Dating/marriage,Standardized separators/case/order/exact labels
+2048031963504611687,Q3,normalized multi-select formatting,Commentary Content,Commentary/reaction content,Standardized separators/case/order/exact labels
+2048031963504611687,Q5,normalized label/case,More regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+2048031963504611687,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+2048031963504611687,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+2048031963504611687,Q9,normalized multi-select formatting,Assert dominance / control,Assert dominance/control,Standardized separators/case/order/exact labels
+2048031963504611687,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+2048031963504611687,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+2048031963504611687,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+2048031963504611687,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+2048031963504611687,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+2048031963504611687,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+1976981658470388103,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+1976981658470388103,Q2,normalized multi-select formatting,Dating,Dating/marriage,Standardized separators/case/order/exact labels
+1976981658470388103,Q5,normalized label/case,More Regressive,More regressive/traditional/restrictive,Mapped to exact prompt label
+1976981658470388103,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+1976981658470388103,Q8,normalized multi-select formatting,Women / Women's Behavior,Women/feminism,Standardized separators/case/order/exact labels
+1976981658470388103,Q9,normalized multi-select formatting,No Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+1976981658470388103,Q10,normalized multi-select formatting,Debate / Argument,Debate/argument,Standardized separators/case/order/exact labels
+1976981658470388103,Q12,normalized multi-select formatting,Generalizations about women,Generalizations about men/women,Standardized separators/case/order/exact labels
+1976981658470388103,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+1976981658470388103,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+1976981658470388103,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+1976981658470388103,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+RIX-023,Q1,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-023,Q2,normalized multi-select formatting,Mental Health / Trauma,Mental health,Standardized separators/case/order/exact labels
+RIX-023,Q4,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-023,Q6,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-023,Q8,normalized multi-select formatting,Mental Health,Mental health/emotional struggle,Standardized separators/case/order/exact labels
+RIX-023,Q9,normalized multi-select formatting,No Clear Solution,No clear solution,Standardized separators/case/order/exact labels
+RIX-023,Q10,normalized multi-select formatting,Commentary Content,Commentary/opinion,Standardized separators/case/order/exact labels
+RIX-023,Q12,normalized multi-select formatting,No Support,No support,Standardized separators/case/order/exact labels
+RIX-023,Q13,normalized multi-select formatting,No Justification,No justification,Standardized separators/case/order/exact labels
+RIX-023,Q17,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-023,Q18,normalized label/case,NO,No,Mapped to exact prompt label
+RIX-023,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+RIX-023,Q6,conditional normalization,No,Not applicable,Q4 = No
+RIX-023,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+EDDY-016,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Mental health","Mental health, Gender issues",Standardized separators/case/order/exact labels
+EDDY-016,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+EDDY-028,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Mental health","Mental health, Gender issues",Standardized separators/case/order/exact labels
+EDDY-028,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+EDDY-031,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Mental health, Family/children","Family/children, Mental health, Gender issues",Standardized separators/case/order/exact labels
+EDDY-031,Q7,normalized multi-select formatting,"Men need to improve themselves, Men need to be emotionally open, Men need to provide/succeed","Men need to provide/succeed, Men need to improve themselves, Men need to be emotionally open",Standardized separators/case/order/exact labels
+EDDY-041,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+EDDY-041,Q6,conditional normalization,,Not applicable,Q4 = No
+EDDY-041,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+RIX-001,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Mental health, Social issues, e.g. corruption","Mental health, Gender issues, Social issues",Standardized separators/case/order/exact labels
+RIX-001,Q8,normalized multi-select formatting,"Men's behavior, Mental health/emotional struggle, Kenyan or Nigerian political/social problems, Global political/social/cultural problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+RIX-015,Q1A,normalized multi-select formatting,"Shares something surprising, Shares something violent or gross","Shares something violent or gross, Shares something surprising",Standardized separators/case/order/exact labels
+RIX-015,Q2,normalized multi-select formatting,"Social issues, e.g. corruption, Mental health, Family/children","Family/children, Mental health, Social issues",Standardized separators/case/order/exact labels
+RIX-015,Q5,conditional normalization,,Does not address masculinity or gender norms,Q4 = No
+RIX-015,Q6,conditional normalization,,Not applicable,Q4 = No
+RIX-015,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+RIX-054,Q1A,normalized multi-select formatting,"Shares something surprising, Shares something violent or gross","Shares something violent or gross, Shares something surprising",Standardized separators/case/order/exact labels
+RIX-054,Q2,normalized multi-select formatting,"Mental health, Family/children","Family/children, Mental health",Standardized separators/case/order/exact labels
+RIX-068,Q1A,normalized multi-select formatting,"Shares something surprising, Shares something sexual","Shares something sexual, Shares something surprising",Standardized separators/case/order/exact labels
+RIX-068,Q2,normalized multi-select formatting,"Mental health, Friends/socializing, Religion/morality","Friends/socializing, Mental health, Religion/morality",Standardized separators/case/order/exact labels
+RIX-068,Q8,normalized multi-select formatting,"Men's behavior, Mental health/emotional struggle, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+RIX-069,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Mental health, Social issues, e.g. corruption","Mental health, Gender issues, Social issues",Standardized separators/case/order/exact labels
+RIX-069,Q8,normalized multi-select formatting,"Men's behavior, Mental health/emotional struggle, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+RIX-079,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Mental health, Social issues, e.g. corruption","Mental health, Gender issues, Social issues",Standardized separators/case/order/exact labels
+RIX-079,Q8,normalized multi-select formatting,"Men's behavior, Mental health/emotional struggle, Kenyan or Nigerian political/social problems, Global political/social/cultural problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+PHIL-008,Q1A,normalized multi-select formatting,"Shares something surprising, Shares something violent or gross","Shares something violent or gross, Shares something surprising",Standardized separators/case/order/exact labels
+PHIL-008,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Family/Children, Social issues, e.g. corruption","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-008,Q9,normalized multi-select formatting,"More equality/respect for women, Social or political change","Social or political change, More equality/respect for women",Standardized separators/case/order/exact labels
+PHIL-008,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+PHIL-009,Q2,normalized multi-select formatting,"Gender issues, e.g. equality",Gender issues,Standardized separators/case/order/exact labels
+PHIL-013,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Family/Children, Dating/marriage","Dating/marriage, Family/children, Gender issues",Standardized separators/case/order/exact labels
+PHIL-013,Q7,conditional normalization,Not applicable,Mixed/unclear,Q6 = Unclear
+PHIL-025,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Family/Children","Family/children, Gender issues",Standardized separators/case/order/exact labels
+PHIL-025,Q8,normalized multi-select formatting,"Kenyan or Nigerian political/social problems, Women/feminism, Men’s behavior","Kenyan or Nigerian political/social problems, Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+PHIL-025,Q9,normalized multi-select formatting,"More emotional growth/healing, Building community, Social or political change","Social or political change, More emotional growth/healing, Building community",Standardized separators/case/order/exact labels
+PHIL-037,Q2,normalized multi-select formatting,"Family/children, Social issues, e.g. corruption","Family/children, Social issues",Standardized separators/case/order/exact labels
+KIBE-016,Q2,normalized multi-select formatting,"Family/children, Gender issues, e.g. equality","Family/children, Gender issues",Standardized separators/case/order/exact labels
+KIBE-016,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+KIBE-016,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction, Personal story","Advice/instruction, Personal story, Commentary/opinion",Standardized separators/case/order/exact labels
+KIBE-016,Q11,normalized multi-select formatting,"Self expression/identity construction, Connection/social interaction","Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+KIBE-019,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Family/children, Social issues, e.g. corruption","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels
+KIBE-019,Q7,normalized multi-select formatting,"Men need to be fully self-reliant, Men need to dominate/lead","Men need to dominate/lead, Men need to be fully self-reliant",Standardized separators/case/order/exact labels
+KIBE-019,Q8,normalized multi-select formatting,"Kenyan or Nigerian political/social problems, Women/feminism, Men’s behavior","Kenyan or Nigerian political/social problems, Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+KIBE-024,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Family/children, Social issues, e.g. corruption","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels
+KIBE-024,Q8,normalized multi-select formatting,"Kenyan or Nigerian political/social problems, Global political/social/cultural problems, Western political/social influence, Women/feminism, Men’s behavior","Kenyan or Nigerian political/social problems, Global political/social/cultural problems, Western political/social influence, Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+KIBE-024,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+KIBE-024,Q11,normalized multi-select formatting,"Self expression/identity construction, Connection/social interaction","Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+KIBE-049,Q2,normalized multi-select formatting,"Dating/marriage, Gender issues, e.g. equality","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+KIBE-049,Q7,normalized multi-select formatting,"Men need to dominate/lead, Men need to be fully self-reliant, Men are disadvantaged/victims","Men need to dominate/lead, Men are disadvantaged/victims, Men need to be fully self-reliant",Standardized separators/case/order/exact labels
+KIBE-049,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+KIBE-049,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+KIBE-050,Q2,normalized multi-select formatting,"Gender issues, e.g. equality",Gender issues,Standardized separators/case/order/exact labels
+KIBE-050,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+KIBE-050,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+KIBE-050,Q7A,shortened other specify,Men need to not treat women as women,Men need to not treat,Prompt requests 1-5 words
+KIBE-051,Q1A,normalized multi-select formatting,"Shares something surprising, Humor or sarcasm, Compelling question","Compelling question, Humor or sarcasm, Shares something surprising",Standardized separators/case/order/exact labels
+KIBE-051,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Dating/marriage","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+KIBE-051,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction, Humor/satire","Advice/instruction, Commentary/opinion, Humor/satire",Standardized separators/case/order/exact labels
+KIBE-051,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+KIBE-054,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Money/status","Money/status, Gender issues",Standardized separators/case/order/exact labels
+KIBE-054,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior, Economic/status pressure","Women/feminism, Men's behavior, Economic/status pressure",Standardized separators/case/order/exact labels
+KIBE-054,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+KIBE-071,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Family/children","Family/children, Gender issues",Standardized separators/case/order/exact labels
+KIBE-071,Q7,normalized multi-select formatting,"Men are disadvantaged/victims, Men need to dominate/lead","Men need to dominate/lead, Men are disadvantaged/victims",Standardized separators/case/order/exact labels
+KIBE-071,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+KIBE-071,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+1954098073262522452,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Dating/marriage, Mental health","Dating/marriage, Mental health, Gender issues",Standardized separators/case/order/exact labels
+1954098073262522452,Q7,normalized multi-select formatting,"Men need to dominate/lead, Men need to be fully self-reliant, Men are disadvantaged/victims","Men need to dominate/lead, Men are disadvantaged/victims, Men need to be fully self-reliant",Standardized separators/case/order/exact labels
+1954098073262522452,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior, Mental health/emotional struggle","Women/feminism, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+1954098073262522452,Q11,normalized multi-select formatting,"Self expression/identity construction, Connection/social interaction, Information seeking","Information seeking, Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+1954196373861003731,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Friends/socializing","Friends/socializing, Gender issues",Standardized separators/case/order/exact labels
+1954196373861003731,Q7,normalized multi-select formatting,"Men need to be fully self-reliant, Men need to not show emotions, Men need to provide/succeed","Men need to provide/succeed, Men need to be fully self-reliant, Men need to not show emotions",Standardized separators/case/order/exact labels
+1954196373861003731,Q8,normalized multi-select formatting,Men’s behavior,Men's behavior,Standardized separators/case/order/exact labels
+1954196373861003731,Q11,normalized multi-select formatting,"Self expression/identity construction, Status seeking, Information seeking","Information seeking, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+1962749588588187787,Q8,normalized multi-select formatting,Men’s behavior,Men's behavior,Standardized separators/case/order/exact labels
+1962749588588187787,Q10,normalized multi-select formatting,"Advice/instruction, Motivational speech, Commentary/opinion","Advice/instruction, Commentary/opinion, Motivational speech",Standardized separators/case/order/exact labels
+1962749588588187787,Q11,normalized multi-select formatting,"Self expression/identity construction, Status seeking, Information seeking","Information seeking, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+1969363662281314544,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels
+1969363662281314544,Q7,normalized multi-select formatting,"Men need to be fully self-reliant, Men are disadvantaged/victims, Men need to not show emotions, Men need to provide/succeed","Men need to provide/succeed, Men are disadvantaged/victims, Men need to be fully self-reliant, Men need to not show emotions",Standardized separators/case/order/exact labels
+1969363662281314544,Q8,normalized multi-select formatting,"Economic/status pressure, Mental health/emotional struggle, Women/Feminism","Women/feminism, Economic/status pressure, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+1969363662281314544,Q10,normalized multi-select formatting,"Advice/instruction, News/telling facts, Commentary/opinion","Advice/instruction, Commentary/opinion, News/telling facts",Standardized separators/case/order/exact labels
+1969363662281314544,Q11,normalized multi-select formatting,"Self expression/identity construction, Status seeking, Information seeking","Information seeking, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+1969363662281314544,Q12,normalized multi-select formatting,"Facts/statistics, Generalizations about men/women, Cultural/social observations","Generalizations about men/women, Cultural/social observations, Facts/statistics",Standardized separators/case/order/exact labels
+1969363662281314544,Q13,normalized multi-select formatting,"References data, Presented as common sense, Anecdotal examples","Anecdotal examples, Presented as common sense, References data",Standardized separators/case/order/exact labels
+2039762097798520881,Q7,normalized multi-select formatting,"Men need to be fully self-reliant, Men need to improve themselves, Men are disadvantaged/victims","Men are disadvantaged/victims, Men need to improve themselves, Men need to be fully self-reliant",Standardized separators/case/order/exact labels
+2039762097798520881,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior, Mental health/emotional struggle","Women/feminism, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+2039762097798520881,Q9,normalized multi-select formatting,"Assert dominance/control, More equality/respect for men, More self-discipline/fitness
+","Assert dominance/control, More self-discipline/fitness, More equality/respect for men",Standardized separators/case/order/exact labels
+2039762097798520881,Q12,normalized multi-select formatting,"Stories about men/women, Generalizations about men/women","Generalizations about men/women, Stories about men/women",Standardized separators/case/order/exact labels
+2040368802852962653,Q2,normalized multi-select formatting,"Dating/marriage, Family/children, Gender issues, e.g. equality","Dating/marriage, Family/children, Gender issues",Standardized separators/case/order/exact labels
+2040368802852962653,Q7,normalized multi-select formatting,"Men need to be dominant/lead, Men are disadvantaged/victims, Men need to provide/succeed","Men need to dominate/lead, Men need to provide/succeed, Men are disadvantaged/victims",Standardized separators/case/order/exact labels
+2040368802852962653,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+2046177081617166630,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Dating/marriage, Mental health, Social issues, e.g. corruption","Dating/marriage, Mental health, Gender issues, Social issues",Standardized separators/case/order/exact labels
+2046177081617166630,Q7,normalized multi-select formatting,"Men need to dominate/lead, Men need to be fully self-reliant, Men need to not show emotions, Men need to improve themselves, Other","Men need to dominate/lead, Men need to improve themselves, Men need to be fully self-reliant, Men need to not show emotions, Other",Standardized separators/case/order/exact labels
+2046177081617166630,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+2046177081617166630,Q10,normalized multi-select formatting,"Advice/instruction, Commentary/opinion, Personal story","Advice/instruction, Personal story, Commentary/opinion",Standardized separators/case/order/exact labels
+2046177081617166630,Q11,normalized multi-select formatting,"Self expression/identity construction, Connection/social interaction, Status seeking","Connection/social interaction, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+2046177081617166630,Q12,normalized multi-select formatting,"Personal experience, Stories about men/women, Generalizations about men/women","Generalizations about men/women, Personal experience, Stories about men/women",Standardized separators/case/order/exact labels
+2046177081617166630,Q13,normalized multi-select formatting,"Anecdotal examples, Presented as common sense, References external sources, such as other influencers","Anecdotal examples, Presented as common sense, References external sources such as other influencers",Standardized separators/case/order/exact labels
+KIBE-006,Q2,normalized multi-select formatting,"Social issues, e.g. corruption",Social issues,Standardized separators/case/order/exact labels
+KIBE-006,Q8,normalized multi-select formatting,"Men's behavior, Global political/social/cultural problems","Global political/social/cultural problems, Men's behavior",Standardized separators/case/order/exact labels
+KIBE-006,Q9,normalized multi-select formatting,"More equality/respect for men, Social or political change
+","Social or political change, More equality/respect for men",Standardized separators/case/order/exact labels
+EDDY-057,Q2,normalized multi-select formatting,"Mental health, Friends/socializing, Gender issues, e.g. equality","Friends/socializing, Mental health, Gender issues",Standardized separators/case/order/exact labels
+EDDY-057,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels
+EDDY-057,Q7,normalized multi-select formatting,"Men need to be emotionally open, Men need to build community","Men need to be emotionally open, Other",Standardized separators/case/order/exact labels
+EDDY-057,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Men's behavior","Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+EDDY-057,Q10,normalized multi-select formatting,"Commentary/opinion, Motivational speech, Personal story","Personal story, Commentary/opinion, Motivational speech",Standardized separators/case/order/exact labels
+EDDY-057,Q12,normalized multi-select formatting,"Cultural/social observations, Personal experience","Personal experience, Cultural/social observations",Standardized separators/case/order/exact labels
+EDDY-057,Q13,normalized multi-select formatting,"Presented as common sense, Anecdotal examples
+","Anecdotal examples, Presented as common sense",Standardized separators/case/order/exact labels
+EDDY-057,Q7A,missing other specify,,,Q7 includes Other but specify is blank
+RIX-066,Q2,normalized multi-select formatting,"Mental health, Social issues, e.g. corruption","Mental health, Social issues",Standardized separators/case/order/exact labels
+RIX-066,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Family/children","Mental health/emotional struggle, Other",Standardized separators/case/order/exact labels
+RIX-066,Q12,normalized multi-select formatting,"Facts/statistics, Cultural/social observations","Cultural/social observations, Facts/statistics",Standardized separators/case/order/exact labels
+RIX-066,Q13,normalized multi-select formatting,"References data, Presented as common sense","Presented as common sense, References data",Standardized separators/case/order/exact labels
+RIX-066,Q7,conditional normalization,Not applicable,Mixed/unclear,Q6 = Unclear
+RIX-066,Q8A,missing other specify,,,Q8 includes Other but specify is blank
+EDDY-001,Q2,normalized multi-select formatting,"Money/status, Mental health, Family/children","Family/children, Money/status, Mental health",Standardized separators/case/order/exact labels
+EDDY-001,Q7,conditional normalization,Mixed/unclear,Not applicable,Q6 = No/Not applicable
+EDDY-027,Q2,normalized multi-select formatting,"Mental health, Gender issues, e.g. equality, Friends/socializing","Friends/socializing, Mental health, Gender issues",Standardized separators/case/order/exact labels
+EDDY-027,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Men’s behavior, General political/social/cultural problems, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+EDDY-027,Q12,normalized multi-select formatting,"Cultural/social observations, Generalizations about men/women","Generalizations about men/women, Cultural/social observations",Standardized separators/case/order/exact labels
+EDDY-032,Q2,normalized multi-select formatting,"Mental health, Gender issues, e.g. equality","Mental health, Gender issues",Standardized separators/case/order/exact labels
+EDDY-032,Q8,normalized multi-select formatting,"Mental health/emotional struggle, General political/social/cultural problems","Global political/social/cultural problems, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+EDDY-032,Q12,normalized multi-select formatting,"Cultural/social observations, Generalizations about men/women","Generalizations about men/women, Cultural/social observations",Standardized separators/case/order/exact labels
+EDDY-060,Q2,normalized multi-select formatting,"Friends/socializing, Mental health, Gender issues, e.g. equality","Friends/socializing, Mental health, Gender issues",Standardized separators/case/order/exact labels
+EDDY-060,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Men’s behavior","Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+RIX-004,Q2,normalized multi-select formatting,"Friends/socializing, Mental health, Gender issues, e.g. equality","Friends/socializing, Mental health, Gender issues",Standardized separators/case/order/exact labels
+RIX-004,Q8,normalized multi-select formatting,"Men’s behavior, Mental health/emotional struggle, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+RIX-004,Q9,normalized multi-select formatting,"Building community, More emotional growth/healing","More emotional growth/healing, Building community",Standardized separators/case/order/exact labels
+RIX-004,Q7A,shortened other specify,Men need to build supportive communities,Men need to build supportive,Prompt requests 1-5 words
+RIX-004,Q18B,shortened other specify,Calls for men to participate in vulnerability and community-building,Calls for men to participate,Prompt requests 1-5 words
+RIX-033,Q3,normalized multi-select formatting,"Interview/conversational content, Motivational/self-help content /","Interview/conversational content, Motivational/self-help content",Standardized separators/case/order/exact labels
+RIX-033,Q6,conditional normalization,No,Not applicable,Q4 = No
+RIX-042,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Mental health, Dating/marriage","Dating/marriage, Mental health, Gender issues",Standardized separators/case/order/exact labels
+RIX-042,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Women/feminism, Men’s behavior","Women/feminism, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+RIX-073,Q2,normalized multi-select formatting,"Family/children, Mental health, Social issues, e.g. corruption","Family/children, Mental health, Social issues",Standardized separators/case/order/exact labels
+RIX-073,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Kenyan or Nigerian political/social problems, General political/social/cultural problems, Men’s behavior","Kenyan or Nigerian political/social problems, Global political/social/cultural problems, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+RIX-073,Q10,normalized multi-select formatting,"Personal story, News/telling facts, Commentary/opinion","Personal story, Commentary/opinion, News/telling facts",Standardized separators/case/order/exact labels
+RIX-077,Q2,normalized multi-select formatting,"Family/children, Mental health, Social issues, e.g. corruption","Family/children, Mental health, Social issues",Standardized separators/case/order/exact labels
+RIX-077,Q6,conditional normalization,No,Not applicable,Q4 = No
+RIX-087,Q2,normalized multi-select formatting,"Mental health, Social Issues, e.g. corruption, Gender issues, e.g. equality, Religion/morality","Mental health, Gender issues, Social issues, Religion/morality",Standardized separators/case/order/exact labels
+RIX-087,Q8,normalized multi-select formatting,"Mental health/emotional struggle, General political/social/cultural problems, Men’s behavior","Global political/social/cultural problems, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+RIX-087,Q9,normalized multi-select formatting,"Building community, More emotional growth/healing","More emotional growth/healing, Building community",Standardized separators/case/order/exact labels
+PHIL-022,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Social issues, e.g. corruption","Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-022,Q8,normalized multi-select formatting,"Kenyan or Nigerian political/social problems, General political/social/cultural problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems",Standardized separators/case/order/exact labels
+PHIL-022,Q13,removed conflicting null option,"Presented as common sense, No justification, Other","Presented as common sense, Other",Null option cannot be combined with substantive labels
+PHIL-022,Q13,normalized multi-select formatting,"Presented as common sense, No justification, Other","Presented as common sense, Other",Standardized separators/case/order/exact labels
+PHIL-024,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Social issues, e.g. corruption, Family/children","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-024,Q8,normalized multi-select formatting,"Kenyan or Nigerian political/social problems, Women/feminism, General political/social/cultural problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems, Women/feminism",Standardized separators/case/order/exact labels
+PHIL-024,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+PHIL-024,Q18B,shortened other specify,Calls for community sensitization about the value of girls,Calls for community sensitization about,Prompt requests 1-5 words
+PHIL-034,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Social issues, e.g. corruption","Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-034,Q8,normalized multi-select formatting,"Women/feminism, General political/social/cultural problems","Global political/social/cultural problems, Women/feminism",Standardized separators/case/order/exact labels
+PHIL-041,Q2,normalized multi-select formatting,"Social issues, e.g. corruption",Social issues,Standardized separators/case/order/exact labels
+PHIL-041,Q8,normalized multi-select formatting,"Kenyan or Nigerian political/social problems, General political/social/cultural problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems",Standardized separators/case/order/exact labels
+PHIL-041,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+PHIL-041,Q18B,shortened other specify,"Calls for awareness, compassion, civic education, and economic change","Calls for awareness, compassion, civic",Prompt requests 1-5 words
+KIBE-003,Q2,normalized multi-select formatting,"Dating/marriage, Gender issues, e.g. equality","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+KIBE-003,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+KIBE-003,Q11,normalized multi-select formatting,"Self expression/identity construction, Entertainment/escapism, Status seeking","Entertainment/escapism, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+KIBE-003,Q13,removed conflicting null option,"Presented as common sense, No justification",Presented as common sense,Null option cannot be combined with substantive labels
+KIBE-003,Q13,normalized multi-select formatting,"Presented as common sense, No justification",Presented as common sense,Standardized separators/case/order/exact labels
+KIBE-008,Q2,normalized multi-select formatting,"Dating/marriage, Money/status, Gender issues, e.g. equality, Religion/morality","Dating/marriage, Money/status, Gender issues, Religion/morality",Standardized separators/case/order/exact labels
+KIBE-008,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior, Economic/status pressure","Women/feminism, Men's behavior, Economic/status pressure",Standardized separators/case/order/exact labels
+KIBE-008,Q13,removed conflicting null option,"No justification, Presented as common sense",Presented as common sense,Null option cannot be combined with substantive labels
+KIBE-008,Q13,normalized multi-select formatting,"No justification, Presented as common sense",Presented as common sense,Standardized separators/case/order/exact labels
+KIBE-008,Q18B,shortened other specify,Calls for fathers/community to regulate women's behavior,Calls for fathers/community to regulate,Prompt requests 1-5 words
+KIBE-009,Q2,normalized multi-select formatting,"Money/status, Gender issues, Friends/socializing, Dating/marriage","Dating/marriage, Friends/socializing, Money/status, Gender issues",Standardized separators/case/order/exact labels
+KIBE-009,Q3,normalized multi-select formatting,"Interview/conversational content, Commentary/reaction content, Motivational/self-help content","Interview/conversational content, Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels
+KIBE-009,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior, Economic/status pressure","Women/feminism, Men's behavior, Economic/status pressure",Standardized separators/case/order/exact labels
+KIBE-009,Q9,normalized multi-select formatting,"More self-discipline/fitness, More wealth/status, Other","More wealth/status, More self-discipline/fitness, Other",Standardized separators/case/order/exact labels
+KIBE-009,Q11,normalized multi-select formatting,"Self expression/identity construction, Status seeking, Entertainment/escapism","Entertainment/escapism, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+KIBE-009,Q18B,shortened other specify,Calls for men to avoid clubs and pursue status-coded hobbies,Calls for men to avoid,Prompt requests 1-5 words
+KIBE-028,Q2,normalized multi-select formatting,"Gender issues, Religion/morality, Dating/marriage","Dating/marriage, Gender issues, Religion/morality",Standardized separators/case/order/exact labels
+KIBE-028,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior, Other","Women/feminism, Men's behavior, Other",Standardized separators/case/order/exact labels
+KIBE-028,Q11,normalized multi-select formatting,"Entertainment/escapism, Status seeking, Self expression/identity construction","Entertainment/escapism, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+KIBE-028,Q12,normalized multi-select formatting,"Moral/religious claims, Generalizations about men/women","Generalizations about men/women, Moral/religious claims",Standardized separators/case/order/exact labels
+KIBE-028,Q13,normalized multi-select formatting,"References religion/tradition, Presented as common sense","Presented as common sense, References religion/tradition",Standardized separators/case/order/exact labels
+KIBE-048,Q1A,normalized multi-select formatting,"Shares something surprising, Shares something sexual","Shares something sexual, Shares something surprising",Standardized separators/case/order/exact labels
+KIBE-048,Q2,normalized multi-select formatting,"Gender issues, Dating/marriage, Social issues, Money/status","Dating/marriage, Money/status, Gender issues, Social issues",Standardized separators/case/order/exact labels
+KIBE-048,Q8,normalized multi-select formatting,"Women/feminism, General political/social/cultural problems, Other","Global political/social/cultural problems, Women/feminism, Other",Standardized separators/case/order/exact labels
+KIBE-048,Q11,normalized multi-select formatting,"Entertainment/escapism, Status seeking, Self expression/identity construction","Entertainment/escapism, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+KIBE-048,Q13,removed conflicting null option,"No justification, Presented as common sense",Presented as common sense,Null option cannot be combined with substantive labels
+KIBE-048,Q13,normalized multi-select formatting,"No justification, Presented as common sense",Presented as common sense,Standardized separators/case/order/exact labels
+KIBE-063,Q2,normalized multi-select formatting,"Dating/marriage, Gender issues, Family/children, Religion/morality","Dating/marriage, Family/children, Gender issues, Religion/morality",Standardized separators/case/order/exact labels
+KIBE-063,Q8,normalized multi-select formatting,Men’s behavior,Men's behavior,Standardized separators/case/order/exact labels
+KIBE-063,Q11,normalized multi-select formatting,"Entertainment/escapism, Status seeking, Self expression/identity construction","Entertainment/escapism, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+KIBE-063,Q13,removed conflicting null option,"No justification, Presented as common sense",Presented as common sense,Null option cannot be combined with substantive labels
+KIBE-063,Q13,normalized multi-select formatting,"No justification, Presented as common sense",Presented as common sense,Standardized separators/case/order/exact labels
+KIBE-080,Q2,normalized multi-select formatting,"Dating/marriage, Gender issues, Family/children, Religion/morality","Dating/marriage, Family/children, Gender issues, Religion/morality",Standardized separators/case/order/exact labels
+KIBE-080,Q8,normalized multi-select formatting,"Men’s behavior, Other","Men's behavior, Other",Standardized separators/case/order/exact labels
+KIBE-080,Q11,normalized multi-select formatting,"Entertainment/escapism, Status seeking, Self expression/identity construction","Entertainment/escapism, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+KIBE-080,Q12,normalized multi-select formatting,"Generalizations about men/women, Moral/religious claims, Cultural/social observations","Generalizations about men/women, Cultural/social observations, Moral/religious claims",Standardized separators/case/order/exact labels
+KIBE-080,Q13,normalized multi-select formatting,"References religion/tradition, Presented as common sense","Presented as common sense, References religion/tradition",Standardized separators/case/order/exact labels
+KIBE-080,Q7A,shortened other specify,Men should follow patriarchal/family authority in marriage,Men should follow patriarchal/family authority,Prompt requests 1-5 words
+KIBE-080,Q8A,shortened other specify,Young men choosing wives based on sexual desire,Young men choosing wives based,Prompt requests 1-5 words
+KIBE-080,Q9A,shortened other specify,Fathers/male elders should guide or choose marriage partners,Fathers/male elders should guide or,Prompt requests 1-5 words
+KIBE-082,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior, Other","Women/feminism, Men's behavior, Other",Standardized separators/case/order/exact labels
+KIBE-082,Q11,normalized multi-select formatting,"Entertainment/escapism, Status seeking, Self expression/identity construction","Entertainment/escapism, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+KIBE-082,Q13,removed conflicting null option,"No justification, Presented as common sense",Presented as common sense,Null option cannot be combined with substantive labels
+KIBE-082,Q13,normalized multi-select formatting,"No justification, Presented as common sense",Presented as common sense,Standardized separators/case/order/exact labels
+KIBE-082,Q8A,shortened other specify,Wives becoming mothers and losing sexual desirability,Wives becoming mothers and losing,Prompt requests 1-5 words
+1951644655797362727,Q2,normalized multi-select formatting,"Gender issues, Dating/marriage, Mental health","Dating/marriage, Mental health, Gender issues",Standardized separators/case/order/exact labels
+1951644655797362727,Q7,normalized multi-select formatting,"Men need to not show emotions, Men need to dominate/lead","Men need to dominate/lead, Men need to not show emotions",Standardized separators/case/order/exact labels
+1951644655797362727,Q11,normalized multi-select formatting,"Information seeking, Status seeking, Self expression/identity construction","Information seeking, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+1951644655797362727,Q13,removed conflicting null option,"No justification, Presented as common sense",Presented as common sense,Null option cannot be combined with substantive labels
+1951644655797362727,Q13,normalized multi-select formatting,"No justification, Presented as common sense",Presented as common sense,Standardized separators/case/order/exact labels
+1951644655797362727,Q18B,shortened other specify,Calls for men to control anger and avoid abusive behavior,Calls for men to control,Prompt requests 1-5 words
+1954120691185250750,Q2,normalized multi-select formatting,"Gender issues, Dating/marriage","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+1954120691185250750,Q8,normalized multi-select formatting,"Men's behavior, Women/feminism","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+1954120691185250750,Q13,removed conflicting null option,"No justification, Presented as common sense",Presented as common sense,Null option cannot be combined with substantive labels
+1954120691185250750,Q13,normalized multi-select formatting,"No justification, Presented as common sense",Presented as common sense,Standardized separators/case/order/exact labels
+1969310581648654500,Q1A,normalized multi-select formatting,"Other, Shares something surprising","Shares something surprising, Other",Standardized separators/case/order/exact labels
+1969310581648654500,Q2,normalized multi-select formatting,"Gender issues, Dating/marriage, Religion/morality","Dating/marriage, Gender issues, Religion/morality",Standardized separators/case/order/exact labels
+1969310581648654500,Q8,normalized multi-select formatting,"Men's behavior, Women/feminism, Other","Women/feminism, Men's behavior, Other",Standardized separators/case/order/exact labels
+1969310581648654500,Q13,normalized multi-select formatting,"References religion/tradition, Presented as common sense","Presented as common sense, References religion/tradition",Standardized separators/case/order/exact labels
+1969310581648654500,Q7A,shortened other specify,Men should not be emotionally dependent on women,Men should not be emotionally,Prompt requests 1-5 words
+1969310581648654500,Q8A,shortened other specify,Men giving women power in marriage,Men giving women power in,Prompt requests 1-5 words
+1969310581648654500,Q18B,shortened other specify,Calls for men to avoid emotional dependence on women,Calls for men to avoid,Prompt requests 1-5 words
+2035265419842359420,Q2,normalized multi-select formatting,"Gender issues, Dating/marriage, Religion/morality","Dating/marriage, Gender issues, Religion/morality",Standardized separators/case/order/exact labels
+2035265419842359420,Q8,normalized multi-select formatting,"Men's behavior, Women/feminism","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+2035265419842359420,Q13,normalized multi-select formatting,"References religion/tradition, Presented as common sense","Presented as common sense, References religion/tradition",Standardized separators/case/order/exact labels
+2035265419842359420,Q18B,shortened other specify,Calls for men not to rescue women,Calls for men not to,Prompt requests 1-5 words
+2039621704155045988,Q1A,normalized multi-select formatting,"Use of all CAPS, Uses a news headline or social media trend as opener, Shares something surprising, Shares something sexual","Use of all CAPS, Shares something sexual, Shares something surprising, Uses a news headline or social media trend as opener",Standardized separators/case/order/exact labels
+2039621704155045988,Q2,normalized multi-select formatting,"Gender issues, Dating/marriage, Religion/morality, Social issues, Mental health","Dating/marriage, Mental health, Gender issues, Social issues, Religion/morality",Standardized separators/case/order/exact labels
+2039621704155045988,Q8,normalized multi-select formatting,"Men's behavior, Women/feminism, Mental health/emotional struggle, Other","Women/feminism, Men's behavior, Mental health/emotional struggle, Other",Standardized separators/case/order/exact labels
+2039621704155045988,Q12,normalized multi-select formatting,"Generalizations about men/women, Moral/religious claims, Facts/statistics, Cultural/social observations
+","Generalizations about men/women, Cultural/social observations, Facts/statistics, Moral/religious claims",Standardized separators/case/order/exact labels
+2039621704155045988,Q13,removed conflicting null option,"Presented as common sense, No justification, References data","Presented as common sense, References data",Null option cannot be combined with substantive labels
+2039621704155045988,Q13,normalized multi-select formatting,"Presented as common sense, No justification, References data","Presented as common sense, References data",Standardized separators/case/order/exact labels
+2039621704155045988,Q7A,shortened other specify,Men need to be sexually cautious/selective,Men need to be sexually,Prompt requests 1-5 words
+2039621704155045988,Q18B,shortened other specify,Calls for mem to avoid casual sex/protect themselves from STIs,Calls for mem to avoid,Prompt requests 1-5 words
+2040474881876267501,Q2,normalized multi-select formatting,"Money/status, Dating/marriage, Gender issues","Dating/marriage, Money/status, Gender issues",Standardized separators/case/order/exact labels
+2040474881876267501,Q8,normalized multi-select formatting,"Men’s behavior, Economic/status pressure","Men's behavior, Economic/status pressure",Standardized separators/case/order/exact labels
+2040474881876267501,Q13,removed conflicting null option,"Presented as common sense, No justification",Presented as common sense,Null option cannot be combined with substantive labels
+2040474881876267501,Q13,normalized multi-select formatting,"Presented as common sense, No justification",Presented as common sense,Standardized separators/case/order/exact labels
+2047918654382112910,Q2,normalized multi-select formatting,"Religion/morality, Dating/marriage, Gender issues","Dating/marriage, Gender issues, Religion/morality",Standardized separators/case/order/exact labels
+2047918654382112910,Q7,normalized multi-select formatting,"Men need to dominate/lead, Men need to not show emotion, Other","Men need to dominate/lead, Men need to not show emotions, Other",Standardized separators/case/order/exact labels
+2047918654382112910,Q12,removed conflicting null option,"Generalizations about men/women, No support",Generalizations about men/women,Null option cannot be combined with substantive labels
+2047918654382112910,Q12,normalized multi-select formatting,"Generalizations about men/women, No support",Generalizations about men/women,Standardized separators/case/order/exact labels
+2047918654382112910,Q13,removed conflicting null option,"Presented as common sense, No justification",Presented as common sense,Null option cannot be combined with substantive labels
+2047918654382112910,Q13,normalized multi-select formatting,"Presented as common sense, No justification",Presented as common sense,Standardized separators/case/order/exact labels
+2047918654382112910,Q7A,shortened other specify,Men should seek revenge for cheating,Men should seek revenge for,Prompt requests 1-5 words
+2047918654382112910,Q18B,shortened other specify,Calls for revenge against a cheating wife,Calls for revenge against a,Prompt requests 1-5 words
+2048024608431804592,Q2,normalized multi-select formatting,"Religion/morality, Dating/marriage, Gender issues, Family/children","Dating/marriage, Family/children, Gender issues, Religion/morality",Standardized separators/case/order/exact labels
+2048024608431804592,Q12,normalized multi-select formatting,"Moral/religious claims, Generalizations about men/women","Generalizations about men/women, Moral/religious claims",Standardized separators/case/order/exact labels
+2048024608431804592,Q7A,shortened other specify,Men need to spiritually bless/guide the family,Men need to spiritually bless/guide,Prompt requests 1-5 words
+2048024608431804592,Q18B,shortened other specify,Calls for patriarchal spiritual family hierachy,Calls for patriarchal spiritual family,Prompt requests 1-5 words
+1951636792672661776,Q2,normalized multi-select formatting,"Gender issues, Social issues, Friends/socializing, Other","Friends/socializing, Gender issues, Social issues, Other",Standardized separators/case/order/exact labels
+1951636792672661776,Q8,normalized multi-select formatting,"Women/feminism, General political/social/cultural problems, Other","Global political/social/cultural problems, Women/feminism, Other",Standardized separators/case/order/exact labels
+1951636792672661776,Q13,removed conflicting null option,"No justification, Presented as common sense",Presented as common sense,Null option cannot be combined with substantive labels
+1951636792672661776,Q13,normalized multi-select formatting,"No justification, Presented as common sense",Presented as common sense,Standardized separators/case/order/exact labels
+1951636792672661776,Q7A,shortened other specify,Men need to protect male-only spaces,Men need to protect male-only,Prompt requests 1-5 words
+1951636792672661776,Q9A,shortened other specify,Keep women out of men's sports spaces,Keep women out of men's,Prompt requests 1-5 words
+1951636792672661776,Q18B,shortened other specify,Calls to protect male-only spaces from women's leadership/officiating,Calls to protect male-only spaces,Prompt requests 1-5 words
+EDDY-062,Q2,normalized multi-select formatting,"Gender issues, Social issues, Gaming/technology, Family/children","Family/children, Gender issues, Social issues, Gaming/technology",Standardized separators/case/order/exact labels
+EDDY-062,Q8,normalized multi-select formatting,"General political/social/cultural problems, Western political/social influence, Other","Global political/social/cultural problems, Western political/social influence, Other",Standardized separators/case/order/exact labels
+EDDY-062,Q8A,shortened other specify,The issue of the forgotten boy child,The issue of the forgotten,Prompt requests 1-5 words
+EDDY-020,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+EDDY-020,Q9A,shortened other specify,Creating a space for open conversation about men's mental health,Creating a space for open,Prompt requests 1-5 words
+EDDY-037,Q10,normalized multi-select formatting,"Personal story, Advice/instruction","Advice/instruction, Personal story",Standardized separators/case/order/exact labels
+EDDY-037,Q18B,shortened other specify,Call for the audience to ask for help if they need it,Call for the audience to,Prompt requests 1-5 words
+EDDY-038,Q7,conditional normalization,Men need to provide/succeed,Mixed/unclear,Q6 = Unclear
+EDDY-059,Q9A,shortened other specify,More conversation about mental health from those in power,More conversation about mental health,Prompt requests 1-5 words
+RIX-026,Q2,normalized multi-select formatting,"Mental health, Social issues, e.g. corruption","Mental health, Social issues",Standardized separators/case/order/exact labels
+RIX-026,Q8,normalized multi-select formatting,"Men’s behavior, Mental health/emotional struggle","Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+RIX-078,Q2,normalized multi-select formatting,"Mental health, Social issues, e.g. corruption","Mental health, Social issues",Standardized separators/case/order/exact labels
+RIX-078,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Global political/social/cultural problems, Other","Global political/social/cultural problems, Mental health/emotional struggle, Other",Standardized separators/case/order/exact labels
+RIX-078,Q12,normalized multi-select formatting,"Cultural/social observations, Personal experience","Personal experience, Cultural/social observations",Standardized separators/case/order/exact labels
+RIX-078,Q7,conditional normalization,Men need to be emotionally open,Mixed/unclear,Q6 = Unclear
+RIX-085,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Mental health","Mental health, Gender issues",Standardized separators/case/order/exact labels
+RIX-085,Q8,normalized multi-select formatting,"Global political/social/cultural problems, Men’s behavior, Mental health/emotional struggle","Global political/social/cultural problems, Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+RIX-085,Q12,normalized multi-select formatting,"Stories about men/women, Personal experience","Personal experience, Stories about men/women",Standardized separators/case/order/exact labels
+PHIL-016,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Social issues, e.g. corruption","Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-016,Q6,conditional normalization,No,Not applicable,Q4 = No
+PHIL-020,Q2,normalized multi-select formatting,"Family/children, Gender issues, e.g. equality, Money/status","Family/children, Money/status, Gender issues",Standardized separators/case/order/exact labels
+PHIL-020,Q8,normalized multi-select formatting,"Kenyan or Nigerian political/social problems, Men’s behavior, Economic/status pressure","Kenyan or Nigerian political/social problems, Men's behavior, Economic/status pressure",Standardized separators/case/order/exact labels
+PHIL-021,Q2,normalized multi-select formatting,"Family/children, Dating/marriage, Gender issues, e.g. equality","Dating/marriage, Family/children, Gender issues",Standardized separators/case/order/exact labels
+PHIL-021,Q8,normalized multi-select formatting,"Women/feminism, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Women/feminism",Standardized separators/case/order/exact labels
+PHIL-026,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Social issues, e.g. corruption","Gender issues, Social issues",Standardized separators/case/order/exact labels
+PHIL-026,Q10,normalized multi-select formatting,"News/telling facts, Commentary/opinion","Commentary/opinion, News/telling facts",Standardized separators/case/order/exact labels
+KIBE-005,Q2,normalized multi-select formatting,"Gender issues, e.g. equality",Gender issues,Standardized separators/case/order/exact labels
+KIBE-005,Q10,normalized multi-select formatting,"Commentary/opinion, Personal story","Personal story, Commentary/opinion",Standardized separators/case/order/exact labels
+KIBE-037,Q2,normalized multi-select formatting,"Friends/socializing, Dating/marriage","Dating/marriage, Friends/socializing",Standardized separators/case/order/exact labels
+KIBE-037,Q12,normalized multi-select formatting,"Personal experience, Generalizations about men/women","Generalizations about men/women, Personal experience",Standardized separators/case/order/exact labels
+KIBE-037,Q7A,shortened other specify,Men need to stick to their word,Men need to stick to,Prompt requests 1-5 words
+KIBE-067,Q2,normalized multi-select formatting,"Family/children, Gender issues, e.g. equality","Family/children, Gender issues",Standardized separators/case/order/exact labels
+KIBE-069,Q8,normalized multi-select formatting,"Women/feminism, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Women/feminism",Standardized separators/case/order/exact labels
+1976943608214212735,Q8,normalized multi-select formatting,"Women/feminism, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Women/feminism",Standardized separators/case/order/exact labels
+1977034206967378054,Q9A,shortened other specify,Vague ideas about growing and power,Vague ideas about growing and,Prompt requests 1-5 words
+2035227655516061989,Q2,normalized multi-select formatting,"Money/status, Dating/marriage","Dating/marriage, Money/status",Standardized separators/case/order/exact labels
+2035227655516061989,Q11,normalized multi-select formatting,"Status seeking, Self expression/identity construction","Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+2040452017219310007,Q2,normalized multi-select formatting,"Dating/marriage, Gender issues, e.g. equality","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+2040452017219310007,Q9,normalized multi-select formatting,"More equality/respect for men, Assert dominance/control","Assert dominance/control, More equality/respect for men",Standardized separators/case/order/exact labels
+2040452017219310007,Q18A,normalized multi-select formatting,Calls for women to follow more traditional gender norm,Calls for women to follow more traditional gender norms,Standardized separators/case/order/exact labels
+2046942539295424701,Q6,conditional normalization,No,Not applicable,Q4 = No
+2047926330331684873,Q9,normalized multi-select formatting,"More self-discipline/fitness, More wealth/status","More wealth/status, More self-discipline/fitness",Standardized separators/case/order/exact labels
+2047926330331684873,Q18B,shortened other specify,Calls for men to improve themselves,Calls for men to improve,Prompt requests 1-5 words
+2047971502197195023,Q2,normalized multi-select formatting,"Family/children, Dating/marriage","Dating/marriage, Family/children",Standardized separators/case/order/exact labels
+2047971502197195023,Q9A,shortened other specify,Be in control and avoid drama,Be in control and avoid,Prompt requests 1-5 words
+2047971502197195023,Q18B,shortened other specify,Calls for men to be in control and avoid drama,Calls for men to be,Prompt requests 1-5 words
+2048054872243618116,Q8,normalized multi-select formatting,"Women/feminism, Men’s behavior","Women/feminism, Men's behavior",Standardized separators/case/order/exact labels
+2048054872243618116,Q18B,shortened other specify,Be prepared and have an exit plan,Be prepared and have an,Prompt requests 1-5 words
+KIBE-036,Q8,normalized multi-select formatting,Men’s behavior,Men's behavior,Standardized separators/case/order/exact labels
+KIBE-036,Q12,normalized multi-select formatting,"Personal experience, Generalizations about men/women","Generalizations about men/women, Personal experience",Standardized separators/case/order/exact labels
+KIBE-088,Q2,normalized multi-select formatting,"Gender issues, e.g. equality, Other","Gender issues, Other",Standardized separators/case/order/exact labels
+KIBE-088,Q8,normalized multi-select formatting,Men’s behavior,Men's behavior,Standardized separators/case/order/exact labels
+RIX-065,Q8,normalized multi-select formatting,"Men’s behavior, Mental health/emotional struggle","Men's behavior, Mental health/emotional struggle",Standardized separators/case/order/exact labels
+EDDY-005,Q7,normalized multi-select formatting,"Men need to improve themselves, other","Men need to improve themselves, Other",Standardized separators/case/order/exact labels
+EDDY-005,Q9,normalized multi-select formatting,"More emotional growth/healing, other","More emotional growth/healing, Other",Standardized separators/case/order/exact labels
+EDDY-005,Q10,normalized multi-select formatting,"Advice/instruction, personal story","Advice/instruction, Personal story",Standardized separators/case/order/exact labels
+EDDY-005,Q11,normalized multi-select formatting,"Connection/social interaction, self expression/identity construction, information seeking","Information seeking, Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+EDDY-005,Q7A,shortened other specify,Men need to be emotionally available fathers,Men need to be emotionally,Prompt requests 1-5 words
+EDDY-017,Q9,normalized multi-select formatting,"More emotional growth/healing, other","More emotional growth/healing, Other",Standardized separators/case/order/exact labels
+EDDY-017,Q11,normalized multi-select formatting,"Connection/social interaction, self expression/identity construction, information seeking","Information seeking, Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+EDDY-017,Q7A,shortened other specify,Men need to practice more self care,Men need to practice more,Prompt requests 1-5 words
+EDDY-017,Q9A,shortened other specify,Men should practice more self care,Men should practice more self,Prompt requests 1-5 words
+EDDY-023,Q3,normalized multi-select formatting,"Interview/conversational content, motivational/self-help content","Interview/conversational content, Motivational/self-help content",Standardized separators/case/order/exact labels
+EDDY-023,Q11,normalized multi-select formatting,"Connection/social interaction, self expression/identity construction, information seeking","Information seeking, Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+EDDY-023,Q5,conditional normalization,More progressive/equitable/expansive,Does not address masculinity or gender norms,Q4 = No
+EDDY-023,Q6,conditional normalization,No,Not applicable,Q4 = No
+EDDY-023,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+EDDY-035,Q2,normalized multi-select formatting,"Mental health, other","Mental health, Other",Standardized separators/case/order/exact labels
+EDDY-035,Q3,normalized multi-select formatting,"Interview/conversational content, motivational/self-help content","Interview/conversational content, Motivational/self-help content",Standardized separators/case/order/exact labels
+EDDY-035,Q11,normalized multi-select formatting,"Connection/social interaction, self expression/identity construction, information seeking","Information seeking, Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+EDDY-055,Q3,normalized multi-select formatting,"Commentary/reaction content, other","Commentary/reaction content, Other",Standardized separators/case/order/exact labels
+EDDY-055,Q11,normalized multi-select formatting,"Connection/social interaction, entertainment/escapism","Entertainment/escapism, Connection/social interaction",Standardized separators/case/order/exact labels
+EDDY-055,Q6,conditional normalization,No,Not applicable,Q4 = No
+EDDY-055,Q3A,shortened other specify,Personal/confessional.,Personal/confessional,Prompt requests 1-5 words
+RIX-003,Q2,normalized multi-select formatting,"Mental health, gender issues, other","Mental health, Gender issues, Other",Standardized separators/case/order/exact labels
+RIX-003,Q11,normalized multi-select formatting,"Information seeking, self expression/identity construction","Information seeking, Self expression/identity construction",Standardized separators/case/order/exact labels
+RIX-003,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+RIX-018,Q2,normalized multi-select formatting,"Family/children, other","Family/children, Other",Standardized separators/case/order/exact labels
+RIX-018,Q3,normalized multi-select formatting,"Interview/conversational content, motivational/self-help content","Interview/conversational content, Motivational/self-help content",Standardized separators/case/order/exact labels
+RIX-018,Q7,normalized multi-select formatting,Men need to be more emotionally open,Men need to be emotionally open,Standardized separators/case/order/exact labels
+RIX-018,Q11,normalized multi-select formatting,"Connection/social interaction, self expression/identity construction, information seeking","Information seeking, Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+RIX-018,Q7,conditional normalization,Men need to be emotionally open,Not applicable,Q6 = No/Not applicable
+RIX-046,Q2,normalized multi-select formatting,"Family/children, other","Family/children, Other",Standardized separators/case/order/exact labels
+RIX-046,Q11,normalized multi-select formatting,"Connection/social interaction, self expression/identity construction, information seeking","Information seeking, Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+RIX-046,Q6,conditional normalization,No,Not applicable,Q4 = No
+RIX-047,Q2,normalized multi-select formatting,"Family/children, other","Family/children, Other",Standardized separators/case/order/exact labels
+RIX-047,Q11,normalized multi-select formatting,"Connection/social interaction, self expression/identity construction, information seeking","Information seeking, Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+RIX-047,Q6,conditional normalization,No,Not applicable,Q4 = No
+RIX-076,Q11,normalized multi-select formatting,"Connection/social interaction, self expression/identity construction, information seeking","Information seeking, Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+RIX-076,Q6,conditional normalization,,Not applicable,Q4 = No
+RIX-076,Q18B,shortened other specify,"Live as if you're living in a village, the way you'd want your village to run.",Live as if you're living,Prompt requests 1-5 words
+PHIL-006,Q1A,normalized multi-select formatting,"Shares something surprising, other","Shares something surprising, Other",Standardized separators/case/order/exact labels
+PHIL-006,Q8,normalized multi-select formatting,"Global political/social/cultural problems, other","Global political/social/cultural problems, Other",Standardized separators/case/order/exact labels
+PHIL-006,Q11,normalized multi-select formatting,"Self expression/identity construction, information seeking","Information seeking, Self expression/identity construction",Standardized separators/case/order/exact labels
+PHIL-006,Q18B,shortened other specify,To take the femicide problem seriously.,To take the femicide problem,Prompt requests 1-5 words
+PHIL-010,Q2,normalized multi-select formatting,"Family/children, gender issues, other","Family/children, Gender issues, Other",Standardized separators/case/order/exact labels
+PHIL-010,Q8,normalized multi-select formatting,"Men's behavior, other","Men's behavior, Other",Standardized separators/case/order/exact labels
+PHIL-010,Q11,normalized multi-select formatting,"Connection/social interaction, self expression/identity construction","Connection/social interaction, Self expression/identity construction",Standardized separators/case/order/exact labels
+PHIL-010,Q6,conditional normalization,,Not applicable,Q4 = No
+PHIL-014,Q11,normalized multi-select formatting,"Self expression/identity construction, information seeking","Information seeking, Self expression/identity construction",Standardized separators/case/order/exact labels
+PHIL-014,Q6,conditional normalization,,Not applicable,Q4 = No
+PHIL-015,Q11,normalized multi-select formatting,"Self expression/identity construction, information seeking","Information seeking, Self expression/identity construction",Standardized separators/case/order/exact labels
+PHIL-015,Q6,conditional normalization,,Not applicable,Q4 = No
+PHIL-023,Q11,normalized multi-select formatting,"Self expression/identity construction, information seeking","Information seeking, Self expression/identity construction",Standardized separators/case/order/exact labels
+PHIL-023,Q6,conditional normalization,No,Not applicable,Q4 = No
+PHIL-031,Q2,normalized multi-select formatting,"Mental health, other","Mental health, Other",Standardized separators/case/order/exact labels
+PHIL-031,Q11,normalized multi-select formatting,"Self expression/identity construction, information seeking","Information seeking, Self expression/identity construction",Standardized separators/case/order/exact labels
+PHIL-031,Q6,conditional normalization,No,Not applicable,Q4 = No
+PHIL-031,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+PHIL-031,Q8A,shortened other specify,"Difficulty of growing up in Busia, a city in Kenya",Difficulty of growing up in,Prompt requests 1-5 words
+KIBE-011,Q3,normalized multi-select formatting,"Interview/conversational content, commentary/reaction content","Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+KIBE-011,Q7,normalized multi-select formatting,"Men need to dominate/lead, other","Men need to dominate/lead, Other",Standardized separators/case/order/exact labels
+KIBE-011,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction, status seeking","Entertainment/escapism, Self expression/identity construction, Status seeking",Standardized separators/case/order/exact labels
+KIBE-011,Q7A,shortened other specify,Men work harder and better than women.,Men work harder and better,Prompt requests 1-5 words
+KIBE-025,Q8,normalized multi-select formatting,"Women/feminism, other","Women/feminism, Other",Standardized separators/case/order/exact labels
+KIBE-025,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+KIBE-025,Q8A,shortened other specify,"Asserts that mothers are damaging, bullies.","Asserts that mothers are damaging,",Prompt requests 1-5 words
+KIBE-027,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+KIBE-031,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+KIBE-031,Q8A,shortened other specify,Some men are raised to be mama's boys which means weakness.,Some men are raised to,Prompt requests 1-5 words
+KIBE-034,Q2,normalized multi-select formatting,"Dating/marriage, gender issues","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+KIBE-034,Q3,normalized multi-select formatting,"Commentary/reaction content, interview/conversational content","Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+KIBE-034,Q8,removed conflicting null option,"No clear problem is identified, Other",Other,Null option cannot be combined with substantive labels
+KIBE-034,Q8,normalized multi-select formatting,"No clear problem is identified, other",Other,Standardized separators/case/order/exact labels
+KIBE-034,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+KIBE-034,Q7A,shortened other specify,Men find younger partners after spending a lot of time with their wives or after the wife becomes a mother.,Men find younger partners after,Prompt requests 1-5 words
+KIBE-034,Q8A,shortened other specify,Asserts that monogamy is not natural for men.,Asserts that monogamy is not,Prompt requests 1-5 words
+KIBE-079,Q1A,normalized multi-select formatting,"Shares something surprising, other","Shares something surprising, Other",Standardized separators/case/order/exact labels
+KIBE-079,Q2,normalized multi-select formatting,"Dating/marriage, gender issues","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+KIBE-079,Q3,normalized multi-select formatting,"Commentary/reaction content, interview/conversational content","Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+KIBE-079,Q8,normalized multi-select formatting,"Women/feminism, other","Women/feminism, Other",Standardized separators/case/order/exact labels
+KIBE-079,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+KIBE-079,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+KIBE-079,Q8A,shortened other specify,Women can claim that they are being abused by men in Western societies,Women can claim that they,Prompt requests 1-5 words
+KIBE-083,Q1A,normalized multi-select formatting,"Shares something surprising, other","Shares something surprising, Other",Standardized separators/case/order/exact labels
+KIBE-083,Q2,normalized multi-select formatting,"Dating/marriage, gender issues","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+KIBE-083,Q3,normalized multi-select formatting,"Commentary/reaction content, interview/conversational content","Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+KIBE-083,Q8,normalized multi-select formatting,"Women/feminism, other","Women/feminism, Other",Standardized separators/case/order/exact labels
+KIBE-083,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+KIBE-083,Q12,normalized multi-select formatting,"Generalizations about men/women, cultural/social observations","Generalizations about men/women, Cultural/social observations",Standardized separators/case/order/exact labels
+KIBE-083,Q7,conditional normalization,,Not applicable,Q6 = No/Not applicable
+KIBE-083,Q1B,shortened other specify,Compares Black relationships in America to war,Compares Black relationships in America,Prompt requests 1-5 words
+KIBE-083,Q8A,shortened other specify,Women controlling children.,Women controlling children,Prompt requests 1-5 words
+1951546068304314751,Q2,normalized multi-select formatting,"Dating/marriage, gender issues, money/status","Dating/marriage, Money/status, Gender issues",Standardized separators/case/order/exact labels
+1951546068304314751,Q3,normalized multi-select formatting,"Commentary/reaction content, motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels
+1951546068304314751,Q8,normalized multi-select formatting,"Women/feminism, other","Women/feminism, Other",Standardized separators/case/order/exact labels
+1951546068304314751,Q10,normalized multi-select formatting,"Commentary/opinion, advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+1951546068304314751,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+1951546068304314751,Q18A,normalized multi-select formatting,"Calls for men to follow more traditional gender norms, other","Calls for men to follow more traditional gender norms, Other",Standardized separators/case/order/exact labels
+1951546068304314751,Q7A,shortened other specify,"Men should ask other men, rather than women, for financial help.","Men should ask other men,",Prompt requests 1-5 words
+1951546068304314751,Q18B,shortened other specify,"Calls for men to ask other men, not women, for financial help",Calls for men to ask,Prompt requests 1-5 words
+1951583978584002773,Q2,normalized multi-select formatting,"Dating/marriage, gender issues","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+1951583978584002773,Q8,normalized multi-select formatting,"Women/feminism, other","Women/feminism, Other",Standardized separators/case/order/exact labels
+1951583978584002773,Q10,normalized multi-select formatting,"Commentary/opinion, advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+1951583978584002773,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+1951583978584002773,Q18A,normalized multi-select formatting,"Calls for men to follow more traditional gender norms, other","Calls for men to follow more traditional gender norms, Other",Standardized separators/case/order/exact labels
+1951583978584002773,Q18B,shortened other specify,Calls for men to only give women gifts in specific situations to avoid being manipulated,Calls for men to only,Prompt requests 1-5 words
+1951659746303377415,Q3,normalized multi-select formatting,"Commentary/reaction content, motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels
+1951659746303377415,Q7,normalized multi-select formatting,"Men need to dominate/lead, other","Men need to dominate/lead, Other",Standardized separators/case/order/exact labels
+1951659746303377415,Q8,normalized multi-select formatting,"Men's behavior, other","Men's behavior, Other",Standardized separators/case/order/exact labels
+1951659746303377415,Q9,normalized multi-select formatting,"More self-discipline/fitness, more equality/respect for men","More self-discipline/fitness, More equality/respect for men",Standardized separators/case/order/exact labels
+1951659746303377415,Q10,normalized multi-select formatting,"Commentary/opinion, advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+1951659746303377415,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+1951659746303377415,Q7A,shortened other specify,Men need to pass through the prescribed life stages instead of being stuck in boyhood,Men need to pass through,Prompt requests 1-5 words
+1954860355793953085,Q2,normalized multi-select formatting,"Dating/marriage, gender issues","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+1954860355793953085,Q3,normalized multi-select formatting,"Commentary/reaction content, interview/conversational content","Interview/conversational content, Commentary/reaction content",Standardized separators/case/order/exact labels
+1954860355793953085,Q7,normalized multi-select formatting,"Men need to dominate/lead, other","Men need to dominate/lead, Other",Standardized separators/case/order/exact labels
+1954860355793953085,Q8,normalized multi-select formatting,"Women/feminism, men's behavior, other","Women/feminism, Men's behavior, Other",Standardized separators/case/order/exact labels
+1954860355793953085,Q10,normalized multi-select formatting,"Commentary/opinion, advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+1954860355793953085,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+1954860355793953085,Q12,normalized multi-select formatting,"Generalizations about men/women, moral/religious claims","Generalizations about men/women, Moral/religious claims",Standardized separators/case/order/exact labels
+1954860355793953085,Q13,normalized multi-select formatting,"Presented as common sense, references religion/tradition, other","Presented as common sense, References religion/tradition, Other",Standardized separators/case/order/exact labels
+1954860355793953085,Q18A,normalized multi-select formatting,"Calls for men to follow more traditional gender norms, calls for women to follow more traditional gender norms","Calls for men to follow more traditional gender norms, Calls for women to follow more traditional gender norms",Standardized separators/case/order/exact labels
+1954860355793953085,Q8A,shortened other specify,Low value women and men not understanding the natural order of the world.,Low value women and men,Prompt requests 1-5 words
+1973440936542720469,Q2,normalized multi-select formatting,"Dating/marriage, gender issues","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+1973440936542720469,Q3,normalized multi-select formatting,"Commentary/reaction content, motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels
+1973440936542720469,Q7,normalized multi-select formatting,"Men need to dominate/lead, other","Men need to dominate/lead, Other",Standardized separators/case/order/exact labels
+1973440936542720469,Q10,normalized multi-select formatting,"Commentary/opinion, advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+1973440936542720469,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+1973440936542720469,Q18A,normalized multi-select formatting,"Calls for men to follow more traditional gender norms, other","Calls for men to follow more traditional gender norms, Other",Standardized separators/case/order/exact labels
+1973440936542720469,Q7A,shortened other specify,Men shoud ignore women starting drama,Men shoud ignore women starting,Prompt requests 1-5 words
+1973440936542720469,Q18B,shortened other specify,Calls for men to stay hard and stay stoic when dealing with women being dramatic.,Calls for men to stay,Prompt requests 1-5 words
+2035235206035034470,Q3,normalized multi-select formatting,"Commentary/reaction content, motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels
+2035235206035034470,Q10,normalized multi-select formatting,"Commentary/opinion, advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+2035235206035034470,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+2035235206035034470,Q7A,shortened other specify,Men need to prepare for fatherhood,Men need to prepare for,Prompt requests 1-5 words
+2035235206035034470,Q9A,shortened other specify,Men can prepare for fatherhood by owning land,Men can prepare for fatherhood,Prompt requests 1-5 words
+2035333355189747989,Q2,normalized multi-select formatting,"Dating/marriage, gender issues","Dating/marriage, Gender issues",Standardized separators/case/order/exact labels
+2035333355189747989,Q3,normalized multi-select formatting,"Commentary/reaction content, motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels
+2035333355189747989,Q10,normalized multi-select formatting,"Commentary/opinion, advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels
+2035333355189747989,Q11,normalized multi-select formatting,"Entertainment/escapism, self expression/identity construction","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels
+2035333355189747989,Q18A,normalized multi-select formatting,"Calls for men to follow more traditional gender norms, other","Calls for men to follow more traditional gender norms, Other",Standardized separators/case/order/exact labels
+2035333355189747989,Q7A,shortened other specify,Dump the woman that asks for a wedding.,Dump the woman that asks,Prompt requests 1-5 words
+2035333355189747989,Q9A,shortened other specify,Leave women that want dramatic or performative things like weddings,Leave women that want dramatic,Prompt requests 1-5 words
+2035333355189747989,Q18B,shortened other specify,Calls for men to leave women that ask for weddings.,Calls for men to leave,Prompt requests 1-5 words
+EDDY-012,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+EDDY-034,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+EDDY-040,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+EDDY-052,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+RIX-007,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+RIX-009,Q2,remaining invalid multi value,Corruption,Corruption,Not an exact prompt option
+RIX-009,Q2,remaining invalid multi value,Family Trauma,Family Trauma,Not an exact prompt option
+RIX-009,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+RIX-028,Q8,remaining invalid multi value,Kenyan Social,Kenyan Social,Not an exact prompt option
+RIX-028,Q3,remaining invalid multi value,Self-help Content,Self-help Content,Not an exact prompt option
+RIX-072,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+RIX-082,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+RIX-088,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+PHIL-001,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+PHIL-002,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+PHIL-005,Q2,remaining invalid multi value,Corruption,Corruption,Not an exact prompt option
+PHIL-005,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+PHIL-035,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+PHIL-036,Q2,remaining invalid multi value,Corruption,Corruption,Not an exact prompt option
+PHIL-036,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option
+KIBE-001,Q8,remaining invalid multi value,Kenyan Cultural Problems,Kenyan Cultural Problems,Not an exact prompt option

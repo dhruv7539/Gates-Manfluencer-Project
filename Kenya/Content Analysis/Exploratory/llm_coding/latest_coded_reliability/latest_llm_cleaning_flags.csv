@@ -1,0 +1,320 @@
+Content ID,Question ID,Flag type,Original value,Cleaned value,Note,Exclude from scoring
+EDDY-002,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Economic/status pressure","Economic/status pressure, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+RIX-017,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels,No
+RIX-070,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Global political/social/cultural problems","Global political/social/cultural problems, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+PHIL-007,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-011,Q2,normalized multi-select formatting,"Social issues, Gender issues, Family/children","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-012,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-019,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-029,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-029,Q8,normalized multi-select formatting,"Global political/social/cultural problems, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems",Standardized separators/case/order/exact labels,No
+PHIL-029,Q10,normalized multi-select formatting,"News/telling facts, Commentary/opinion","Commentary/opinion, News/telling facts",Standardized separators/case/order/exact labels,No
+KIBE-061,Q2,normalized multi-select formatting,"Gender issues, Money/status","Money/status, Gender issues",Standardized separators/case/order/exact labels,No
+KIBE-064,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+KIBE-091,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+KIBE-091,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+1951561231522746625,Q13,normalized multi-select formatting,"Presented as common sense, Anecdotal examples","Anecdotal examples, Presented as common sense",Standardized separators/case/order/exact labels,No
+1951561231522746625,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1951614290114310219,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1975245528242729101,Q2,normalized multi-select formatting,"Dating/marriage, Gender issues, Mental health","Dating/marriage, Mental health, Gender issues",Standardized separators/case/order/exact labels,No
+2040406554671829239,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2040459874526433729,Q11,normalized multi-select formatting,"Self expression/identity construction, Entertainment/escapism","Entertainment/escapism, Self expression/identity construction",Standardized separators/case/order/exact labels,No
+1954188481585873209,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1954188481585873209,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+KIBE-004,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+KIBE-004,Q3,normalized multi-select formatting,"Advice/instruction, Commentary/reaction content","Commentary/reaction content, Advice/instruction",Standardized separators/case/order/exact labels,No
+KIBE-004,Q11,normalized multi-select formatting,"Self expression/identity construction, Information seeking","Information seeking, Self expression/identity construction",Standardized separators/case/order/exact labels,No
+KIBE-004,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+EDDY-018,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels,No
+RIX-030,Q2,normalized multi-select formatting,"Mental health, Family/children","Family/children, Mental health",Standardized separators/case/order/exact labels,No
+RIX-030,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels,No
+2043969069993378270,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+2043969069993378270,Q3,normalized multi-select formatting,"Advice/instruction, Commentary/reaction content","Commentary/reaction content, Advice/instruction",Standardized separators/case/order/exact labels,No
+2043969069993378270,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+KIBE-002,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels,No
+KIBE-002,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+EDDY-036,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+EDDY-036,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+EDDY-012,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+EDDY-052,Q2,normalized multi-select formatting,"Mental health, Fitness/self-improvement","Fitness/self-improvement, Mental health",Standardized separators/case/order/exact labels,No
+EDDY-052,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels,No
+RIX-007,Q2,normalized multi-select formatting,"Mental health, Family/children","Family/children, Mental health",Standardized separators/case/order/exact labels,No
+RIX-007,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+RIX-009,Q2,normalized multi-select formatting,"Mental health, Family/children","Family/children, Mental health",Standardized separators/case/order/exact labels,No
+RIX-009,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+RIX-028,Q2,normalized multi-select formatting,"Mental health, Family/children","Family/children, Mental health",Standardized separators/case/order/exact labels,No
+RIX-028,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+RIX-028,Q3,normalized multi-select formatting,"Advice/instruction, Commentary/reaction content","Commentary/reaction content, Advice/instruction",Standardized separators/case/order/exact labels,No
+RIX-082,Q9,normalized multi-select formatting,"More emotional growth/healing, Social or political change","Social or political change, More emotional growth/healing",Standardized separators/case/order/exact labels,No
+RIX-088,Q2,normalized multi-select formatting,"Mental health, Fitness/self-improvement","Fitness/self-improvement, Mental health",Standardized separators/case/order/exact labels,No
+PHIL-002,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+PHIL-002,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+PHIL-005,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-035,Q2,normalized multi-select formatting,"Family/children, Social issues, Gender issues","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-036,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+KIBE-001,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels,No
+KIBE-001,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+KIBE-020,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+KIBE-029,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+KIBE-029,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels,No
+KIBE-029,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1951568877998965117,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1951568877998965117,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1975078851945394590,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1975078851945394590,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1976936284460351491,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1976936284460351491,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2040414105522065830,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2048031963504611687,Q11,normalized multi-select formatting,"Self expression/identity construction, Information seeking","Information seeking, Self expression/identity construction",Standardized separators/case/order/exact labels,No
+EDDY-028,Q18,unresolved noncanonical value,Calls for men to follow more equitable gender norms,Calls for men to follow more equitable gender norms,Needs manual review; left as-is,Yes
+EDDY-031,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+EDDY-031,Q10,normalized multi-select formatting,"Motivational speech, Personal story","Personal story, Motivational speech",Standardized separators/case/order/exact labels,No
+EDDY-041,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+RIX-001,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Global political/social/cultural problems","Global political/social/cultural problems, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+RIX-015,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+RIX-054,Q2,normalized multi-select formatting,"Mental health, Family/children","Family/children, Mental health",Standardized separators/case/order/exact labels,No
+RIX-054,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+RIX-068,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+RIX-068,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+RIX-068,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Global political/social/cultural problems","Global political/social/cultural problems, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+RIX-069,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels,No
+RIX-069,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Global political/social/cultural problems","Global political/social/cultural problems, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+RIX-079,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Global political/social/cultural problems","Global political/social/cultural problems, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+PHIL-008,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-009,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-013,Q2,normalized multi-select formatting,"Social issues, Gender issues, Family/children","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-025,Q2,normalized multi-select formatting,"Family/children, Social issues, Gender issues","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-025,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+PHIL-025,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+PHIL-037,Q2,normalized multi-select formatting,"Family/children, Social issues, Gender issues","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+KIBE-016,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+KIBE-016,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels,No
+KIBE-016,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+KIBE-049,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+KIBE-049,Q10,normalized multi-select formatting,"Commentary/opinion, Advice/instruction","Advice/instruction, Commentary/opinion",Standardized separators/case/order/exact labels,No
+KIBE-049,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+KIBE-051,Q8,normalized multi-select formatting,"Women/feminism, Global political/social/cultural problems","Global political/social/cultural problems, Women/feminism",Standardized separators/case/order/exact labels,No
+1954098073262522452,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1954098073262522452,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1954196373861003731,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1954196373861003731,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1962749588588187787,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1969363662281314544,Q10,normalized multi-select formatting,"News/telling facts, Commentary/opinion","Commentary/opinion, News/telling facts",Standardized separators/case/order/exact labels,No
+KIBE-006,Q8,normalized multi-select formatting,"Women/feminism, Global political/social/cultural problems","Global political/social/cultural problems, Women/feminism",Standardized separators/case/order/exact labels,No
+EDDY-057,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels,No
+EDDY-057,Q9,normalized multi-select formatting,"Building community, More emotional growth/healing","More emotional growth/healing, Building community",Standardized separators/case/order/exact labels,No
+EDDY-001,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+EDDY-001,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Economic/status pressure","Economic/status pressure, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+EDDY-027,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels,No
+EDDY-027,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Global political/social/cultural problems","Global political/social/cultural problems, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+EDDY-060,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+RIX-004,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels,No
+RIX-004,Q9,normalized multi-select formatting,"Building community, More emotional growth/healing","More emotional growth/healing, Building community",Standardized separators/case/order/exact labels,No
+RIX-033,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels,No
+RIX-042,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Global political/social/cultural problems","Global political/social/cultural problems, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+RIX-073,Q2,normalized multi-select formatting,"Mental health, Family/children","Family/children, Mental health",Standardized separators/case/order/exact labels,No
+RIX-073,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+RIX-073,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+RIX-077,Q9,normalized multi-select formatting,"Building community, More emotional growth/healing","More emotional growth/healing, Building community",Standardized separators/case/order/exact labels,No
+PHIL-022,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-022,Q8,normalized multi-select formatting,"Global political/social/cultural problems, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems",Standardized separators/case/order/exact labels,No
+PHIL-024,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-034,Q2,normalized multi-select formatting,"Social issues, Gender issues, Family/children","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-034,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+PHIL-034,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+PHIL-041,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-041,Q8,normalized multi-select formatting,"Global political/social/cultural problems, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems",Standardized separators/case/order/exact labels,No
+KIBE-003,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+KIBE-003,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+KIBE-008,Q18,unresolved noncanonical value,Calls for women to follow more traditional gender norms,Calls for women to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1951644655797362727,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1951644655797362727,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2035265419842359420,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+2035265419842359420,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2039621704155045988,Q1A,normalized multi-select formatting,"Shares something surprising, Use of all CAPS","Use of all CAPS, Shares something surprising",Standardized separators/case/order/exact labels,No
+2039621704155045988,Q3,unresolved noncanonical value,News/telling facts,News/telling facts,Needs manual review; left as-is,Yes
+2039621704155045988,Q3,normalized multi-select formatting,"News/telling facts, Commentary/reaction content","Commentary/reaction content, News/telling facts",Standardized separators/case/order/exact labels,No
+2039621704155045988,Q10,normalized multi-select formatting,"News/telling facts, Commentary/opinion","Commentary/opinion, News/telling facts",Standardized separators/case/order/exact labels,No
+2039621704155045988,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2040474881876267501,Q2,normalized multi-select formatting,"Gender issues, Money/status","Money/status, Gender issues",Standardized separators/case/order/exact labels,No
+2047918654382112910,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+2047918654382112910,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2048024608431804592,Q2,normalized multi-select formatting,"Religion/morality, Gender issues","Gender issues, Religion/morality",Standardized separators/case/order/exact labels,No
+1951636792672661776,Q8,normalized multi-select formatting,"Women/feminism, Global political/social/cultural problems","Global political/social/cultural problems, Women/feminism",Standardized separators/case/order/exact labels,No
+EDDY-020,Q3,normalized multi-select formatting,"Commentary/reaction content, Motivational/self-help content","Motivational/self-help content, Commentary/reaction content",Standardized separators/case/order/exact labels,No
+EDDY-020,Q9,normalized multi-select formatting,"Building community, More emotional growth/healing","More emotional growth/healing, Building community",Standardized separators/case/order/exact labels,No
+EDDY-037,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+EDDY-037,Q3,normalized multi-select formatting,"Personal story, Motivational/self-help content","Motivational/self-help content, Personal story",Standardized separators/case/order/exact labels,No
+EDDY-038,Q2,normalized multi-select formatting,"Mental health, Gender issues, Money/status","Money/status, Mental health, Gender issues",Standardized separators/case/order/exact labels,No
+EDDY-038,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Economic/status pressure","Economic/status pressure, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+EDDY-051,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+EDDY-051,Q3,normalized multi-select formatting,"Personal story, Motivational/self-help content","Motivational/self-help content, Personal story",Standardized separators/case/order/exact labels,No
+EDDY-051,Q9,normalized multi-select formatting,"Building community, More emotional growth/healing","More emotional growth/healing, Building community",Standardized separators/case/order/exact labels,No
+RIX-078,Q9,normalized multi-select formatting,"Building community, More emotional growth/healing","More emotional growth/healing, Building community",Standardized separators/case/order/exact labels,No
+RIX-085,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Global political/social/cultural problems","Global political/social/cultural problems, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+PHIL-016,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-016,Q8,normalized multi-select formatting,"Global political/social/cultural problems, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems",Standardized separators/case/order/exact labels,No
+PHIL-020,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-021,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-026,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-026,Q8,normalized multi-select formatting,"Global political/social/cultural problems, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems",Standardized separators/case/order/exact labels,No
+PHIL-039,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+PHIL-039,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+KIBE-005,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+KIBE-005,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+KIBE-005,Q8,normalized multi-select formatting,"Women/feminism, Global political/social/cultural problems","Global political/social/cultural problems, Women/feminism",Standardized separators/case/order/exact labels,No
+KIBE-058,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+KIBE-058,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+KIBE-067,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+KIBE-067,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1976943608214212735,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1976943608214212735,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1977034206967378054,Q2,normalized multi-select formatting,"Gender issues, Money/status","Money/status, Gender issues",Standardized separators/case/order/exact labels,No
+1977034206967378054,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1977034206967378054,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2035227655516061989,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+2047926330331684873,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+2047926330331684873,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2047971502197195023,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+2048054872243618116,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+KIBE-036,Q2,normalized multi-select formatting,"Dating/marriage, Religion/morality, Gender issues","Dating/marriage, Gender issues, Religion/morality",Standardized separators/case/order/exact labels,No
+KIBE-036,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+KIBE-036,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+KIBE-088,Q11,normalized multi-select formatting,"Self expression/identity construction, Information seeking","Information seeking, Self expression/identity construction",Standardized separators/case/order/exact labels,No
+RIX-065,Q18,unresolved noncanonical value,Calls for men to follow more equitable gender norms,Calls for men to follow more equitable gender norms,Needs manual review; left as-is,Yes
+EDDY-005,Q18,unresolved noncanonical value,Calls for men to follow more equitable gender norms,Calls for men to follow more equitable gender norms,Needs manual review; left as-is,Yes
+EDDY-017,Q18,unresolved noncanonical value,Calls for men to follow more equitable gender norms,Calls for men to follow more equitable gender norms,Needs manual review; left as-is,Yes
+EDDY-023,Q2,normalized multi-select formatting,"Mental health, Friends/socializing, Gender issues","Friends/socializing, Mental health, Gender issues",Standardized separators/case/order/exact labels,No
+EDDY-023,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+EDDY-023,Q9,normalized multi-select formatting,"Building community, More emotional growth/healing","More emotional growth/healing, Building community",Standardized separators/case/order/exact labels,No
+EDDY-023,Q18,unresolved noncanonical value,Calls for men to follow more equitable gender norms,Calls for men to follow more equitable gender norms,Needs manual review; left as-is,Yes
+EDDY-035,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Global political/social/cultural problems","Global political/social/cultural problems, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+EDDY-055,Q2,normalized multi-select formatting,"Mental health, Money/status","Money/status, Mental health",Standardized separators/case/order/exact labels,No
+EDDY-055,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+EDDY-055,Q8,normalized multi-select formatting,"Mental health/emotional struggle, Economic/status pressure","Economic/status pressure, Mental health/emotional struggle",Standardized separators/case/order/exact labels,No
+RIX-018,Q2,normalized multi-select formatting,"Mental health, Family/children","Family/children, Mental health",Standardized separators/case/order/exact labels,No
+RIX-018,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+RIX-046,Q2,normalized multi-select formatting,"Mental health, Family/children","Family/children, Mental health",Standardized separators/case/order/exact labels,No
+RIX-046,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+RIX-047,Q2,normalized multi-select formatting,"Mental health, Family/children","Family/children, Mental health",Standardized separators/case/order/exact labels,No
+RIX-047,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+PHIL-006,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-006,Q3,unresolved noncanonical value,News/telling facts,News/telling facts,Needs manual review; left as-is,Yes
+PHIL-006,Q3,normalized multi-select formatting,"News/telling facts, Commentary/reaction content","Commentary/reaction content, News/telling facts",Standardized separators/case/order/exact labels,No
+PHIL-010,Q2,normalized multi-select formatting,"Social issues, Gender issues, Family/children","Family/children, Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-014,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-014,Q8,normalized multi-select formatting,"Global political/social/cultural problems, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems",Standardized separators/case/order/exact labels,No
+PHIL-015,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-023,Q2,normalized multi-select formatting,"Social issues, Gender issues","Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-023,Q8,normalized multi-select formatting,"Global political/social/cultural problems, Kenyan or Nigerian political/social problems","Kenyan or Nigerian political/social problems, Global political/social/cultural problems",Standardized separators/case/order/exact labels,No
+PHIL-031,Q2,normalized multi-select formatting,"Social issues, Mental health, Gender issues","Mental health, Gender issues, Social issues",Standardized separators/case/order/exact labels,No
+PHIL-031,Q3,unresolved noncanonical value,Personal story,Personal story,Needs manual review; left as-is,Yes
+PHIL-031,Q3,normalized multi-select formatting,"Personal story, Commentary/reaction content","Commentary/reaction content, Personal story",Standardized separators/case/order/exact labels,No
+KIBE-011,Q2,normalized multi-select formatting,"Gender issues, Money/status","Money/status, Gender issues",Standardized separators/case/order/exact labels,No
+KIBE-079,Q8,normalized multi-select formatting,"Women/feminism, Global political/social/cultural problems","Global political/social/cultural problems, Women/feminism",Standardized separators/case/order/exact labels,No
+1951546068304314751,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1951546068304314751,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1951583978584002773,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+1951583978584002773,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+1951659746303377415,Q2,normalized multi-select formatting,"Gender issues, Family/children","Family/children, Gender issues",Standardized separators/case/order/exact labels,No
+1951659746303377415,Q9,normalized multi-select formatting,"More self-discipline/fitness, Assert dominance/control","Assert dominance/control, More self-discipline/fitness",Standardized separators/case/order/exact labels,No
+1973440936542720469,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2035235206035034470,Q3,unresolved noncanonical value,Advice/instruction,Advice/instruction,Needs manual review; left as-is,Yes
+2035235206035034470,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+2035333355189747989,Q18,unresolved noncanonical value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Needs manual review; left as-is,Yes
+KIBE-064,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+KIBE-091,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+1951561231522746625,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1951614290114310219,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+2040406554671829239,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1954188481585873209,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1954188481585873209,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+KIBE-004,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+KIBE-004,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+2043969069993378270,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+2043969069993378270,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+KIBE-002,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+EDDY-036,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+EDDY-012,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-007,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-009,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-028,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+PHIL-002,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+KIBE-001,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+KIBE-020,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+KIBE-029,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+KIBE-029,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+1951568877998965117,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1951568877998965117,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+1975078851945394590,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1975078851945394590,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+1976936284460351491,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1976936284460351491,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+2040414105522065830,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+EDDY-028,Q18,remaining invalid single value,Calls for men to follow more equitable gender norms,Calls for men to follow more equitable gender norms,Not an exact prompt option,Yes
+EDDY-031,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+EDDY-041,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-015,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-054,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-068,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+PHIL-025,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+KIBE-016,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+KIBE-016,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+KIBE-049,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+KIBE-049,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+1954098073262522452,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1954098073262522452,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+1954196373861003731,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1954196373861003731,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+1962749588588187787,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+EDDY-001,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+EDDY-060,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-073,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+PHIL-034,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+KIBE-003,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+KIBE-003,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+KIBE-008,Q18,remaining invalid single value,Calls for women to follow more traditional gender norms,Calls for women to follow more traditional gender norms,Not an exact prompt option,Yes
+1951644655797362727,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1951644655797362727,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+2035265419842359420,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+2035265419842359420,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+2039621704155045988,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+2039621704155045988,Q3,remaining invalid multi value,News/telling facts,News/telling facts,Not an exact prompt option,Yes
+2047918654382112910,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+2047918654382112910,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+EDDY-037,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+EDDY-051,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+PHIL-039,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+KIBE-005,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+KIBE-058,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+KIBE-067,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+KIBE-067,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+1976943608214212735,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1976943608214212735,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+1977034206967378054,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1977034206967378054,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+2035227655516061989,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+2047926330331684873,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+2047926330331684873,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+2047971502197195023,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+2048054872243618116,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+KIBE-036,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-065,Q18,remaining invalid single value,Calls for men to follow more equitable gender norms,Calls for men to follow more equitable gender norms,Not an exact prompt option,Yes
+EDDY-005,Q18,remaining invalid single value,Calls for men to follow more equitable gender norms,Calls for men to follow more equitable gender norms,Not an exact prompt option,Yes
+EDDY-017,Q18,remaining invalid single value,Calls for men to follow more equitable gender norms,Calls for men to follow more equitable gender norms,Not an exact prompt option,Yes
+EDDY-023,Q18,remaining invalid single value,Calls for men to follow more equitable gender norms,Calls for men to follow more equitable gender norms,Not an exact prompt option,Yes
+EDDY-023,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+EDDY-055,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-018,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-046,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+RIX-047,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+PHIL-006,Q3,remaining invalid multi value,News/telling facts,News/telling facts,Not an exact prompt option,Yes
+PHIL-031,Q3,remaining invalid multi value,Personal story,Personal story,Not an exact prompt option,Yes
+1951546068304314751,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1951546068304314751,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+1951583978584002773,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+1951583978584002773,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+1973440936542720469,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+2035235206035034470,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes
+2035235206035034470,Q3,remaining invalid multi value,Advice/instruction,Advice/instruction,Not an exact prompt option,Yes
+2035333355189747989,Q18,remaining invalid single value,Calls for men to follow more traditional gender norms,Calls for men to follow more traditional gender norms,Not an exact prompt option,Yes

@@ -1,0 +1,96 @@
+Question ID,Question,Option,Valid rows,TP,FP,FN,TN,Accuracy,Precision,Recall,F1
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",Compelling question,200,3,5,5,187,0.950000,0.375000,0.375000,0.375000
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",Use of all CAPS,200,4,0,1,195,0.995000,1.000000,0.800000,0.888889
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",Humor or sarcasm,200,0,0,4,196,0.980000,,0.000000,
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",Shares something violent or gross,200,1,0,2,197,0.990000,1.000000,0.333333,0.500000
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",Shares something sexual,200,0,0,6,194,0.970000,,0.000000,
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",Shares something surprising,200,1,0,36,163,0.820000,1.000000,0.027027,0.052632
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",Uses a news headline or social media trend as opener,200,0,0,3,197,0.985000,,0.000000,
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",Interesting visual or meme,200,0,0,0,200,1.000000,,,
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",Other,200,0,0,24,176,0.880000,,0.000000,
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Dating/marriage,197,62,4,21,110,0.873096,0.939394,0.746988,0.832215
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Friends/socializing,197,2,0,9,186,0.954315,1.000000,0.181818,0.307692
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Family/children,197,25,10,15,147,0.873096,0.714286,0.625000,0.666667
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Money/status,197,10,8,6,173,0.928934,0.555556,0.625000,0.588235
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Fitness/self-improvement,197,1,2,1,193,0.984772,0.333333,0.500000,0.400000
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Mental health,197,51,23,10,113,0.832487,0.689189,0.836066,0.755556
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Gender issues,197,90,80,4,23,0.573604,0.529412,0.957447,0.681818
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Social issues,197,24,16,16,141,0.837563,0.600000,0.600000,0.600000
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Religion/morality,197,3,1,11,182,0.939086,0.750000,0.214286,0.333333
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Gaming/technology,197,0,0,1,196,0.994924,,0.000000,
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,Other,197,0,0,11,186,0.944162,,0.000000,
+Q3,Q3. Characterize the type of content.,Interview/conversational content,142,7,1,66,68,0.528169,0.875000,0.095890,0.172840
+Q3,Q3. Characterize the type of content.,Motivational/self-help content,142,5,14,12,111,0.816901,0.263158,0.294118,0.277778
+Q3,Q3. Characterize the type of content.,Commentary/reaction content,142,81,52,2,7,0.619718,0.609023,0.975904,0.750000
+Q3,Q3. Characterize the type of content.,Other,142,0,0,0,142,1.000000,,,
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Men need to dominate/lead,200,29,24,10,137,0.830000,0.547170,0.743590,0.630435
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Men need to provide/succeed,200,4,5,8,183,0.935000,0.444444,0.333333,0.380952
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Men are disadvantaged/victims,200,0,2,10,188,0.940000,0.000000,0.000000,
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Men need to improve themselves,200,2,0,8,190,0.960000,1.000000,0.200000,0.333333
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Men need to be fully self-reliant,200,2,4,15,179,0.905000,0.333333,0.117647,0.173913
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Men need to be emotionally open,200,15,26,5,154,0.845000,0.365854,0.750000,0.491803
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Men need to not show emotions,200,1,1,10,188,0.945000,0.500000,0.090909,0.153846
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Men need to be equal partners,200,1,0,1,198,0.995000,1.000000,0.500000,0.666667
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Mixed/unclear,200,0,0,12,188,0.940000,,0.000000,
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Other,200,0,0,29,171,0.855000,,0.000000,
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",Not applicable,200,65,24,37,74,0.695000,0.730337,0.637255,0.680628
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,Kenyan or Nigerian political/social problems,184,4,3,19,158,0.880435,0.571429,0.173913,0.266667
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,Global political/social/cultural problems,184,20,32,9,123,0.777174,0.384615,0.689655,0.493827
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,Western political/social influence,184,0,0,2,182,0.989130,,0.000000,
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,Women/feminism,184,65,15,13,91,0.847826,0.812500,0.833333,0.822785
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,Men's behavior,184,2,3,78,101,0.559783,0.400000,0.025000,0.047059
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,Economic/status pressure,184,6,3,6,169,0.951087,0.666667,0.500000,0.571429
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,Mental health/emotional struggle,184,40,18,6,120,0.869565,0.689655,0.869565,0.769231
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,No clear problem is identified,184,1,0,11,172,0.940217,1.000000,0.083333,0.153846
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,Other,184,0,0,31,153,0.831522,,0.000000,
+Q9,Q9. What solution is being proposed? Choose all that apply.,Social or political change,200,4,6,7,183,0.935000,0.400000,0.363636,0.380952
+Q9,Q9. What solution is being proposed? Choose all that apply.,Assert dominance/control,200,33,23,9,135,0.840000,0.589286,0.785714,0.673469
+Q9,Q9. What solution is being proposed? Choose all that apply.,More wealth/status,200,3,3,2,192,0.975000,0.500000,0.600000,0.545455
+Q9,Q9. What solution is being proposed? Choose all that apply.,More self-discipline/fitness,200,2,0,11,187,0.945000,1.000000,0.153846,0.266667
+Q9,Q9. What solution is being proposed? Choose all that apply.,More emotional growth/healing,200,30,30,6,134,0.820000,0.500000,0.833333,0.625000
+Q9,Q9. What solution is being proposed? Choose all that apply.,More equality/respect for men,200,4,3,12,181,0.925000,0.571429,0.250000,0.347826
+Q9,Q9. What solution is being proposed? Choose all that apply.,More equality/respect for women,200,5,23,2,170,0.875000,0.178571,0.714286,0.285714
+Q9,Q9. What solution is being proposed? Choose all that apply.,Building community,200,6,6,7,181,0.935000,0.500000,0.461538,0.480000
+Q9,Q9. What solution is being proposed? Choose all that apply.,No clear solution,200,25,12,56,107,0.660000,0.675676,0.308642,0.423729
+Q9,Q9. What solution is being proposed? Choose all that apply.,Other,200,0,0,26,174,0.870000,,0.000000,
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,Advice/instruction,200,24,8,48,120,0.720000,0.750000,0.333333,0.461538
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,Personal story,200,30,2,18,150,0.900000,0.937500,0.625000,0.750000
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,Commentary/opinion,200,104,38,22,36,0.700000,0.732394,0.825397,0.776119
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,Debate/argument,200,0,0,23,177,0.885000,,0.000000,
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,Humor/satire,200,0,0,1,199,0.995000,,0.000000,
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,Motivational speech,200,2,8,16,174,0.880000,0.200000,0.111111,0.142857
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,News/telling facts,200,2,3,4,191,0.965000,0.400000,0.333333,0.363636
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,Other,200,0,0,4,196,0.980000,,0.000000,
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,Entertainment/escapism,200,0,1,26,173,0.865000,0.000000,0.000000,
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,Information seeking,200,109,88,3,0,0.545000,0.553299,0.973214,0.705502
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,Connection/social interaction,200,13,9,53,125,0.690000,0.590909,0.196970,0.295455
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,Self expression/identity construction,200,74,79,27,20,0.470000,0.483660,0.732673,0.582677
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,Status seeking,200,0,0,24,176,0.880000,,0.000000,
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,Documentation of events,200,0,0,1,199,0.995000,,0.000000,
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,None of these apply,200,0,0,24,176,0.880000,,0.000000,
+Q12,Q12. How does the content support its claims or messages?,Generalizations about men/women,200,69,24,19,88,0.785000,0.741935,0.784091,0.762431
+Q12,Q12. How does the content support its claims or messages?,Personal experience,200,37,12,10,141,0.890000,0.755102,0.787234,0.770833
+Q12,Q12. How does the content support its claims or messages?,Stories about men/women,200,4,5,3,188,0.960000,0.444444,0.571429,0.500000
+Q12,Q12. How does the content support its claims or messages?,Cultural/social observations,200,27,30,28,115,0.710000,0.473684,0.490909,0.482143
+Q12,Q12. How does the content support its claims or messages?,Facts/statistics,200,2,1,4,193,0.975000,0.666667,0.333333,0.444444
+Q12,Q12. How does the content support its claims or messages?,Moral/religious claims,200,1,0,10,189,0.950000,1.000000,0.090909,0.166667
+Q12,Q12. How does the content support its claims or messages?,Mixed,200,0,0,16,184,0.920000,,0.000000,
+Q12,Q12. How does the content support its claims or messages?,No support,200,0,0,17,183,0.915000,,0.000000,
+Q12,Q12. How does the content support its claims or messages?,Other,200,0,0,2,198,0.990000,,0.000000,
+Q13,Q13. How are the claims justified?,No justification,200,0,0,50,150,0.750000,,0.000000,
+Q13,Q13. How are the claims justified?,Anecdotal examples,200,38,20,18,124,0.810000,0.655172,0.678571,0.666667
+Q13,Q13. How are the claims justified?,Presented as common sense,200,78,55,21,46,0.620000,0.586466,0.787879,0.672414
+Q13,Q13. How are the claims justified?,References data,200,3,0,2,195,0.990000,1.000000,0.600000,0.750000
+Q13,Q13. How are the claims justified?,References religion/tradition,200,3,4,5,188,0.955000,0.428571,0.375000,0.400000
+Q13,Q13. How are the claims justified?,References external sources such as other influencers,200,0,0,2,198,0.990000,,0.000000,
+Q13,Q13. How are the claims justified?,Other,200,0,0,6,194,0.970000,,0.000000,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",Calls for audience to like the content,199,0,0,0,199,1.000000,,,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",Calls for audience to share the content,199,0,0,0,199,1.000000,,,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",Calls for audience to follow the speaker on social media,199,0,0,0,199,1.000000,,,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",Calls for men to follow more traditional gender norms,199,3,5,35,156,0.798995,0.375000,0.078947,0.130435
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",Calls for men to follow more equitable gender norms,199,0,10,9,180,0.904523,0.000000,0.000000,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",Calls for women to follow more traditional gender norms,199,0,0,5,194,0.974874,,0.000000,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",Calls for women to follow more equitable gender norms,199,0,0,1,198,0.994975,,0.000000,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",Calls for politicians or social figures to do something,199,2,1,1,195,0.989950,0.666667,0.666667,0.666667
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",Calls for audience to vote in a different way,199,0,0,0,199,1.000000,,,
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",Other,199,0,0,35,164,0.824121,,0.000000,

@@ -1,0 +1,21 @@
+question_id,question,summary_mode,n_score_rows,n_alpha_values,mean_alpha,median_alpha,min_alpha,max_alpha,mean_observed_disagreement
+Q1,Q1. Does the content start with an attention-getter?,single_choice_nominal,1,1,0.322660,0.322660,0.322660,0.322660,0.330000
+Q1A,"Q1a. If yes, what kind of attention-getting strategies does it use? Choose all that apply.",multi_select_option_average,20,19,0.056287,-0.002506,-0.063830,0.384615,0.037000
+Q2,Q2. What is/are the primary topic(s) of the content? Choose all that apply.,multi_select_option_average,29,27,0.156405,-0.002506,-0.030928,0.797468,0.060517
+Q3,Q3. Characterize the type of content.,single_choice_nominal,1,1,0.122016,0.122016,0.122016,0.122016,0.611111
+Q4,Q4. Does this content address masculinity / gender norms?,single_choice_nominal,1,1,0.359414,0.359414,0.359414,0.359414,0.350000
+Q5,"Q5. If yes, how would you characterize the type of masculinity or gender norms addressed?",single_choice_nominal,1,1,0.451941,0.451941,0.451941,0.451941,0.353293
+Q6,"Q6. If yes, does the content address what men should do or be in society?",single_choice_nominal,1,1,0.302849,0.302849,0.302849,0.302849,0.375758
+Q7,"Q7. If yes, what does the content indicate men do or need to do? Choose all that apply.",multi_select_option_average,20,20,0.111515,-0.002506,-0.197605,0.664148,0.058000
+Q8,Q8. What problem is being identified in the content? Choose all that apply.,multi_select_option_average,19,19,0.060284,-0.002506,-0.107082,0.490044,0.095789
+Q9,Q9. What solution is being proposed? Choose all that apply.,multi_select_option_average,12,12,0.257433,0.287347,-0.069519,0.589744,0.091667
+Q10,Q10. How would you characterize the communication mode of this content? Choose all that apply.,multi_select_option_average,15,15,0.108496,-0.002506,-0.047120,0.721845,0.069000
+Q11,Q11. Which audience needs does the content aim to fulfill? Choose all that apply.,multi_select_option_average,9,9,-0.119620,-0.063830,-0.369060,-0.002506,0.196111
+Q12,Q12. How does the content support its claims or messages?,single_choice_nominal,1,1,0.330711,0.330711,0.330711,0.330711,0.540404
+Q13,Q13. How are the claims justified?,single_choice_nominal,1,1,0.250803,0.250803,0.250803,0.250803,0.525000
+Q14,Q14. What is the general sentiment toward men?,single_choice_nominal,1,1,0.206761,0.206761,0.206761,0.206761,0.630000
+Q15,Q15. What is the general sentiment toward women?,single_choice_nominal,1,1,0.565162,0.565162,0.565162,0.565162,0.300000
+Q16,Q16. What is the general sentiment toward traditional gender norms?,single_choice_nominal,1,1,0.501492,0.501492,0.501492,0.501492,0.355000
+Q17,Q17. Does the content use fear or threat to help drive the message home?,single_choice_nominal,1,1,0.278461,0.278461,0.278461,0.278461,0.310000
+Q18,Q18. Does the content include any calls to action to the audience?,single_choice_nominal,1,1,0.535552,0.535552,0.535552,0.535552,0.210000
+Q18A,"Q18a. If yes, what kinds of calls to action are included? Choose all that apply.",multi_select_option_average,12,8,0.239493,0.115004,-0.012658,0.854598,0.034583

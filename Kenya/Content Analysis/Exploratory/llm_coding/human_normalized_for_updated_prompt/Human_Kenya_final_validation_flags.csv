@@ -1,0 +1,30 @@
+Content ID,Question ID,Flag type,Original value,Cleaned value,Note
+EDDY-012,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+EDDY-034,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+EDDY-040,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+EDDY-052,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+RIX-007,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+RIX-009,Q2,final known-value normalization,"Corruption, Family Trauma","Family/children, Mental health, Social issues",Mapped residual shorthand to prompt options
+RIX-009,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+RIX-028,Q3,final known-value normalization,"Commentary/reaction content, Self-help Content","Motivational/self-help content, Commentary/reaction content",Mapped residual shorthand to prompt options
+RIX-028,Q8,final known-value normalization,"Kenyan or Nigerian political/social problems, Kenyan Social",Kenyan or Nigerian political/social problems,Mapped local cultural/social shorthand to prompt option
+RIX-072,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+RIX-082,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+RIX-088,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+PHIL-001,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+PHIL-002,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+PHIL-005,Q2,final known-value normalization,"Social issues, Corruption",Social issues,Mapped residual shorthand to prompt options
+PHIL-005,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+PHIL-035,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+PHIL-036,Q2,final known-value normalization,"Social issues, Corruption",Social issues,Mapped residual shorthand to prompt options
+PHIL-036,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+KIBE-001,Q8,final known-value normalization,"Mental health/emotional struggle, Kenyan Cultural Problems","Kenyan or Nigerian political/social problems, Mental health/emotional struggle",Mapped local cultural/social shorthand to prompt option
+KIBE-014,Q18B,filled missing other specify,,Dominate more,Filled from original noncanonical parent label
+KIBE-052,Q18B,filled missing other specify,,Dominate more,Filled from original noncanonical parent label
+RIX-072,Q10A,filled missing other specify,,Conversational content,Filled from original noncanonical parent label
+PHIL-001,Q10A,filled missing other specify,,Conversational content,Filled from original noncanonical parent label
+PHIL-002,Q10A,filled missing other specify,,Conversational content,Filled from original noncanonical parent label
+1976936284460351491,Q7A,filled missing other specify,,Avoid certain women,Filled from original noncanonical parent label
+EDDY-057,Q7A,filled missing other specify,,Build community,Filled from original noncanonical parent label
+RIX-066,Q8A,filled missing other specify,,Family/children,Filled from original noncanonical parent label
+KIBE-069,Q18A,filled missing call-to-action type,,Calls for men to follow more traditional gender norms,Q18 = Yes and row frames men leading as traditional norm

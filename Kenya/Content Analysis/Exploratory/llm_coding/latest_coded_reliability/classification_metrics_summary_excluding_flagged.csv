@@ -1,0 +1,8 @@
+Metric,Value
+Multi-select micro accuracy,0.881492
+Multi-select micro precision,0.606492
+Multi-select micro recall,0.508765
+Multi-select micro F1,0.553347
+Multi-select average question macro F1,0.484536
+Single-answer average accuracy,0.580569
+Single-answer average macro F1,0.514742

@@ -1,0 +1,21 @@
+Question ID,Type,Metric,Score,Percent/exact agreement,Jaccard,Valid rows
+Q1,Single-answer,Krippendorff alpha,1.000000,1.000000,,200
+Q1A,Multi-select,Jaccard,1.000000,1.000000,1.000000,72
+Q2,Multi-select,Jaccard,1.000000,1.000000,1.000000,200
+Q3,Multi-select,Jaccard,1.000000,1.000000,1.000000,198
+Q4,Single-answer,Krippendorff alpha,1.000000,1.000000,,200
+Q5,Single-answer,Krippendorff alpha,1.000000,1.000000,,188
+Q6,Single-answer,Krippendorff alpha,1.000000,1.000000,,185
+Q7,Multi-select,Jaccard,1.000000,1.000000,1.000000,163
+Q8,Multi-select,Jaccard,1.000000,1.000000,1.000000,199
+Q9,Multi-select,Jaccard,1.000000,1.000000,1.000000,200
+Q10,Multi-select,Jaccard,1.000000,1.000000,1.000000,200
+Q11,Multi-select,Jaccard,1.000000,1.000000,1.000000,200
+Q12,Multi-select,Jaccard,1.000000,1.000000,1.000000,198
+Q13,Multi-select,Jaccard,1.000000,1.000000,1.000000,200
+Q14,Single-answer,Krippendorff alpha,1.000000,1.000000,,200
+Q15,Single-answer,Krippendorff alpha,1.000000,1.000000,,200
+Q16,Single-answer,Krippendorff alpha,1.000000,1.000000,,200
+Q17,Single-answer,Krippendorff alpha,1.000000,1.000000,,200
+Q18,Single-answer,Krippendorff alpha,1.000000,1.000000,,200
+Q18A,Multi-select,Jaccard,1.000000,1.000000,1.000000,69
